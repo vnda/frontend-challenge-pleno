@@ -1,0 +1,11 @@
+@keyframes bounce {
+  100% {
+    transform: translateY(2rem);
+  }
+}
+
+@keyframes open_menu {
+  100% {
+    right: 0;
+  }
+}

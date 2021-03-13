@@ -1,0 +1,51 @@
+.more-info {
+  padding: 2rem;
+
+  .content {
+    .text {
+      .title {
+        h2 {
+          @include h2;
+          @include separator;
+        }
+      }
+
+      .description {
+        margin: 2rem 0;
+
+        p {
+          font-size: 1.8rem;
+          font-family: $second-font;
+          line-height: 1.5;
+        }
+      }
+
+      .call-to-action button {
+        @include button($font-size: 2rem);
+      }
+    }
+
+    @include device(desktop) {
+      max-width: 1100px;
+      margin: 0 auto;
+
+      display: grid;
+      grid-template: 1fr / repeat(2, 1fr);
+
+      .text {
+        grid-column: 1 / 2;
+
+        padding-right: 2rem;
+      }
+
+      .image {
+        grid-column: 2 / 3;
+
+        border-radius: 0.4rem;
+
+        @include background-image($url: '../img/more-info/image-1.webp');
+        background-position-y: 100%;
+      }
+    }
+  }
+}

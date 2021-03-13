@@ -1,0 +1,46 @@
+.testimonials {
+  .content {
+    padding: 2rem;
+
+    @include background-image($url: '../img/testimonials/image-2.webp');
+    background-position-x: 40%;
+
+    position: relative;
+
+    .person-comment {
+      text-align: center;
+
+      margin-bottom: 1rem;
+
+      q {
+        @include h2;
+        font-weight: bold;
+      }
+    }
+
+    .person-image {
+      height: 40rem;
+
+      position: relative;
+
+      img {
+        position: relative;
+        top: 4rem;
+
+        height: inherit;
+        border-radius: 0.4rem;
+        object-fit: cover;
+
+        margin: 0 auto;
+      }
+    }
+
+    @include device(desktop) {
+      .person-comment {
+        max-width: 60rem;
+
+        margin: 0 auto;
+      }
+    }
+  }
+}

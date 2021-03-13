@@ -1,0 +1,100 @@
+.products {
+  .content {
+    padding: 2rem;
+
+    .title h2 {
+      @include h2($text-align: center, $font-size: 3rem);
+      @include separator($width: 5rem, $margin: 2rem auto 0 auto);
+    }
+
+    .swiper-container {
+      width: 100%;
+
+      .swiper-wrapper {
+        .products-list {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          margin: 2rem 0;
+
+          .product-category {
+            margin: 1rem 0;
+          }
+
+          .product-category h1 {
+            font-family: $second-font;
+            color: $fourth-color;
+            font-size: 1.8rem;
+            text-transform: uppercase;
+          }
+
+          .product-image {
+            position: relative;
+
+            .flag {
+              position: absolute;
+              top: 1rem;
+              left: 1rem;
+
+              background-color: $first-color;
+
+              padding: 1rem;
+
+              p {
+                font-family: $second-font;
+                font-size: 1rem;
+                color: $fourth-color;
+                text-transform: uppercase;
+              }
+            }
+
+            .image {
+              img {
+                object-fit: cover;
+              }
+            }
+
+            .price {
+              position: relative;
+
+              p {
+                position: absolute;
+                bottom: 1rem;
+                left: calc(10rem - 3rem);
+
+                font-family: $second-font;
+                color: $fourth-color;
+                font-size: 1.3rem;
+                font-weight: bold;
+              }
+            }
+          }
+
+          .product-name {
+            margin: 1rem 0;
+
+            p {
+              font-family: $second-font;
+              color: $fourth-color;
+              font-size: 1.5rem;
+            }
+          }
+
+          .call-to-action button {
+            @include button($font-size: 2rem);
+          }
+        }
+      }
+
+      .swiper-button-next {
+        right: .1rem;
+      }
+
+      .swiper-button-prev {
+        left: .1rem;
+      }
+    }
+  }
+}
