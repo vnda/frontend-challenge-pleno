@@ -1,0 +1,75 @@
+.collection-first {
+    .catalog {
+        .catalog-card-container {
+            .first {
+                top: 0;
+                right: 10%;
+                width: 85%;
+                z-index: 2;
+                transition: all 0.6s ease-out;
+
+                @media screen and (max-width: $very-large) {
+                    right: 15%;
+                    width: 100%;
+                }
+
+                @media screen and (max-width: $large) {
+                    width: 85%;
+                    right: 40%;
+                }
+            }
+            
+            .second {
+                top: 45%;
+                right: 0;
+                width: 70%;
+                transition: all 0.6s ease-out;
+
+                @media screen and (max-width: $very-large) {
+                    width: 85%;
+                }
+
+                @media screen and (max-width: $large) {
+                    top: 25%;
+                    right: 15%;
+                }
+            }
+        }
+    }
+
+    //size medium - 768px
+    .catalog.small {
+        @media screen and (max-width: $medium) {
+            .catalog-card-container {
+                .image-wrapper {
+                    position: relative;
+                    height: 320px;
+                    @include flex-center-center;
+
+                    img {
+                        height: 300px;
+                        max-width: 280px;
+                        object-fit: cover;
+                        display: block;
+
+                        @media screen and (max-width: $very-small) {
+                            height: 350px;
+                            max-width: 350px;
+                        }
+                    }
+                }
+
+                .catalog-card.first,
+                .catalog-card.second {
+                    width: 45%;
+                    margin: 0 5%;
+
+                    @media screen and (max-width: $very-small) {
+                        width: 80%;
+                        margin: 7% 5%;
+                    }
+                }
+            }
+        }
+    }
+}

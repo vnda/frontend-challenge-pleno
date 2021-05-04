@@ -1,0 +1,139 @@
+.location {
+    margin-top: 10rem;
+
+    .location-section-title {
+        margin-bottom: 5rem;
+        font-size: 2.5rem;
+        text-align: center;
+
+        @include letterTransform;
+    }
+
+    .location-container {
+        height: 80%;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+
+        @media screen and (max-width: $small) {
+            flex-wrap: wrap;
+        }
+
+        .city-container {
+            width: 20%;
+            margin: 0 1.5rem;
+            @include flex-center-center;
+            flex-direction: column;
+
+            @media screen and (max-width: $large) {
+                width: 21.1%;
+            }
+
+            @media screen and (max-width: $small) {
+                width: 45%;
+            }
+
+            @media screen and (max-width: $very-small) {
+                width: 100%;
+            }
+
+            .city-card {
+                position: relative;
+                @include flex-center-center;
+                flex-direction: column;
+                box-shadow: 8px 11px 9px -6px rgba(0, 0, 0, 0.56);
+                border-radius: 5px;
+
+                @media screen and (max-width: $large) {
+                    height: 150px;
+                }
+
+                .city-img {
+                    border-radius: inherit;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    display: block;
+                    position: relative;
+                }
+
+                .city-address {
+                    color: var(--white);
+                    text-shadow: 2px 2px 4px var(--secondary-color);
+                    font-size: 1.5rem;
+                    line-height: 2.5rem;
+                    text-align: center;
+                    opacity: 0;
+                    transition: all 0.3s ease-out;
+
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+
+                    @media screen and (max-width: $medium) {
+                        font-size: 1.35rem;
+                        line-height: 2rem;
+                    }
+                }
+
+                &:hover .city-address {
+                    opacity: 1;
+                    z-index: 2;
+                }
+                
+                //background shadow
+                @include cardHover;
+            }
+
+            .city-title {
+                font-size: 1.6rem;
+                margin: 1.5rem 0;
+                @include letterTransform;
+
+                @media screen and (max-width: $medium) {
+                    font-size: 1.35rem;
+                }
+            }
+
+            .city-btn {
+                background: transparent;
+                margin: 2rem 0;
+                padding: 0.5rem 1rem;
+                border: solid 1px;
+                border-radius: 5px;
+                outline: none;
+                cursor: pointer;
+                font-size: 1.5rem;
+                transition: all 0.3s ease;
+
+                &:hover{
+                    background-color: var(--secondary-color);
+                    color: var(--primary-color);
+                }
+            }
+
+            .location-map {
+                margin-top: 2rem;
+                width: 0;
+                height: 0;
+                opacity: 0;
+                transition: all 0.3s ease-out;
+                border: none;
+                border-radius: 5px;
+                overflow: hidden;
+            }
+
+            .open {
+                width: 100%;
+                height: 250px;
+                opacity: 1;
+            }
+
+        }
+    }
+}
+
+
+

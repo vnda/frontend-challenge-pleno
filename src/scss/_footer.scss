@@ -1,0 +1,100 @@
+.footer {
+    margin-top: 10rem;
+
+    display: flex;
+    flex-direction: column;
+
+    background-color: var(--primary-color);
+
+    .footer-content {
+        padding: 0 12rem;
+
+        @media screen and (max-width: $medium) {
+            padding: 0 5%;
+        }
+
+        @include flex-between-center;
+
+        @media screen and (max-width: $very-small) {
+            flex-direction: column;
+            padding-top: 3rem;
+        }
+
+        .footer-logo {
+            font-size: 3rem;
+
+            @include letterTransform;
+        }
+
+        .footer-nav {
+            > ul {
+                > li {
+                    padding: 1rem 0;
+                    position: relative;
+
+                    > .footer-nav-link {
+                        font-size: 1.5rem;
+
+                        @include letterTransform;
+
+                        @include hoverMenu;
+                    }
+                }
+            }
+
+            @media screen and (max-width: $very-small) {
+                margin: 5rem;
+            }
+        }
+
+        .footer-social-media {
+            > ul {
+                > li {
+                    @include flex-between-center;
+
+                    padding: 1rem;
+
+                    > a {
+                        margin-left: 1rem;
+                        margin-top: 1rem;
+                        font-size: 1.5rem;
+
+                        @include letterTransform;
+                    }
+
+                    .footer-icons {
+                        width: 22px;
+                        height: 22px;
+                        transition: all 0.3s ease;
+                    }
+
+                    &:hover .footer-icons {
+                        transform: translateY(-1rem);
+                    }
+                }
+            }
+        }
+    }
+
+    .copyright {
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin-top: 2rem;
+
+        @include flex-center-center;
+
+        align-self: center;
+        border-top: solid 1px;
+        width: 50%;
+
+        @media screen and (max-width: $small) {
+            width: 90%;
+        }
+
+        @media screen and (max-width: $very-small) {
+            font-size: 1.4rem;
+        }
+    }
+}

@@ -1,0 +1,21 @@
+//Swiper arrows
+.swiper-container {
+    //Default
+    --swiper-theme-color: var(--secondary-color);
+    --swiper-navigation-size: 2.5rem;
+
+    .swiper-button-prev {
+        left: 0.5rem;
+        right: auto;
+    }
+
+    .swiper-button-next {
+        right: 0.5rem;
+        left: auto;
+    }
+
+    .swiper-button-prev-big,
+    .swiper-button-prev-big{
+        color: var(--primary-color);
+    }
+}

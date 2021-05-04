@@ -1,0 +1,79 @@
+//sizes
+$very-large: 75em; //1200px
+$large: 61.94em; //991px
+$medium: 48em; //768px
+$small: 36.57em; //585px
+$very-small: 26.57em; //425px
+
+//collors
+:root {
+    --primary-color: #e5e1c7;
+    --primary-color-transparent: rgba(229, 225, 199, 0.5);
+    --secondary-color: #000;
+    --flag-red: #f00;
+    --grey: #ddd;
+    --white: #fff;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+html {
+    position: relative;
+
+    font-size: 62.5%;
+
+    @media screen and (max-width: $medium) {
+        font-size: 55%;
+    }
+
+    @media screen and (max-width: $very-small) {
+        font-size: 50%;
+    }
+}
+
+body {
+    height: 100%;
+    font-size: 1.6rem;
+    line-height: 1.6rem;
+    font-weight: none;
+    font-family: "PT Sans", sans-serif;
+    overflow-x: hidden;
+    transition: background-color 0.3s ease-out;
+
+    &::-webkit-scrollbar {
+        width: 0.5rem;
+    }
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--secondary-color);
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+    }
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: "Playfair Display", serif;
+    font-weight: none;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--secondary-color);
+    text-decoration: none;
+}

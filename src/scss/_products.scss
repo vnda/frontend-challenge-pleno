@@ -1,0 +1,118 @@
+.products {
+    height: 100%;
+    margin: 3.5rem;
+
+    @media screen and (max-width: $large) {
+        margin: 8rem 0; 
+    }
+
+    @media screen and (max-width: $very-small) {
+        margin: 3rem 0;
+    }
+
+    .product-section-title {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        text-align: center;
+
+        @include letterTransform;
+
+        @media screen and (max-width: $large) {
+            font-size: 1.6rem;
+        }
+    }
+
+    .product-section-container {
+        margin-top: 5rem;
+
+        @include flex-center-center;
+        flex-wrap: wrap;
+        
+        .product-card {
+            margin: 0 1.5rem;
+            width: 20%;
+            position: relative;
+
+            @media screen and (max-width: $medium) {
+                flex-basis: 260px;
+            }
+
+            @media screen and (max-width: $small) {
+                width: 20%;
+                flex-basis: 200px;
+            }
+
+            .product-category {
+                font-size: 1.8rem;
+
+                @include letterTransform;
+
+                text-align: center;
+                line-height: 4rem;
+            }
+
+            .product-img {
+                
+                img {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+
+                .flag{
+                    background: var(--flag-red);
+                    color: var(--grey);
+
+                    text-transform: uppercase;
+                    display: inline-block;
+
+                    padding: .5rem 1rem;
+                    position: absolute;
+                    top: 2%;
+                    left: 2%;
+                    z-index: 2;
+                }
+
+                .price{
+                    color: var(--primary-color);
+                    text-shadow: 2px 2px 4px var(--secondary-color);
+                    position: absolute;
+                    bottom: 5%;
+                    right: 50%;
+                    transform: translateX(50%);
+                    z-index: 2;
+                    
+                    font-size: 2rem;
+
+                    @media screen and (max-width: $large) {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+
+            .product-name {
+                font-size: 1.6rem;
+                line-height: 3rem;
+                padding: 1rem;
+                text-align: center;
+            }
+
+            .product-btn {
+                font-size: 1.6rem;
+                line-height: 2rem;
+                padding: 1rem;
+                margin-bottom: 1.5rem;
+                text-align: center;
+                border: solid 1px;
+                display: block;
+                transition: all .3s ease;
+
+                &:hover{
+                    background-color: var(--secondary-color);
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+}

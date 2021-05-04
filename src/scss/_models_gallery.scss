@@ -1,0 +1,98 @@
+.models-galery {
+    margin-top: 5rem;
+    position: relative;
+
+    //Background banner
+    .gallery-top {
+        width: 100%;
+        height: 100%;
+
+        .models-img-bg {
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .models-title {
+            position: absolute;
+            top: 25%;
+            left: 9%;
+
+            font-size: 2rem;
+            text-align: center;
+
+            color: var(--primary-color);
+            text-shadow: 2px 2px 4px var(--secondary-color);
+
+            @include letterTransform;
+
+            @media screen and (max-width: $medium) {
+                left: 5%;
+                font-size: 1.8rem;
+            }
+
+            @media screen and (max-width: $small) {
+                font-size: 1.5rem;
+            }
+
+        }
+
+        .models-title-bg {
+            font-size: 2.5rem;
+
+            color: var(--primary-color);
+            text-shadow: 2px 2px 4px var(--secondary-color);
+
+            @include letterTransform;
+
+            position: absolute;
+            bottom: 30%;
+            right: 20%;
+
+            &:hover {
+                animation: pulse-effect 1.5s infinite;
+            }
+
+            @media screen and (max-width: $medium) {
+                font-size: 2.2rem;
+            }
+
+            @media screen and (max-width: $small) {
+                right: 5%;
+            }
+
+            @media screen and (max-width: $very-small) {
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    //Thumb
+    .gallery-thumbs {
+        position: absolute;
+        top: 35%;
+        left: 9%;
+        border: solid 1px;
+        width: 20%;
+        height: 70%;
+        box-shadow: 8px 11px 9px -6px rgba(0, 0, 0, 0.56);
+
+        @media screen and (max-width: $large) {
+            width: 30%;
+        }
+
+        @media screen and (max-width: $medium) {
+            left: 5%; 
+        }
+
+        @media screen and (max-width: $very-small) {
+            width: 40%;
+            height: 90%;
+        }
+
+        .models-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
