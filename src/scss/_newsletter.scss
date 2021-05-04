@@ -1,0 +1,67 @@
+.newsletter {
+    margin-top: 10rem;
+    padding: 0 12rem;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+
+    
+    @media screen and (max-width: $medium) {
+        padding: 0 5%;
+    }
+
+    @media screen and (max-width: $very-small) {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .newsletter-text {
+        width: 25%;
+
+        font-size: 2rem;
+        line-height: 2.3rem;
+
+        @include letterTransform;
+
+        @media screen and (max-width: $large) {
+            font-size: 1.5rem;
+        }
+
+        @media screen and (max-width: $very-small) {
+            width: 90%;
+            margin-bottom: 5rem;
+        }
+    }
+
+    .newsletter-form {
+        width: 80%;
+        display: flex;
+        justify-content: flex-end;
+
+        @media screen and (max-width: $small) {
+            width: 100%;
+        }
+
+        
+        .newsletter-form-email {
+            width: 50%;
+            background: transparent;
+            border: none;
+            border-bottom: solid 1px;
+            outline: none;
+            font-style: italic;
+            padding: 1rem;
+            font-size: 1.3rem;
+            margin: 0 2rem;
+
+            @media screen and (max-width: $small) {
+                width: 55%;
+                margin: 0 1rem;
+            }
+    
+        }
+
+    }
+}

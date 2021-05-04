@@ -1,0 +1,92 @@
+.collection-third {
+    margin: 10rem 0;
+    max-width: 100%;
+    @media screen and (max-width: $large) {
+        margin: 0;
+    }
+
+    @media screen and (max-width: $very-small) {
+        margin: 2rem 0;
+    }
+
+    .collection-section-title {
+        padding: 1.5rem;
+        line-height: 3rem;
+        text-align: center;
+
+        @media screen and (max-width: $large) {
+            margin: 3rem 0;
+        }
+
+    }
+
+    .catalog {
+        .catalog-card-container {
+            .first {
+                top: 10%;
+                right: 0;
+                width: 100%;
+                overflow: hidden;
+
+                @media screen and (max-width: $large) {
+                    top: 15%;
+                    right: 15%;
+                }
+
+                > img {
+                    transition: all 0.3s ease-out;
+                }
+
+                &:hover img {
+                    transform: scale(1.1);
+                }
+                
+                a {
+                    @include cardHoverBtn;
+                }
+            }
+        }
+    }
+
+    .catalog.small {
+        @media screen and (max-width: $medium) {
+            .catalog-text-container {
+                position: relative;
+                height: 100%;
+                background: rgba(0, 0, 0, 0.3);
+
+                &:before {
+                    content: "";
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    background-image: url("../../src/img/third_collection_1_bg.png");
+                    background-position: left;
+                    background-repeat: no-repeat;
+                    z-index: -1;
+                    opacity: 0.8;
+                }
+
+                .catalog-title {
+                    color: var(--primary-color);
+                    text-shadow: 2px 2px 4px var(--secondary-color);;
+                }
+
+                .catalog-description {
+                    color: var(--primary-color);
+                    text-shadow: 2px 2px 4px var(--secondary-color);;
+                }
+            }
+
+            .catalog-card-container {
+                .catalog-card.first {
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,208 @@
+//Header
+.header {
+    @include flex-between-center;
+    height: 10vh;
+    width: 100%;
+    padding: 1.5rem 5rem;
+    background-color: var(--primary-color-transparent);
+    transition: all 0.3s ease-out;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+    &:hover {
+        background-color: var(--primary-color);
+    }
+
+    @media screen and (max-width: $medium) {
+        padding: 0 1rem;
+    }
+
+    .logo {
+        > a > h1 {
+            font-size: 3.5rem;
+            @include letterTransform;
+            color: var(--secondary-color);
+        }
+
+        @media screen and (max-width: $medium) {
+            order: 2;
+        }
+    }
+
+    .nav {
+        max-height: 100vh;
+        > .nav-bar {
+            @include flex-between-center;
+
+            > li {
+                margin: 0 5rem;
+                padding: 0.6rem 0;
+                position: relative;
+
+                //responsive nav
+                @media screen and (max-width: $medium) {
+                    opacity: 0;
+                }
+
+                .nav-bar-link {
+                    font-size: 1.8rem;
+                    @include letterTransform;
+                    @include hoverMenu;
+                }
+            }
+
+            //responsive nav
+            @media screen and (max-width: $medium) {
+                position: absolute;
+                top: 9vh;
+                left: -70%;
+                z-index: 999;
+                height: 91vh;
+                background-color: var(--primary-color);
+                flex-direction: column;
+                justify-content: space-evenly;
+                width: 70%;
+                transition: transform 0.5s ease-in;
+            }
+        }
+
+        .burger {
+            display: none;
+            cursor: pointer;
+            .line {
+                width: 25px;
+                height: 2px;
+                background-color: var(--secondary-color);
+                margin: 5px;
+                transition: all 0.3s ease;
+            }
+
+            @media screen and (max-width: $medium) {
+                display: block;
+            }
+        }
+    }
+
+    //nav open
+    .nav-open {
+        transform: translateX(99%);
+    }
+
+    //rotate burger
+    .burger-rotate {
+        .line:nth-child(1) {
+            transform: rotate(-45deg) translate(-4px, 5px);
+        }
+        .line:nth-child(2) {
+            opacity: 0;
+        }
+        .line:nth-child(3) {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+    }
+
+    .user-nav {
+        @include flex-between-center;
+
+        @media screen and (max-width: $medium) {
+            order: 3;
+        }
+
+        .user-nav-link {
+            margin: 0 0.6rem;
+            transition: all 0.3s ease;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+
+        .user-nav-icon {
+            width: 22px;
+            height: 22px;
+            fill: var(--secondary-color);
+        }
+    }
+
+    .search-bar {
+        position: absolute;
+        top: 98%;
+        right: 50%;
+        transform: translateX(50%);
+        transition: all 0.3s ease-in;
+        z-index: 999;
+        width: 70%;
+        height: 10vh;
+        @include flex-center-center;
+        background-color: var(--primary-color-transparent);
+        border-radius: 0 0 5px 5px;
+
+        @media screen and (max-width: $medium) {
+            width: 100%;
+            background-color: var(--primary-color);
+        }
+
+        &:hover {
+            background-color: var(--primary-color);
+        }
+
+        > .container {
+            @include flex-between-center;
+            width: 80%;
+            > input {
+                width: 70%;
+                margin: 0 1rem;
+                padding: 1rem 0.3rem;
+                font-size: 1.4rem;
+                border: none;
+                border-bottom: solid 1px;
+                color: var(--secondary-color);
+                background-color: transparent;
+            }
+
+            > button {
+                padding: 1rem 1rem;
+                background-color: transparent;
+                border: solid 1px;
+                border-radius: 5px;
+                cursor: pointer;
+                transition: all 0.3s ease;
+                font-size: 1.2rem;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+
+                &:hover {
+                    background-color: var(--secondary-color);
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+
+    .search-bar.hide {
+        opacity: 0;
+        right: 0;
+        z-index: -1;
+    }
+}
+
+.header.sticky {
+    position: sticky;
+    background-color: var(--primary-color);
+    box-shadow: 1px 0 5px rgba(0, 0, 0, 0.5);
+
+    .search-bar {
+        background-color: var(--primary-color);
+    }
+}
+
+//nav mobile open - header bg change
+.header.bg-color {
+    background-color: var(--primary-color);
+
+    .search-bar {
+        background-color: var(--primary-color);
+    }
+}

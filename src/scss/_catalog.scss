@@ -1,0 +1,159 @@
+.catalog {
+    display: flex;
+    height: 100%;
+    position: relative;
+
+    .catalog-text-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+
+        width: 60%;
+        margin: 18rem 12rem;
+
+        @media screen and (max-width: $large) {
+            margin: 8rem;
+        }
+     
+
+        .text-wrapper {
+            min-width: 325px;
+            padding-right: 12rem;
+
+            @media screen and (max-width: $large) {
+                padding-right: 5rem;
+            }
+
+            @media screen and (max-width: $very-small) {
+                min-width: 200px;
+            }
+
+
+            .catalog-title {
+                font-size: 3rem;
+                line-height: 4rem;
+                color: var(--secondary-color);
+
+                @media screen and (max-width: $large) {
+                    font-size: 2.8rem;
+                }
+            }
+
+            .catalog-description {
+                margin: 5rem 0;
+                font-size: 1.6rem;
+                line-height: 2rem;
+
+                @media screen and (max-width: $very-small) {
+                    margin: 2.5rem 0;
+                }
+            }
+        }
+    }
+
+    .catalog-card-container {
+        position: relative;
+        width: 40%;
+        min-width: 300px;
+
+        .catalog-card {
+            position: absolute;
+
+            .catalog-card-image {
+                width: 100%;
+            }
+        }
+    }
+
+    //catalogos com mais de 1 card
+    .image-wrapper {
+        position: relative;
+
+        .catalog-card-image {
+            position: absolute;
+        }
+
+        .catalog-card-image:nth-child(2) {
+            transition: all 0.5s ease-out;
+            opacity: 0;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+
+    //card hover
+    .switchCard {
+        z-index: 2;
+    }
+}
+
+.catalog-btn {
+    text-align: center;
+    color: var(--white);
+    background-color: var(--secondary-color);
+    padding: 1.5rem 7rem;
+    border: solid 2px var(--secondary-color);
+    transition: all .3s ease;
+
+    &:hover{
+        color: var(--secondary-color);
+        background-color: var(--primary-color);
+    }
+
+    @media screen and (max-width: $large) {
+        padding: 1.5rem 3rem;
+    }
+
+    @media screen and (max-width: $small) {
+        font-size: 1.45rem;
+        padding: 1rem 2rem;
+    }
+}
+
+//768px
+.catalog.small {
+    @media screen and (max-width: $medium) {
+        height: 100%;
+        flex-direction: column;
+        @include flex-center-center;
+
+        .catalog-text-container {
+            margin: 5rem;
+            width: 100%;
+            text-align: center;
+
+            .text-wrapper {
+                padding: 3.5rem;
+
+                @include flex-center-center;
+                flex-direction: column;
+
+                @media screen and (max-width: $very-small) {
+                    padding: 1rem;
+                }
+                
+
+                .catalog-description {
+                    font-size: 1.8rem;
+                    line-height: 2.5rem;
+                }
+            }
+        }
+
+        .catalog-card-container {
+            width: 100%;
+            @include flex-center-center;
+
+            .catalog-card {
+                position: initial;
+            }
+
+            @media screen and (max-width: $very-small) {
+                flex-direction: column;
+            }
+        }
+    }
+}
