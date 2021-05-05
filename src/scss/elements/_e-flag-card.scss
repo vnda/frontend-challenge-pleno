@@ -1,0 +1,11 @@
+.e-flag-card {
+  position: relative;
+  width: 30%;
+  text-align: center;
+  background-color: var(--color-white);
+  color: var(--color-black);
+
+  transform: rotate(-45deg);
+  left: -7%;
+  top: 8%;
+}

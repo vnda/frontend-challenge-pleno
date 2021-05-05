@@ -1,0 +1,16 @@
+.is-flag-icon {
+  position: absolute;
+  right: 0;
+  bottom: -0.1em;
+  background-color: green;
+  color: white;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  span {
+    font-size: 0.4em;
+  }
+}

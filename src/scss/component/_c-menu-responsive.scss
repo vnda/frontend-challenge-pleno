@@ -1,0 +1,39 @@
+.c-menu-responsive {
+  display: flex;
+  position: absolute;
+  transition: left 0.3s ease-out;
+  left: -100%;
+  z-index: 100000;
+  width: 90%;
+  height: 300%;
+  background-color: var(--color-eerie-black);
+
+  &__nav {
+    margin: 5em auto;
+    text-align: center;
+  }
+  &__clean {
+    margin-bottom: 3em;
+    width: 80%;
+    text-align: right;
+    button {
+      background-color: var(--color-eerie-black);
+      color: var(--color-white);
+      &:active {
+        opacity: 0.3;
+      }
+    }
+  }
+  &__list {
+    li {
+      padding: 2em;
+      a {
+        padding: 1em;
+        width: 100%;
+        text-align: center;
+        text-decoration: none;
+        color: var(--color-white);
+      }
+    }
+  }
+}

@@ -1,0 +1,70 @@
+.c-section-quarterly {
+  margin-bottom: 8em;
+  margin-top: 0em;
+
+  &__bg {
+    position: absolute;
+    width: 100%;
+    height: 640px;
+    object-fit: cover;
+  }
+
+  &__left {
+    position: relative;
+    bottom: -0.7em;
+    line-height: 1.6em;
+    color: var(--color-white);
+    h4 {
+      font-size: 1.4em;
+      margin-bottom: 0.5em;
+      text-align: center;
+    }
+  }
+  &__right {
+    width: 50%;
+    position: relative;
+    color: var(--color-white);
+    align-self: flex-end;
+    text-align: end;
+    bottom: 4em;
+    font-size: 2em;
+  }
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    max-width: var(--measure-max-width-large);
+    margin: auto;
+
+    @include breakpoint(large-only) {
+      max-width: var(--measure-max-width-medium);
+    }
+    @include breakpoint(medium-only) {
+      max-width: var(--measure-max-width-small);
+      flex-direction: column;
+    }
+    @include breakpoint(small-only) {
+      max-width: var(--measure-max-width-mobile-phone);
+      flex-wrap: wrap;
+      .c-section-quarterly__photo {
+        position: relative;
+        max-width: var(--measure-max-width-mobile-phone);
+        bottom: -2em;
+      }
+      .c-section-quarterly__right {
+        color: var(--color-black);
+        bottom: -1em;
+        width: 100%;
+      }
+    }
+  }
+  @include breakpoint(medium-only) {
+    &__right {
+      bottom: 0;
+      color: var(--color-black);
+      width: 100%;
+    }
+    &__photo {
+      width: 100%;
+    }
+  }
+}
