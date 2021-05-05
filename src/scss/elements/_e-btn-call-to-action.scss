@@ -1,0 +1,27 @@
+.e-btn-call-to-action {
+  background-color: var(--color-black);
+  color: var(--color-white);
+  padding: var(--measure-padding-btn);
+  border-radius: var(--measure-radius);
+  font-family: var(--font-pt-sans);
+  box-shadow: var(--measure-box-shadow);
+
+  &:hover {
+    background-color: var(--color-eerie-black);
+    box-shadow: var(--measure-box-shadow-hover);
+    transform: translate(2px, 2px);
+  }
+  &:active {
+    transform: translate(4px, 4px);
+    box-shadow: none;
+  }
+
+  @include breakpoint(large-only) {
+  }
+  @include breakpoint(medium-only) {
+  }
+  @include breakpoint(small-only) {
+    font-size: 0.6em;
+    padding: 6px 20px;
+  }
+}

@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--build:css ./assets/css/style.css-->
+    <link rel="stylesheet" href="./dist/assets/css/style.css" />
+    <!-- /build -->
+
+    <link
+      href="https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <title>Test document</title>
+  </head>
+  <body>
+    <header class="l-header">
+      <div class="c-menu-responsive js-menu-responsive">
+        <nav class="c-menu-responsive__nav">
+          <div class="c-menu-responsive__clean">
+            <button class="js-menu-responsive__btn-clean">
+              <i class="bx bx-x bx-sm"></i>
+            </button>
+          </div>
+          <ul class="c-menu-responsive__list">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Menu</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="c-navbar">
+        <div class="c-navbar__wapper">
+          <div class="c-navbar__brand"><h1>LOGO</h1></div>
+          <nav class="c-navbar__nav is-toogle-responsive">
+            <ul class="c-navbar__list">
+              <li><a href="#">Home</a></li>
+              <li><a href="#">Menu</a></li>
+              <li><a href="#">Menu</a></li>
+            </ul>
+          </nav>
+          <div class="c-navbar__icons">
+            <ul>
+              <li class="c-navbar__btn-toggle-menu">
+                <a
+                  class="e-icon-navbar js-menu-responsive__btn-toggle"
+                  href="#"
+                >
+                  <i class="bx bx-menu bx-sm"></i>
+                </a>
+              </li>
+              <li>
+                <a class="e-icon-navbar" href="#"
+                  ><i class="bx bx-search-alt-2 bx-sm"></i
+                ></a>
+              </li>
+              <li>
+                <a class="e-icon-navbar" href="#"
+                  ><i class="bx bx-user-circle bx-sm"></i
+                ></a>
+              </li>
+              <li>
+                <a class="e-icon-navbar" href="#">
+                  <i class="bx bx-basket bx-tada bx-sm">
+                    <div class="is-flag-icon">
+                      <span>3</span>
+                    </div>
+                  </i></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="c-text-banner">
+        <div class="c-text-banner__wrapper">
+          <h1 class="c-text-banner__title c-text-banner--shadow">
+            Banner Title
+          </h1>
+          <h2 class="c-text-banner__subtitle c-text-banner--shadow">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Asperiores
+            ad delectus, tempore repudiandae expedita hic praesentium, beatae
+            dignissimos cumque debitis nihil magni.
+          </h2>
+          <button class="c-text-banner__button e-btn-call-to-action">
+            Call to action
+          </button>
+        </div>
+      </div>
+      <!-- start swiper -->
+      <div class="js-swiper-container swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/id/1031/1280/720" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/id/114/1280/720" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/id/1021/1280/720" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/id/1022/1280/720" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/id/1028/1280/720" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/id/1002/1280/720" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/id/1032/1280/720" alt="" />
+          </div>
+          <div class="swiper-slide">
+            <img src="https://picsum.photos/id/1016/1280/720" alt="" />
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+
+        <!-- If we need scrollbar -->
+      </div>
+      <!-- end swiper -->
+    </header>
+    <main class="l-main">
+      <section class="c-first-section">
+        <div class="c-first-section__wrapper">
+          <div class="c-first-section__left">
+            <article class="c-first-section__content">
+              <h2 class="c-first-section__title">
+                Título da seção int occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt
+              </h2>
+              <p class="c-first-section__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <button class="e-btn-call-to-action">Call to action</button>
+            </article>
+            <figcaption class="c-first-section__figure-left">
+              <img
+                src="http://via.placeholder.com/350/ccc/fff/?text=Image"
+                alt=""
+              />
+            </figcaption>
+          </div>
+          <div class="c-first-section__right">
+            <div class="c-first-section__figure-right">
+              <figcaption class="c-first-section__figure-right--first">
+                <img
+                  src="http://via.placeholder.com/225x300/ccc/fff/?text=Image"
+                  alt=""
+                />
+              </figcaption>
+              <figcaption class="c-first-section__figure-right--last">
+                <img
+                  src="http://via.placeholder.com/225x300/ddd/fff/?text=Image"
+                  alt=""
+                />
+              </figcaption>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="c-section-secondary">
+        <div class="c-section-secondary__wrapper">
+          <div class="c-section-secondary__left">
+            <article class="c-section-secondary__content">
+              <h2 class="c-section-secondary__title">
+                Título da seção int occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt
+              </h2>
+              <p class="c-section-secondary__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <button class="e-btn-call-to-action">Call to action</button>
+            </article>
+          </div>
+          <div class="c-section-secondary__right">
+            <figure class="c-section-secondary__figure">
+              <img
+                src="http://via.placeholder.com/450x600/c5c5c5/fff/?text=Image"
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <section class="c-section-story">
+        <h2 class="c-section-story__section-title">Section Title</h2>
+        <div class="c-section-story__wrapper">
+          <div class="c-section-story__card">
+            <div class="c-section-story__module">
+              <h3 class="c-section-story__category">Category</h3>
+              <figcaption>
+                <div class="e-flag-card">Flag</div>
+                <img
+                  src="http://via.placeholder.com/225x300/ccc/fff/?text=Image"
+                  alt=""
+                />
+              </figcaption>
+              <div class="c-section-story__card-story">
+                <h3>R$ <span>895</span>,54</h3>
+                <h4 class="c-card-story__name">Name Product</h4>
+                <button class="e-btn-card-store">Call to action</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="c-section-story__card">
+            <div class="c-section-story__module">
+              <h3 class="c-section-story__category">Category</h3>
+              <figcaption>
+                <div class="e-flag-card">Flag</div>
+                <img
+                  src="http://via.placeholder.com/225x300/ccc/fff/?text=Image"
+                  alt=""
+                />
+              </figcaption>
+              <div class="c-section-story__card-story">
+                <h3>R$ <span>895</span>,54</h3>
+                <h4 class="c-card-story__name">Name Product</h4>
+                <button class="e-btn-card-store">Call to action</button>
+              </div>
+            </div>
+          </div>
+          <div class="c-section-story__card">
+            <div class="c-section-story__module">
+              <h3 class="c-section-story__category">Category</h3>
+              <figcaption>
+                <div class="e-flag-card">Flag</div>
+                <img
+                  src="http://via.placeholder.com/225x300/ccc/fff/?text=Image"
+                  alt=""
+                />
+              </figcaption>
+              <div class="c-section-story__card-story">
+                <h3>R$ <span>1345</span>,58</h3>
+                <h4 class="c-card-story__name">Name Product</h4>
+                <button class="e-btn-card-store">Call to action</button>
+              </div>
+            </div>
+          </div>
+          <div class="c-section-story__card">
+            <div class="c-section-story__module">
+              <h3 class="c-section-story__category">Category</h3>
+              <figcaption>
+                <div class="e-flag-card">Flag</div>
+                <img
+                  src="http://via.placeholder.com/225x300/ccc/fff/?text=Image"
+                  alt=""
+                />
+              </figcaption>
+              <div class="c-section-story__card-story">
+                <h3>R$ <span>1575</span>,54</h3>
+                <h4 class="c-card-story__name">Name Product</h4>
+                <button class="e-btn-card-store">Call to action</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="c-section-story">
+        <h2 class="c-section-story__section-title">Section Title</h2>
+        <div class="c-section-story__wrapper">
+          <div class="c-section-story__card">
+            <div class="c-section-story__module">
+              <h3 class="c-section-story__category">Category</h3>
+              <figcaption>
+                <div class="e-flag-card">Flag</div>
+                <img
+                  src="http://via.placeholder.com/225x300/ccc/fff/?text=Image"
+                  alt=""
+                />
+              </figcaption>
+              <div class="c-section-story__card-story">
+                <h3>R$ <span>895</span>,54</h3>
+                <h4 class="c-card-story__name">Name Product</h4>
+                <button class="e-btn-card-store">Call to action</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="c-section-story__card">
+            <div class="c-section-story__module">
+              <h3 class="c-section-story__category">Category</h3>
+              <figcaption>
+                <div class="e-flag-card">Flag</div>
+                <img
+                  src="http://via.placeholder.com/225x300/ccc/fff/?text=Image"
+                  alt=""
+                />
+              </figcaption>
+              <div class="c-section-story__card-story">
+                <h3>R$ <span>895</span>,54</h3>
+                <h4 class="c-card-story__name">Name Product</h4>
+                <button class="e-btn-card-store">Call to action</button>
+              </div>
+            </div>
+          </div>
+          <div class="c-section-story__card">
+            <div class="c-section-story__module">
+              <h3 class="c-section-story__category">Category</h3>
+              <figcaption>
+                <div class="e-flag-card">Flag</div>
+                <img
+                  src="http://via.placeholder.com/225x300/ccc/fff/?text=Image"
+                  alt=""
+                />
+              </figcaption>
+              <div class="c-section-story__card-story">
+                <h3>R$ <span>1345</span>,58</h3>
+                <h4 class="c-card-story__name">Name Product</h4>
+                <button class="e-btn-card-store">Call to action</button>
+              </div>
+            </div>
+          </div>
+          <div class="c-section-story__card">
+            <div class="c-section-story__module">
+              <h3 class="c-section-story__category">Category</h3>
+              <figcaption>
+                <div class="e-flag-card">Flag</div>
+                <img
+                  src="http://via.placeholder.com/225x300/ccc/fff/?text=Image"
+                  alt=""
+                />
+              </figcaption>
+              <div class="c-section-story__card-story">
+                <h3>R$ <span>1575</span>,54</h3>
+                <h4 class="c-card-story__name">Name Product</h4>
+                <button class="e-btn-card-store">Call to action</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="c-section-phrase">
+        <h2 class="c-section-phrase__title">
+          Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        </h2>
+      </section>
+
+      <div class="c-section-tertiary">
+        <section class="c-section-content">
+          <div class="c-section-content__wrapper">
+            <article class="c-section-content__content">
+              <h2 class="c-section-content__title">
+                Título da seção int occaecat cupidatat non proident, sunt in
+                culpa qui officia deserunt
+              </h2>
+              <p class="c-section-content__paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident,
+                sunt in culpa qui officia deserunt mollit anim id est laborum.
+              </p>
+              <button class="e-btn-call-to-action">Call to action</button>
+            </article>
+            <img
+              class="c-section-content__figure"
+              src="http://via.placeholder.com/450x600/ccc/fff/?text=Image"
+              alt=""
+            />
+          </div>
+        </section>
+
+        <section class="c-section-post">
+          <div class="c-section-post__wrapper">
+            <article class="c-section-post__post--first c-section-post__post">
+              <div class="c-section-post__post--d">
+                <img
+                  class="c-section-post__image"
+                  src="http://via.placeholder.com/300x300/ccc/fff/?text=Image"
+                  alt=""
+                />
+
+                <div class="c-section-post__content">
+                  <h4 class="c-section-post__theme">Tema</h4>
+                  <p class="c-section-post__number">1</p>
+                  <h2 class="c-section-post__title">
+                    Título do post lorem ipsum
+                  </h2>
+                  <p class="c-section-post__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="c-section-post__post--center c-section-post__post">
+              <div class="c-section-post__post--d">
+                <img
+                  class="c-section-post__image"
+                  src="http://via.placeholder.com/300x400/bbb/fff/?text=Image"
+                  alt=""
+                />
+
+                <div class="c-section-post__content">
+                  <h4 class="c-section-post__theme">Tema</h4>
+                  <p class="c-section-post__number">2</p>
+                  <h2 class="c-section-post__title">
+                    Título do post lorem ipsum
+                  </h2>
+                  <p class="c-section-post__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris.
+                  </p>
+                </div>
+              </div>
+            </article>
+
+            <article class="c-section-post__post--last c-section-post__post">
+              <div class="c-section-post__post--d">
+                <img
+                  class="c-section-post__image"
+                  src="http://via.placeholder.com/300x300/ccc/fff/?text=Image"
+                  alt=""
+                />
+
+                <div class="c-section-post__content">
+                  <h4 class="c-section-post__theme">Tema</h4>
+                  <p class="c-section-post__number">1</p>
+                  <h2 class="c-section-post__title">
+                    Título do post lorem ipsum
+                  </h2>
+                  <p class="c-section-post__text">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                    do eiusmod tempor incididunt ut labore et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <section class="c-section-quarterly">
+        <img
+          class="c-section-quarterly__bg"
+          src="https://picsum.photos/id/1021/1280/720"
+          alt=""
+        />
+        <div class="c-section-quarterly__wrapper">
+          <div class="c-section-quarterly__left">
+            <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+            <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+            <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+            <img
+              class="c-section-quarterly__photo"
+              src="https://picsum.photos/id/1067/480/640"
+              alt=""
+            />
+          </div>
+          <div class="c-section-quarterly__right">
+            <h2>Título do banner<br />lorem ipsum</h2>
+          </div>
+        </div>
+      </section>
+
+      <section class="c-section-quintuple">
+        <h2>ONDE ENCONTRAR</h2>
+        <p>
+          <span>CIDADE - SP</span> | <span>CIDADE - RJ</span> |
+          <span>CIDADE - SP</span> | <span>CIDADE - RJ</span>
+        </p>
+        <p>
+          <span>CIDADE - SP</span> | <span>CIDADE - RJ</span> |
+          <span>CIDADE - SP</span> | <span>CIDADE - RJ</span>
+        </p>
+        <p>
+          <span>CIDADE - SP</span> | <span>CIDADE - RJ</span> |
+          <span>CIDADE - SP</span> | <span>CIDADE - RJ</span>
+        </p>
+        <p>
+          <span>CIDADE - SP</span> | <span>CIDADE - RJ</span> |
+          <span>CIDADE - SP</span> | <span>CIDADE - RJ</span>
+        </p>
+      </section>
+
+      <section class="c-section-newsletter">
+        <div class="c-section-newsletter__wrapper">
+          <div class="c-section-newsletter__text">
+            <p>
+              Newsletter texto de apoio lorem ipsum sit amet consectur
+              adiscipling
+            </p>
+          </div>
+
+          <div class="c-section-newsletter__form">
+            <input
+              class="c-section-newsletter__input"
+              type="text"
+              name=""
+              id=""
+              placeholder="Digite seu email aqui"
+            />
+            <button class="e-btn-call-to-action">Call to action</button>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="l-footer">
+      <div class="c-footer">
+        <div class="c-footer__wrapper">
+          <div class="c-footer__logo">
+            <h2>LOGO</h2>
+          </div>
+
+          <div class="c-footer__nav">
+            <ul class="c-footer__list">
+              <li><a class="e-link-simple" href="#">Menu</a></li>
+              <li><a class="e-link-simple" href="#">Menu</a></li>
+              <li><a class="e-link-simple" href="#">Menu</a></li>
+            </ul>
+          </div>
+
+          <div class="c-footer__social-midia">
+            <ul>
+              <li class="c-footer__social-midia--item">
+                <a class="e-link-simple" href="#">
+                  <i class="bx bxl-facebook-circle bx-sm"></i>
+                  <span>INSTAGRAM</span>
+                </a>
+              </li>
+              <li class="c-footer__social-midia--item">
+                <a class="e-link-simple" href="#">
+                  <i class="bx bxl-instagram-alt bx-sm"></i>
+                  <span>FACEBOOK</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="c-footer__copyright">
+          <p>@Vnda - Tecnologia para ecommerce / CNPJ: 00.000.000/0001-00</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <!--build:js ./assets/js/app.min.js-->
+    <script src="./dist/assets/js/app.min.js"></script>
+    <!-- /build -->
+  </body>
+</html>

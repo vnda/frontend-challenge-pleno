@@ -1,0 +1,32 @@
+/// Converts a pixel value to matching rem value.
+@function rem($value, $base: 16) {
+  @return $value / $base + 'rem';
+}
+
+@function ptToRem($value, $base: 16) {
+  @return ($value / 0.75) / $base + 'rem';
+}
+
+$project-mensures: (
+  // moble - limit min 320px
+  'max-width-mobile-phone': rem(319),
+  // small  - limit 600px
+  'max-width-small': rem(520),
+  // medium - limit 900px
+  'max-width-medium': rem(820),
+  'size-paragraph-medium': ptToRem(8),
+  // large - limit 1200px
+  'max-width-large': rem(1120),
+  'size-paragraph-large': ptToRem(10),
+  // -------
+  'max-width': rem(780),
+  'font-size': rem(18),
+  'line-height': 1.5,
+  'radius': rem(3),
+  'between-menus': rem(8),
+  'module-size': rem(30),
+  'padding-btn': 8px 24px,
+  'box-shadow': 8px 8px 8px -2px rgba(0, 0, 0, 0.54),
+  'box-shadow-hover': 4px 4px 8px -2px rgba(0, 0, 0, 0.84),
+  'text-shadow': 4px 4px 5px rgba(0, 0, 0, 0.65)
+);

@@ -1,0 +1,17 @@
+.swiper-container {
+  width: 100%;
+
+  object-fit: fill;
+}
+
+.swiper-slide {
+  img {
+    width: 100%;
+  }
+}
+@include breakpoint(large-only) {
+}
+@include breakpoint(medium-only) {
+}
+@include breakpoint(small-only) {
+}
