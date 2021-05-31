@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+</head>
+
+<body class="header_transparent_true">
+  <header class="header">
+    <div class="container">
+      <div class="col-left">
+        <h1 class="logo">
+          <a href="/">
+            <img src="img/logo.svg" alt="Logo">
+          </a>
+        </h1>
+      </div>
+      <div class="col-center">
+        <nav class="navigation">
+          <ul class="menu-list">
+            <li class="item"><a href="/">Home</a></li>
+            <li class="item"><a href="#sobre">Sobre</a></li>
+            <li class="item"><a href="#produtos">Produtos</a></li>
+            <li class="item"><a href="#blog">Blog</a></li>
+            <li class="item"><a href="#lojas">Lojas</a></li>
+          </ul>
+        </nav>
+        <div class="menu-mobile">
+          <span class="close-menu-mb"></span>
+          <div class="menu-title">Menu</div>
+          <ul class="menu-list-mb">
+            <li class="item"><a href="/">Home</a></li>
+            <li class="item"><a href="#sobre">Sobre</a></li>
+            <li class="item"><a href="#produtos">Produtos</a></li>
+            <li class="item"><a href="#blog">Blog</a></li>
+            <li class="item"><a href="#lojas">Lojas</a></li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="col-right">
+        <ul class="header-actions">
+          <li class="search">
+            <a href="/search"><img src="img/search.svg" alt="Buscar">
+            </a>
+          </li>
+          <li class="account">
+            <a href="/account">
+              <img src="img/user.svg" alt="Minha conta">
+            </a>
+          </li>
+          <li class="cart">
+            <a href="/cart">
+              <img src="img/cart.svg" alt="Carrinho">
+              <span class="cart-count">0</span>
+            </a>
+          </li>
+          <li class="menu-hamburguer">
+            <img src="img/menu.svg" alt="Menu Hamburguer">
+          </li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section-slider">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="/promocao1">
+              <div class="image-slider" style="background-image: url('img/banner1.jpg');">
+                <div class="content-wrapper">
+                  <h2>Best Sellers</h2>
+                  <span>Shop Now</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/promocao2">
+              <div class="image-slider" style="background-image: url('img/banner2.jpg');">
+                <div class="content-wrapper">
+                  <h2>Classic Season</h2>
+                  <span>Shop Now</span>
+                </div>
+              </div>
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="/promocao3">
+              <div class="image-slider" style="background-image: url('img/banner3.jpg');">
+                <div class="content-wrapper">
+                  <h2>New In</h2>
+                  <span>Shop Now</span>
+                </div>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <section class="section-featured-columns" id="sobre">
+      <div class="row">
+        <div class="column-top-left">
+          <div class="container">
+            <h2>Design Minimalista</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam error numquam ab deleniti necessitatibus suscipit, fugit dignissimos ratione reiciendis facere labore eius quo nam eveniet atque dolores nemo tempore.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, blanditiis! Atque, quod! Ex ipsum nostrum dolor suscipit, eligendi maiores facilis adipisci, recusandae nihil quae eius eos, neque aliquam accusamus pariatur.
+            </p>
+            <a class="btn-secondary" href="/produtos">Confira</a>
+          </div>
+        </div>
+        <div class="column-top-right">
+          <div class="container">
+            <img class="first-image" src="img/columns-image1.jpg" alt="Imagem 1">
+            <img class="last-image" src="img/columns-image2.jpg" alt="Imagem 2">
+          </div>
+        </div>
+      </div>
+      
+      <div class="column-center-image">
+        <div class="container">
+          <img src="img/columns-image3.jpg" alt="Imagem 3">
+        </div>
+      </div>
+      <div class="row align-center">
+        <div class="column-bottom-left">
+          <div class="container">
+            <h2>Sobre nossos produtos</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam error numquam ab deleniti necessitatibus suscipit, fugit dignissimos ratione reiciendis facere labore eius quo nam eveniet atque dolores nemo tempore.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, blanditiis! Atque, quod! Ex ipsum nostrum dolor suscipit, eligendi maiores facilis adipisci, recusandae nihil quae eius eos, neque aliquam accusamus pariatur.
+            </p>
+            <a class="btn-secondary" href="/produtos">Conheça</a>
+          </div>
+        </div>
+        <div class="column-bottom-right">
+          <img src="img/columns-image4.jpg" alt="Imagem 4">
+        </div>
+      </div>
+    </section>
+    <section class="section-featured-products" id="produtos">
+      <div class="container">
+        <h2>Em destaque</h2>
+        <div class="products swiper-container">
+          <div class="swiper-wrapper">
+            <div class="product swiper-slide">
+              <span class="label-product sale">10% Off</span>
+              <div class="product-category">Categoria</div>
+              <div class="product-image">
+                <img src="img/product1.png" alt="Produto 1">
+              </div>
+              <div class="product-info">
+                <p class="product-title">Mesa de Madeira</p>
+                <span class="price">R$ 150,00</span>
+                <a href="" class="add-to-cart btn-primary">Adicionar ao carrinho</a>
+              </div>
+            </div>
+            <div class="product swiper-slide">
+              <div class="product-category">Categoria</div>
+              <div class="product-image">
+                <img src="img/product2.png" alt="Produto 2">
+              </div>
+              <div class="product-info">
+                <p class="product-title">Mesa de Madeira</p>
+                <span class="price">R$ 200,00</span>
+                <a href="" class="add-to-cart btn-primary">Adicionar ao carrinho</a>
+              </div>
+            </div>
+            <div class="product swiper-slide">
+              <div class="product-category">Categoria</div>
+              <div class="product-image">
+                <img src="img/product3.png" alt="Produto 3">
+              </div>
+              <div class="product-info">
+                <p class="product-title">Mesa de Madeira</p>
+                <span class="price">R$ 250,00</span>
+                <a href="" class="add-to-cart btn-primary">Adicionar ao carrinho</a>
+              </div>
+            </div>
+            <div class="product swiper-slide">
+              <div class="product-category">Categoria</div>
+              <div class="product-image">
+                <img src="img/product4.png" alt="Produto 4">
+              </div>
+              <div class="product-info">
+                <p class="product-title">Mesa de Madeira</p>
+                <span class="price">R$ 300,00</span>
+                <a href="" class="add-to-cart btn-primary">Adicionar ao carrinho</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-featured-products2">
+      <div class="container">
+        <h2>Mais vendidos</h2>
+        <div class="products swiper-container">
+          <div class="swiper-wrapper">
+            <div class="product swiper-slide">
+              <span class="label-product new">Novo</span>
+              <div class="product-category">Categoria</div>
+              <div class="product-image">
+                <img src="img/product1.png" alt="Produto 1">
+              </div>
+              <div class="product-info">
+                <p class="product-title">Mesa de Madeira</p>
+                <span class="price">R$ 150,00</span>
+                <a href="" class="add-to-cart btn-primary">Adicionar ao carrinho</a>
+              </div>
+            </div>
+            <div class="product swiper-slide">
+              <div class="product-category">Categoria</div>
+              <div class="product-image">
+                <img src="img/product2.png" alt="Produto 2">
+              </div>
+              <div class="product-info">
+                <p class="product-title">Mesa de Madeira</p>
+                <span class="price">R$ 200,00</span>
+                <a href="" class="add-to-cart btn-primary">Adicionar ao carrinho</a>
+              </div>
+            </div>
+            <div class="product swiper-slide">
+              <div class="product-category">Categoria</div>
+              <div class="product-image">
+                <img src="img/product3.png" alt="Produto 3">
+              </div>
+              <div class="product-info">
+                <p class="product-title">Mesa de Madeira</p>
+                <span class="price">R$ 250,00</span>
+                <a href="" class="add-to-cart btn-primary">Adicionar ao carrinho</a>
+              </div>
+            </div>
+            <div class="product swiper-slide">
+              <div class="product-category">Categoria</div>
+              <div class="product-image">
+                <img src="img/product4.png" alt="Produto 4">
+              </div>
+              <div class="product-info">
+                <p class="product-title">Mesa de Madeira</p>
+                <span class="price">R$ 300,00</span>
+                <a href="" class="add-to-cart btn-primary">Adicionar ao carrinho</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-text">
+      <div class="container">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nisi iure harum quas quae tempore cumque aliquam sint ex vero porro quaerat nobis adipisci non, explicabo blanditiis veritatis rem magni unde.</p>
+      </div>
+    </section>
+    <section class="section-text-with-image">
+      <div class="row align-center">
+        <div class="col-6 left">
+          <div class="container">
+            <h2>Compromisso com a Qualidade</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo laboriosam error numquam ab deleniti necessitatibus suscipit, fugit dignissimos ratione reiciendis facere labore eius quo nam eveniet atque dolores nemo tempore.
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus, blanditiis! Atque, quod! Ex ipsum nostrum dolor suscipit, eligendi maiores facilis adipisci, recusandae nihil quae eius eos, neque aliquam accusamus pariatur.
+            </p>
+            <a class="btn-secondary" href="/produtos">Confira</a>
+          </div>
+        </div>
+        <div class="col-6 right">
+          <img src="img/image5.jpg" alt="Imagem">
+        </div>
+      </div>
+    </section>
+    <section class="section-blog-posts" id="blog">
+      <div class="container">
+        <div class="articles swiper-container">
+          <div class="swiper-wrapper">
+            <article class="swiper-slide">
+              <a href="/blog/post1">
+                <div class="post-image" style="background-image:url('img/post1.jpg');"></div>
+              </a>
+              <div class="post-info">
+                <a href="/blog/category/negocios"><span class="post-category">Negócios</span></a>
+                <span class="post-time">21 de jan. de 2021</span>
+                <a href="/blog/post1"><h4>Onde encontrar inspiração para quem tem e-commerce</h4></a>
+                <div class="post-content">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Harum necessitatibus id doloremque at tempore nesciunt totam, laboriosam impedit, quasi placeat dignissimos nobis voluptatum repudiandae magnam enim pariatur laudantium, ducimus nam.</div>
+              </div>
+            </article>
+            <article class="swiper-slide">
+              <a href="/blog/post2">
+                <div class="post-image" style="background-image:url('img/post2.jpg');"></div>
+              </a>
+              <div class="post-info">
+                <a href="/blog/category/marketing"><span class="post-category">Marketing</span></a>
+                <span class="post-time">21 de abr. de 2021</span>
+                <a href="/blog/post2"><h4>Como tirar boas fotos de produtos</h4></a>
+                <div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi rerum perspiciatis sunt, totam, qui voluptates labore, consequuntur facilis a veritatis et! Alias consectetur dolorem, odio quos et ipsa vitae sequi!</div>
+              </div>
+            </article>
+            <article class="swiper-slide">
+              <a href="/blog/post3">
+                <div class="post-image" style="background-image:url('img/post3.jpg');"></div>
+              </a>
+              <div class="post-info">
+                <a href="/blog/category/produtividade"><span class="post-category">Produtividade</span></a>
+                <span class="post-time">28 de out. de 2020</span>
+                <a href="/blog/post3"><h4>Como parar de procrastinar</h4></a>
+                <div class="post-content">Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem quia laborum recusandae laboriosam cumque ab amet tenetur maiores reprehenderit odio. Temporibus ipsam veniam iste soluta blanditiis sed, dolorum possimus officia.</div>
+              </div>
+            </article>
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+      </div>
+    </section>
+    <section class="section-full-banner">
+      <div class="image" style="background-image: url('img/banner-full.jpg');">
+        <div class="container">
+          <div class="row align-center">
+            <div class="col-6">
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              <p>Illo laboriosam error numquam ab deleniti necessitatibus suscipit.</p>
+              <p>Fugit dignissimos ratione reiciendis facere labore eius quo nam eveniet.</p>
+              <img src="img/banner-full2.jpg" alt="Imagem">
+            </div>
+            <div class="col-6 last">
+              <h2>Sobre nós</h2>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-addresses" id="lojas">
+      <div class="container">
+        <h4>Onde encontrar</h4>
+        <div class="address">
+          <p><img src="img/pin.svg" alt="Localização"><span>Rua Felipe Schmidt, nº 1616, Florianópolis - SC</span></p>
+          <p><img src="img/pin.svg" alt="Localização"><span>Rua XV de Novembro, nº 2020, Curitiba - PR</span></p>
+          <p><img src="img/pin.svg" alt="Localização"><span>Rua Padre Chagas, nº 3030, Porto Alegre - RS</span></p>
+        </div>
+      </div>
+    </section>
+    <section class="section-newsletter">
+      <div class="container">
+        <div class="row align-center">
+          <div class="col-title">
+            <h3>Assine nossa newsletter e receba conteúdos exclusivos</h3>
+          </div>
+          <div class="col-form">
+            <form action="/newsletter" class="form-newsletter">
+              <div class="field">
+                <input type="email" name="email" placeholder="Insira seu melhor e-mail" class="input" required>
+                <button class="btn-primary" type="submit">Assinar</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="logo-footer">
+              <a href="/">
+                <img src="img/logo.svg" alt="Logo">
+              </a>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="menu-footer">
+              <ul class="menu">
+                <li class="menu-item"><a href="/sobre-nos">Sobre nós</a></li>
+                <li class="menu-item"><a href="/politica-de-privacidade">Política de Privacidade</a></li>
+                <li class="menu-item"><a href="/trocas-e-devolucoes">Trocas e Devoluções</a></li>
+                <li class="menu-item"><a href="/faqs">Perguntas Frequentes</a></li>
+                <li class="menu-item"><a href="/contato">Contato</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="social">
+              <a href="https://www.instagram.com/vnda"><img src="img/instagram.svg" alt="Instagram"><span>Instagram</span></a>
+              <a href="https://www.facebook.com/vnda"><img src="img/facebook.svg" alt="Facebook"><span>Facebook</span></a>
+              <a href="https://www.linkedin.com/vnda"><img src="img/linkedin.svg" alt="LinkedIn"><span>LinkedIn</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">© 2021, Vnda - Tecnologia em E-commerce. CNPJ: 00.000.000/0001-00</div>
+  </footer>
+
+  <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
