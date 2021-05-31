@@ -1,0 +1,142 @@
+.above-the-fold {
+  .content {
+    width: 100%;
+    height: 100vh;
+
+    @include background-image('../img/above-the-fold/background.webp');
+    background-position-x: center;
+
+    display: flex;
+    flex-direction: column;
+
+    position: relative;
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      background-color: rgba($color: $fourth-color, $alpha: 0.3);
+      backdrop-filter: blur(1rem);
+
+      padding: 2rem;
+
+      .logo {
+        width: 10rem;
+      }
+
+      nav {
+        display: flex;
+
+        .menu-mobile button {
+          background-color: transparent;
+        }
+
+        .menu-mobile button img {
+          width: 4rem;
+          height: 4rem;
+        }
+
+        .menu-mobile .menu {
+          width: 0;
+
+          height: 100vh;
+
+          position: fixed;
+          top: 0;
+          right: 0;
+
+          overflow-x: hidden;
+
+          background-color: rgba($color: $fourth-color, $alpha: 0.7);
+          backdrop-filter: blur(1rem);
+
+          transition: .4s ease;
+
+          .user-links {
+            display: flex;
+
+            margin-top: 1rem;
+
+            img {
+              width: 5rem;
+              height: 5rem;
+
+              padding: 1rem;
+            }
+          }
+
+          .internal-links li {
+            margin-top: 1rem;
+
+            a {
+              font-family: $second-font;
+              font-size: 2rem;
+              color: $first-color;
+              text-transform: uppercase;
+
+              padding: 1rem;
+            }
+          }
+        }
+
+        .menu-desktop {
+          display: none;
+        }
+      }
+    }
+
+    .presentation {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      height: inherit;
+
+      .title {
+        margin-top: 14rem;
+      }
+
+      .title h1 {
+        @include h2(
+          $font-size: 3rem,
+          $text-align: center,
+          $color: $second-color
+        );
+      }
+
+      .call-to-action a {
+        font-family: $second-font;
+        color: $third-color;
+        font-size: 4rem;
+
+        &:after {
+          content: '↓';
+
+          font-size: 3rem;
+          color: $third-color;
+
+          display: block;
+          margin: 0 auto;
+
+          width: 1rem;
+
+          animation: bounce 0.8s alternate-reverse ease infinite;
+        }
+      }
+    }
+
+    @include device(desktop) {
+      .menu-mobile button img {
+        &:hover {
+          cursor: pointer;
+        }
+      }
+
+      .presentation .title {
+        margin-top: 30rem;
+      }
+    }
+  }
+}

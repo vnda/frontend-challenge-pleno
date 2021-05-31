@@ -1,0 +1,109 @@
+.contact {
+  .content {
+    padding: 2rem;
+
+    .find-us {
+      margin-top: 2rem;
+
+      h2 {
+        @include h2($font-size: 2.5rem, $text-align: center);
+        @include separator($margin: 1rem auto 0 auto);
+      }
+    }
+
+    #map {
+      height: 30rem;
+
+      margin: 2rem 0;
+    }
+
+    .newsletter {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .signup-text {
+        width: 100%;
+
+        margin-bottom: 1rem;
+
+        p {
+          font-family: $second-font;
+          color: $fourth-color;
+          font-size: 1.8rem;
+        }
+      }
+
+      .signup-email {
+        width: 50%;
+
+        position: relative;
+
+        input {
+          width: 100%;
+
+          border-bottom: 0.2rem solid;
+
+          font-size: 1.5rem;
+          font-family: $second-font;
+
+          margin-top: 1rem;
+        }
+
+        input:not(:placeholder-shown) + label {
+          opacity: 1;
+
+          color: #757575;
+
+          transform: translateY(-1rem);
+        }
+
+        label {
+          font-family: $second-font;
+
+          position: absolute;
+          left: 0;
+          font-size: 1.5rem;
+
+          opacity: 0;
+          transition: all 0.2s ease;
+        }
+      }
+
+      .signup-button {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50%;
+
+        button {
+          @include button($font-size: 2rem);
+        }
+      }
+    }
+
+    @include device(desktop) {
+      max-width: 1100px;
+      margin: 0 auto;
+
+      .newsletter {
+
+        .signup-text {
+          margin-bottom: initial;
+        }
+
+        .signup-text,
+        .signup-email,
+        .signup-button {
+          width: max-content;
+        }
+
+        .signup-text,
+        .signup-email {
+          margin-right: 4rem;
+        }
+      }
+    }
+  }
+}

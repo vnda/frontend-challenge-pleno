@@ -1,0 +1,87 @@
+@mixin device($size) {
+  $mobile: 300px;
+  $desktop: 768px;
+
+  @if $size == mobile {
+    @media only screen and (min-width: $mobile) {
+      @content;
+    }
+  } @else if $size == desktop {
+    @media only screen and (min-width: $desktop) {
+      @content;
+    }
+  }
+}
+
+@mixin background-image($url, $size: cover) {
+  background-image: url($url);
+  background-repeat: no-repeat;
+  background-size: $size;
+}
+
+@mixin transition() {
+  transition: all 0.4s ease;
+}
+
+@mixin button($font-size: 2.5rem, $device: mobile) {
+  font-family: $second-font;
+  font-size: $font-size;
+  color: $fourth-color;
+
+  background-color: $third-color;
+
+  padding: 1rem;
+
+  border-radius: 0.4rem;
+
+  cursor: pointer;
+
+  transition: all 0.4s ease;
+
+  %floating {
+    transform: translate3d(0, -0.5rem, 0);
+
+    box-shadow: 0 1rem 3.7rem rgba($color: $fifth-color, $alpha: 0.18);
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $fourth-color;
+
+    color: $third-color;
+
+    @if $device == desktop {
+      @extend %floating;
+    }
+  }
+}
+
+@mixin h2(
+  $font-size: 3rem,
+  $text-align: initial,
+  $uppercase: initial,
+  $color: $fourth-color
+) {
+  font-family: $first-font;
+  font-size: $font-size;
+  color: $color;
+  text-align: $text-align;
+  text-transform: $uppercase;
+}
+
+@mixin separator($width: 10rem, $height: 0.4rem, $margin: 2rem 0 0 0) {
+  &:after {
+    content: '';
+
+    display: block;
+
+    width: $width;
+    height: $height;
+
+    margin: $margin;
+
+    border-radius: 0.4rem;
+
+    background-color: $fourth-color;
+  }
+}
