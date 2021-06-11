@@ -19,10 +19,24 @@
   },
   "homepage": "https://github.com/pixelHat/frontend-challenge-pleno#readme",
   "devDependencies": {
+    "browserify": "^17.0.0",
+    "del": "^6.0.0",
     "eslint": "^7.28.0",
+    "esmify": "^2.1.1",
+    "gulp": "^4.0.2",
+    "gulp-print": "^5.0.2",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-uglify": "^3.0.2",
     "husky": "^6.0.0",
     "lint-staged": "^11.0.0",
-    "prettier": "^2.3.1"
+    "node-sass": "^6.0.0",
+    "prettier": "^2.3.1",
+    "pug": "^3.0.2",
+    "vinyl-buffer": "^1.0.1",
+    "vinyl-paths": "^3.0.1",
+    "vinyl-source-stream": "^2.0.0"
   },
   "lint-staged": {
     "*.js": "eslint --cache --fix",
