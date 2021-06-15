@@ -1,0 +1,418 @@
+@import "objects/flex";
+@import "utils/_index";
+
+$lg: 1024px;
+$md: 768px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  list-style: none;
+  font-family: "PT Sans", sans-serif;
+}
+body,
+html {
+  overflow-x: hidden;
+}
+
+/* c-primary-button */
+.c-primary-button {
+  display: inline-block;
+  padding: 15px 80px;
+  background: black;
+  color: white;
+}
+
+/* c-section-1 */
+.c-section-1 {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  @media screen and (min-width: $lg) {
+    grid-template-columns: 1.3fr 1fr;
+  }
+
+  > .left {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: lightgray;
+    @media screen and (min-width: $lg) {
+      text-align: left;
+      padding: 150px;
+      margin-top: 0px;
+    }
+    .title {
+      font-size: 1.5rem;
+      max-width: 39ch;
+      @media screen and (min-width: $md) {
+        margin: 0 auto;
+      }
+      @media screen and (min-width: $lg) {
+        font-size: 2.6rem;
+      }
+    }
+    .content {
+      font-size: 1.1rem;
+      max-width: 39ch;
+      @media screen and (min-width: $md) {
+        margin: 0 auto;
+        margin-top: 1.5rem;
+      }
+      @media screen and (min-width: $lg) {
+        margin-left: 0;
+      }
+    }
+  }
+
+  > .right {
+    display: none;
+    position: relative;
+    > .img-1 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 350px;
+      height: 450px;
+      transform: translate(-80px, 0);
+    }
+    > .img-2 {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 350px;
+      height: 450px;
+      transform: translate(100px, 200px);
+    }
+    @media screen and (min-width: $lg) {
+      display: block;
+    }
+  }
+
+  .bottom {
+    width: 100%;
+    margin-left: 100px;
+    margin-top: -200px;
+    display: none;
+    grid-column: 1/-1;
+    @media screen and (min-width: $lg) {
+      display: flex;
+    }
+    > .img-3 {
+      height: 400px;
+      width: 550px;
+      object-fit: cover;
+    }
+  }
+}
+
+/* c-section-2 */
+.c-section-2 {
+  width: 100vw;
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  @media screen and (min-width: $lg) {
+    grid-template-columns: 1.3fr 1fr;
+    margin-top: -100px;
+  }
+
+  > .left {
+    text-align: center;
+    padding: 50px 20px;
+    @media screen and (min-width: $lg) {
+      text-align: left;
+      padding: 150px;
+      margin-top: 0px;
+    }
+    .title {
+      font-size: 1.5rem;
+      max-width: 39ch;
+      @media screen and (min-width: $md) {
+        margin: 0 auto;
+      }
+      @media screen and (min-width: $lg) {
+        font-size: 2.6rem;
+        margin-left: 0;
+      }
+    }
+    .content {
+      font-size: 1.1rem;
+      margin-top: 50px;
+      max-width: 39ch;
+      @media screen and (min-width: $md) {
+        margin: 0 auto;
+        margin-top: 1.5rem;
+      }
+      @media screen and (min-width: $lg) {
+        margin-left: 0;
+      }
+    }
+    > a {
+      margin-top: 50px;
+    }
+  }
+
+  > .right {
+    > .img-1 {
+      height: 100vh;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+/* Produtos */
+.c-list-products {
+  margin: 0 auto;
+  margin-top: 70px;
+  @media screen and (min-width: $md) {
+    max-width: 80%;
+    max-height: 700px;
+  }
+
+  > .title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+    @media screen and (min-width: $lg) {
+      font-size: 4rem;
+    }
+  }
+}
+
+.c-card-product {
+  text-align: center;
+
+  > .title {
+    font-size: 2rem;
+  }
+
+  > .image {
+    margin-top: 20px;
+    height: 400px;
+    position: relative;
+
+    > .flag {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 99;
+    }
+
+    > .price {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  > .name {
+    margin-top: 10px;
+  }
+  > .button {
+    display: block;
+    border: 1px solid black;
+    padding: 10px 10px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    @media screen and (min-width: $lg) {
+      width: unset;
+    }
+  }
+}
+
+/* Section 3 */
+
+.c-section-3 {
+  text-align: center;
+  max-width: 80ch;
+  margin: 0 auto;
+  > p {
+    font-size: 2.3rem;
+  }
+}
+
+/* Section 4 */
+.c-section-4 {
+  margin-top: 200px;
+  background-color: lightblue;
+  display: grid;
+  grid-template-columns: 1fr;
+  @media screen and (min-width: $lg) {
+    grid-template-columns: 1.3fr 1fr;
+  }
+
+  > .left {
+    order: 1;
+    padding: 50px 20px;
+    text-align: center;
+    @media screen and (min-width: $lg) {
+      text-align: left;
+      padding: 150px 130px 100px 150px;
+      order: 0;
+    }
+    > h2 {
+      max-width: 39ch;
+      font-size: 1.5rem;
+      @media screen and (min-width: $md) {
+        margin: 0 auto;
+      }
+      @media screen and (min-width: $lg) {
+        font-size: 2.6rem;
+      }
+    }
+    > p {
+      max-width: 39ch;
+      font-size: 1.1rem;
+      margin-top: 50px;
+      @media screen and (min-width: $md) {
+        margin: 0 auto;
+        margin-top: 1.5rem;
+      }
+      @media screen and (min-width: $lg) {
+        margin-left: 0;
+      }
+    }
+    > a {
+      margin-top: 50px;
+    }
+  }
+
+  > .right {
+    order: 0;
+    position: relative;
+    @media screen and (min-width: $lg) {
+      margin-top: -100px;
+      order: 1;
+    }
+    > .img-1 {
+      @media screen and (min-width: $lg) {
+        height: calc(100vh + 100px);
+      }
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+.c-fluid-banner {
+  height: 600px;
+  position: relative;
+  @media screen and (min-width: $lg) {
+    margin-top: 100px;
+  }
+
+  & > .image {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  & > .title {
+    position: absolute;
+    right: 50%;
+    bottom: 50%;
+    transform: translate(50%, 50%);
+    text-align: center;
+    @media screen and (min-width: $lg) {
+      right: 200px;
+      bottom: 100px;
+      transform: none;
+      text-align: left;
+    }
+    h2 {
+      font-size: 2rem;
+    }
+  }
+
+  & > .content {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 300px;
+    height: 550px;
+    width: 400px;
+    @media screen and (min-width: $lg) {
+      display: block;
+    }
+    img {
+      display: inline-block;
+      margin-top: 30px;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+/* c-newsletter-section */
+.c-newsletter-section {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @media screen and (min-width: $lg) {
+    margin-top: 200px;
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-end;
+  }
+  & > p {
+    max-width: 28ch;
+    font-size: 1.1rem;
+    @media screen and (min-width: $lg) {
+      margin-right: 40px;
+    }
+  }
+
+  & > input {
+    border: none;
+    border-bottom: 2px solid black;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 40px;
+    @media screen and (min-width: $lg) {
+      margin-right: 20px;
+      margin-top: 0px;
+    }
+  }
+
+  & > a {
+    margin-top: 20px;
+    width: 100%;
+    @media screen and (min-width: $lg) {
+      margin-top: 0px;
+      width: auto;
+    }
+  }
+}
+
+/* Footer */
+.footer {
+  margin-top: 100px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  background-color: lightblue;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+
+  > * + * {
+    margin-top: 10px;
+  }
+}
