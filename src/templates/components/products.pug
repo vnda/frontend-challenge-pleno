@@ -1,0 +1,17 @@
+mixin card(category, product, flag=false)
+  article.c-card-product.swiper-slide
+    h3.title= category
+    section.image
+      if flag
+        span.flag 20% OFF
+      img.u-height-full.u-width-full.cover(src=product.img)
+      span.price= product.price
+    p.name= product.name
+    a.button Adquirir
+
+mixin cardSection(title, cards)
+  article.c-list-products
+    h2.title= title
+    section.list.swiper-wrapper
+      each c, i in cards
+        +card(c.title, c.product, i==0)

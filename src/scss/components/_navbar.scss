@@ -1,0 +1,93 @@
+.c-navbar {
+  --padding-x: 20px;
+  --padding-y: 5px;
+  position: absolute;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: var(--padding-y) var(--padding-x);
+  z-index: 999;
+  overflow-x: hidden;
+
+  @media screen and (min-width: $lg) {
+    --padding-x: 40px;
+    --padding-y: 10px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    background-color: white;
+    width: calc(100% + var(--padding-x) * 2 + var(--padding-y) * 2);
+    height: 100%;
+  }
+
+  > .logo {
+    height: 60px;
+    object-fit: cover;
+  }
+
+  > .menu {
+    margin-left: auto;
+    display: none;
+
+    @media screen and (min-width: $lg) {
+      display: flex;
+    }
+
+    > * + * {
+      margin-left: 20px;
+    }
+
+    > .item {
+      font-size: 1.3rem;
+
+      &:hover,
+      &:focus {
+        text-decoration: underline;
+        color: $clr-red;
+      }
+    }
+  }
+
+  .menu-mobile {
+    text-align: center;
+    background-color: white;
+    padding-top: 50px;
+    font-size: 1.5rem;
+    > .item {
+      margin-top: 10px;
+      font-size: 1.5rem;
+    }
+  }
+
+  #toggleMenu {
+    width: 40px;
+    height: 40px;
+
+    @media screen and (min-width: $lg) {
+      display: none;
+    }
+  }
+
+  > .right {
+    margin-left: auto;
+    display: flex;
+    > * {
+      height: 1.25rem;
+      width: 1.25rem;
+    }
+
+    > * + * {
+      margin-left: 10px;
+    }
+  }
+
+  .menu-tmp {
+    background-color: #efefef;
+    padding: 10px;
+  }
+}

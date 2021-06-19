@@ -1,0 +1,60 @@
+@import "../settings/variables";
+@import "../tools/mixins";
+@import "./spacing";
+
+$breakpoints: (
+  "": 0px,
+  "\\@md": $md,
+  "\\@lg": $lg,
+);
+
+@each $k, $v in $breakpoints {
+  @include breakpoint($v) {
+    .u-text-left#{$k} {
+      text-align: left !important;
+    }
+  }
+  @for $i from 2 through 20 {
+    @include breakpoint($v) {
+      .u-text-#{$i}#{$k} {
+        font-size: #{$i / 2}rem !important;
+      }
+    }
+  }
+  @include breakpoint($v) {
+    .u-display-none#{$k} {
+      display: none;
+    }
+    .u-display-block#{$k} {
+      display: block;
+    }
+  }
+}
+
+.u-text-center {
+  text-align: center;
+}
+
+.u-text-right {
+  text-align: right;
+}
+
+.u-max-w-39 {
+  max-width: 39ch;
+}
+
+.u-font-playfair {
+  font-family: "Playfair Display", serif;
+}
+
+.u-object-cover {
+  object-fit: cover;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-full {
+  width: 100%;
+}

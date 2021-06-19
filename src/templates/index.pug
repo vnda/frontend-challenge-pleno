@@ -1,0 +1,26 @@
+include components/products.pug
+html
+  head
+    meta(charset="utf-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1")
+    link(rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css")
+    script(src="../js/main.js")
+    link(href="../css/index.css" rel="stylesheet")
+    link(rel="preconnect" href="https://fonts.gstatic.com")
+    link(href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet")
+    link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css", integrity="undefined", crossorigin="anonymous")
+  body
+    include components/navbar.pug
+    include components/full-banner.pug
+    include components/recommended-author.pug
+    include components/recommended-book.pug
+    each value, key in products
+      +cardSection(key, value)
+    include components/quote.pug
+    include components/new-publication.pug
+    include components/collection.pug
+    include components/about-us.pug
+    include components/where-to-find.pug
+    include components/newsletter.pug
+    include components/footer.pug
+

@@ -19,8 +19,8 @@ Teste para a vaga de Frontend Pleno
 - O envio deve ser feito através dos arquivos zipados ou no github (pode ser feito pull request para esse repositório);
 - Deve ser utilizado sass e gulp para o pré-processamento do código;
 - Entregar uma pasta com os arquivos de desenvolvimento e outra pasta com os arquivos minificados e comprimidos (src/dist);
--- Na pasta **src** ficam os arquivos de desenvolvimento.
--- Na pasta **dist** ficam os arquivos finais (comprimidos e minificados).
+  -- Na pasta **src** ficam os arquivos de desenvolvimento.
+  -- Na pasta **dist** ficam os arquivos finais (comprimidos e minificados).
 - Não deve ser usado nenhum framework de css (Bootstrap entre outros) nem de js (React, Vue, Angular entre outros), para que possamos avaliar melhor a sua qualidade técnica;
 
 Dicas
@@ -32,5 +32,5 @@ Dicas
 - Tente utilizar o JS além do Swiper e Menu Mobile, veja algumas seções em que você possa inserir algumas funções. Não precisa ser nada complexo;
 - Plugins JS são bem vindos contanto que sejam utilizados de forma inteligente;
 - Ainda não tem dominada algumas das skills? Foque primeiro no que você sabe. Vá o mais longe possível e utilize o tempo restante pra aprender o que não sabe, afinal essas habilidades serão utilizadas na sua rotina de trabalho;
- 
+
 - Passe seu café e acredite no seu potencial!

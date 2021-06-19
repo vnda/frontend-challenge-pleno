@@ -1,0 +1,46 @@
+.c-newsletter-section {
+  max-width: 80%;
+  margin: 0 auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  @media screen and (min-width: $lg) {
+    margin-top: 200px;
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-end;
+  }
+  & > p {
+    max-width: 28ch;
+    font-size: 1.1rem;
+    @media screen and (min-width: $lg) {
+      margin-right: 40px;
+    }
+  }
+
+  & > input {
+    border: none;
+    border-bottom: 2px solid $clr-black;
+    padding: 10px;
+    max-width: 400px;
+    width: 100%;
+    margin-top: 40px;
+    @media screen and (min-width: $lg) {
+      margin-right: 20px;
+      margin-top: 0px;
+    }
+  }
+
+  & > a {
+    margin-top: 20px;
+    width: 100%;
+    @media screen and (min-width: $lg) {
+      margin-top: 0px;
+      width: auto;
+    }
+  }
+}

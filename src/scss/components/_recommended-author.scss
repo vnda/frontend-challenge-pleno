@@ -1,0 +1,38 @@
+.c-recommended-author {
+  position: relative;
+
+  .image-top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-80px, 0);
+    height: 500px;
+    width: 400px;
+  }
+
+  .image-right {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(200px, 100px);
+    height: 500px;
+    width: 400px;
+  }
+
+  .bottom {
+    width: 100%;
+    margin-left: 100px;
+    margin-top: -200px;
+    display: none;
+    grid-column: 1/-1;
+    @media screen and (min-width: $lg) {
+      display: flex;
+      justify-content: center;
+    }
+    > .image {
+      height: 400px;
+      width: 550px;
+      object-fit: cover;
+    }
+  }
+}
