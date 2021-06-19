@@ -1,0 +1,43 @@
+.c-new-publication {
+  margin-top: 200px;
+  background-color: $clr-yellow;
+  color: $clr-black;
+
+  > .left {
+    order: 1;
+    padding: 50px 20px;
+    text-align: center;
+    @media screen and (min-width: $lg) {
+      text-align: left;
+      padding: 150px 130px 100px 150px;
+      order: 0;
+    }
+    > h2 {
+      max-width: 39ch;
+      font-size: 1.5rem;
+      font-family: "Playfair Display", serif;
+      @media screen and (min-width: $md) {
+        margin: 0 auto;
+      }
+      @media screen and (min-width: $lg) {
+        font-size: 2.6rem;
+      }
+    }
+  }
+
+  > .right {
+    order: 0;
+    position: relative;
+    @media screen and (min-width: $lg) {
+      margin-top: -100px;
+      order: 1;
+    }
+    > .img-1 {
+      @media screen and (min-width: $lg) {
+        height: calc(100vh + 100px);
+      }
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+}

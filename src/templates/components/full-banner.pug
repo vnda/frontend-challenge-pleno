@@ -1,9 +1,22 @@
+- 
+  var slides = [
+    {
+      img: "https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Ym9va3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60",
+      title: "Promoções todos os dias"
+    },
+    {
+      img: "https://images.unsplash.com/photo-1558901357-ca41e027e43a?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1",
+      title: "Biografias e Hitórias Reais"
+    }
+  ]
 header.swiper-container.c-full-banner.o-block
   div.swiper-wrapper
-    div.swiper-slide
-      img.o-full-image(src="https://via.placeholder.com/2400")
-    div.swiper-slide
-      img.o-full-image(src="https://via.placeholder.com/3000")
-  div.o-cover.z-1.o-flex.-center.-column
-    h1 Título do Banner
-    p Call to Action
+    each slide in slides
+      div.swiper-slide
+        div.cover-black
+          img.cover-black.o-full-image(src=slide.img)
+        div.o-cover.z-1.o-flex.-center.-column
+          h1.title= slide.title
+          a.button(href="#") Conferir
+  .swiper-button-next.abc
+  .swiper-button-prev

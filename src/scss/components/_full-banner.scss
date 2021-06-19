@@ -1,0 +1,59 @@
+.c-full-banner {
+  color: $clr-white;
+
+  .highlight {
+    background-color: red;
+  }
+
+  .title {
+    font-size: 2rem;
+    font-family: "Playfair Display", serif;
+    color: $clr-white;
+    font-weight: bold;
+    text-shadow: 1px 1px currentColor;
+  }
+
+  .button {
+    font-size: 1.5rem;
+    text-decoration: underline;
+    margin-top: 20px;
+    font-weight: bold;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  .cover-black {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: $clr-black;
+      opacity: 0.4;
+      filter: blur(4px);
+    }
+  }
+
+  .swiper-button-next {
+    right: 30%;
+    top: 90%;
+  }
+  .swiper-button-prev {
+    left: 30%;
+    top: 90%;
+  }
+  @media (min-width: $lg) {
+    .swiper-button-prev {
+      left: 5%;
+      top: 50%;
+    }
+    .swiper-button-next {
+      right: 5%;
+      top: 50%;
+    }
+  }
+}

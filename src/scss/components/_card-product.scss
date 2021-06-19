@@ -1,0 +1,63 @@
+.c-card-product {
+  text-align: center;
+
+  > .title {
+    font-size: 2rem;
+  }
+
+  > .image {
+    margin-top: 20px;
+    height: 400px;
+    position: relative;
+
+    > .flag {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      z-index: 99;
+      background-color: $clr-red;
+      padding: 5px 10px;
+      color: $clr-white;
+    }
+
+    > .price {
+      position: absolute;
+      bottom: 0px;
+      left: 50%;
+      transform: translateX(-50%);
+      background-color: $clr-yellow;
+      color: $clr-black;
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  > .name {
+    margin-top: 10px;
+  }
+
+  > .button {
+    display: block;
+    border: 1px solid $clr-black;
+    color: $clr-black;
+    padding: 10px 10px;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 10px;
+    transition: background-color 250ms ease, border-color 750ms ease;
+
+    &:hover {
+      background-color: $clr-yellow;
+      border-color: $clr-yellow;
+      cursor: pointer;
+    }
+
+    @media screen and (min-width: $lg) {
+      width: unset;
+    }
+  }
+}

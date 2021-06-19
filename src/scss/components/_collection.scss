@@ -1,0 +1,58 @@
+.c-collection {
+  background-color: $clr-yellow;
+  padding-bottom: 100px;
+
+  @media (min-width: $lg) {
+    padding-top: 100px;
+  }
+
+  .swiper-wrapper {
+    display: flex;
+    align-items: center !important;
+    text-align: center;
+
+    @media (min-width: $lg) {
+      justify-content: center !important;
+      text-align: left;
+    }
+  }
+
+  .swiper-slide {
+    height: auto;
+  }
+
+  > * + * {
+    @media (min-width: $lg) {
+      margin-left: -40px;
+    }
+  }
+
+  .card {
+    @media (min-width: $md) {
+      max-width: 350px;
+    }
+
+    &.-tall {
+      .image {
+        height: 450px;
+      }
+    }
+
+    .image {
+      height: 300px;
+      width: 350px;
+      object-fit: cover;
+    }
+
+    .title {
+      font-size: 2rem;
+      margin-top: 20px;
+    }
+
+    .content {
+      max-width: 80%;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+  }
+}

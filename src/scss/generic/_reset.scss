@@ -1,0 +1,18 @@
+@import "../settings/variables";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 16px;
+  font-weight: normal;
+  text-decoration: none;
+  list-style: none;
+  font-family: "PT Sans", sans-serif;
+  color: inherit;
+}
+body,
+html {
+  overflow-x: hidden;
+  color: $clr-black;
+}

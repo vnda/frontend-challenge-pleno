@@ -1,0 +1,66 @@
+@for $i from 1 through 20 {
+  .u-p-#{$i} {
+    padding: #{$i * 4}px !important;
+  }
+  .u-p-#{$i}\@md {
+    @media screen and (min-width: $md) {
+      padding: #{$i * 4}px !important;
+    }
+  }
+  .u-p-#{$i}\@lg {
+    @media screen and (min-width: $lg) {
+      padding: #{$i * 4}px !important;
+    }
+  }
+  .u-pt-#{$i} {
+    padding-top: #{$i * 4}px;
+  }
+  .u-pb-#{$i} {
+    padding-bottom: #{$i * 4}px;
+  }
+  .u-pl-#{$i} {
+    padding-left: #{$i * 4}px;
+  }
+  .u-pr-#{$i} {
+    padding-right: #{$i * 4}px;
+  }
+  .u-m-#{$i} {
+    margin: #{$i * 4}px;
+  }
+  .u-mt-#{$i} {
+    margin-top: #{$i * 4}px !important;
+  }
+  .u-mb-#{$i} {
+    margin-bottom: #{$i * 4}px;
+  }
+  .u-ml-#{$i} {
+    margin-left: #{$i * 4}px;
+  }
+  .u-mr-#{$i} {
+    margin-right: #{$i * 4}px;
+  }
+}
+
+.h-5 {
+  height: 1.25rem;
+}
+
+.w-5 {
+  width: 1.25rem;
+}
+
+.text-white {
+  color: $clr-white !important;
+}
+
+.text-black {
+  color: $clr-black !important;
+}
+
+.bg-red {
+  background-color: $clr-red !important;
+}
+
+.bg-yellow {
+  background-color: $clr-yellow !important;
+}

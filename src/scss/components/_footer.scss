@@ -1,0 +1,25 @@
+.footer {
+  margin-top: 100px;
+  padding: 40px 0;
+  display: flex;
+  flex-direction: column;
+  background-color: $clr-black;
+  color: $clr-white;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr;
+
+  @media (min-width: $lg) {
+    grid-template-columns: 3fr;
+  }
+
+  > * + * {
+    margin-top: 10px;
+  }
+
+  > :last-child {
+    margin-top: 50px;
+  }
+}

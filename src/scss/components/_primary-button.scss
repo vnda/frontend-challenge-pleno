@@ -1,0 +1,10 @@
+.c-primary-button {
+  display: inline-block;
+  padding: 15px 80px;
+  background: black;
+  color: white;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

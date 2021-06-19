@@ -1,0 +1,59 @@
+.o-flex {
+  display: flex;
+
+  &.-center {
+    align-items: center;
+    justify-content: center;
+  }
+
+  &.-center-x {
+    justify-content: center;
+  }
+
+  &.-right {
+    margin-left: auto;
+  }
+
+  &.-column {
+    flex-direction: column;
+  }
+
+  &.-wrap {
+    flex-wrap: wrap;
+  }
+}
+
+.o-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  @media screen and (min-width: $lg) {
+    grid-template-columns: 1.3fr 1fr;
+  }
+
+  &.-columns-3 {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  & > .full {
+    grid-column: 1/-1;
+  }
+}
+
+.o-cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.o-full-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.o-block {
+  position: relative;
+}

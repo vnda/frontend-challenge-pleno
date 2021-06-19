@@ -1,7 +1,10 @@
 const gulp = require("gulp");
 const sourcemaps = require("gulp-sourcemaps");
 const sass = require("gulp-sass");
+const cleanCSS = require("gulp-clean-css");
 const pug = require("gulp-pug");
+const data = require("gulp-data");
+const fs = require("fs");
 const browserify = require("browserify");
 const source = require("vinyl-source-stream");
 const buffer = require("vinyl-buffer");
@@ -16,14 +19,14 @@ const paths = {
   src: {
     jsEntry: "src/js/main.js",
     js: "src/js/**/*.js",
-    pug: "src/templates/**/*.pug",
+    pug: "src/templates/*.pug",
     scss: "src/scss/**/*.scss",
   },
   dest: {
-    base: "./dest",
-    js: "dest/js/",
-    html: "dest/pages/",
-    css: "dest/css/",
+    base: "./dist",
+    js: "dist/js/",
+    html: "dist/pages/",
+    css: "dist/css/",
   },
 };
 
@@ -36,12 +39,21 @@ gulp.task("sass", function () {
     .src(paths.src.scss)
     .pipe(sourcemaps.init())
     .pipe(sass().on("error", sass.logError))
+    .pipe(cleanCSS())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(paths.dest.css));
 });
 
 gulp.task("pug", function () {
-  return gulp.src(paths.src.pug).pipe(pug({})).pipe(gulp.dest(paths.dest.html));
+  return gulp
+    .src(paths.src.pug)
+    .pipe(
+      data(function () {
+        return JSON.parse(fs.readFileSync("./data.json"));
+      })
+    )
+    .pipe(pug())
+    .pipe(gulp.dest(paths.dest.html));
 });
 
 gulp.task("javascript", function () {
@@ -68,3 +80,4 @@ gulp.task("watch", function () {
 });
 
 exports.watch = gulp.series("clean", "watch");
+exports.build = gulp.series("pug", "sass", "javascript");

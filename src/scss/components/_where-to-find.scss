@@ -1,0 +1,24 @@
+.c-where-to-find {
+  padding: 0 20px;
+  margin-top: 100px;
+  text-align: center;
+
+  @media (min-width: $lg) {
+    margin-top: 250px;
+  }
+
+  > .title {
+    font-size: 3rem;
+    font-family: "Playfair Display", serif;
+  }
+
+  > .location {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+  }
+
+  > * + * {
+    margin-top: 20px;
+  }
+}

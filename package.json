@@ -18,12 +18,20 @@
     "url": "https://github.com/pixelHat/frontend-challenge-pleno/issues"
   },
   "homepage": "https://github.com/pixelHat/frontend-challenge-pleno#readme",
+  "browserify": {
+    "transform": [
+      "browserify-css"
+    ]
+  },
   "devDependencies": {
     "browserify": "^17.0.0",
+    "browserify-css": "^0.15.0",
     "del": "^6.0.0",
     "eslint": "^7.28.0",
     "esmify": "^2.1.1",
     "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-data": "^1.3.1",
     "gulp-print": "^5.0.2",
     "gulp-pug": "^5.0.0",
     "gulp-sass": "^4.1.0",
@@ -39,7 +47,11 @@
     "vinyl-source-stream": "^2.0.0"
   },
   "lint-staged": {
-    "*.js": "eslint --cache --fix",
-    "*.{js,scss,md,json}": "prettier --write"
+    "src/*.js": "eslint --cache --fix",
+    "src/*.{js,scss,md,json}": "prettier --write"
+  },
+  "dependencies": {
+    "mobile-swipe-menu": "^2.1.0",
+    "swiper": "^6.7.0"
   }
 }

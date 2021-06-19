@@ -1,0 +1,6 @@
+.c-recommended-book {
+  position: relative;
+  @media screen and (min-width: $lg) {
+    margin-top: -100px;
+  }
+}

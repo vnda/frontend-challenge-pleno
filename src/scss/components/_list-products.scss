@@ -1,0 +1,19 @@
+.c-list-products {
+  margin: 0 auto;
+  margin-top: 70px;
+
+  @media screen and (min-width: $md) {
+    max-width: 80%;
+    max-height: 700px;
+  }
+
+  > .title {
+    font-size: 3rem;
+    text-align: center;
+    margin-bottom: 50px;
+    font-family: "Playfair Display", serif;
+    @media screen and (min-width: $lg) {
+      font-size: 4rem;
+    }
+  }
+}
