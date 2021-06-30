@@ -1,0 +1,40 @@
+.searchbar {
+    position: absolute;
+    left: 0;
+    top: 67px;
+    z-index: $base-index;
+    margin: auto;
+    width: 100%;
+    padding: 5px 20px;
+    height: 0px;
+    opacity: 0;
+    transition: opacity 0.8s, height 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &.-open {
+        height: 67px;
+        opacity: 1;
+    }
+    &-container {
+        background-color: #00000070;
+        width: 100%;
+        padding: 10px;
+        display: inline-block;
+        border-radius: 8px;
+        i {
+            cursor: pointer;
+        }
+    }
+    &-input {
+        width: 90%;
+        padding: 0 10px;
+        border: none;
+        font-size: 16px;
+        background-color: #00000010;
+        color: $colortxtOne;
+        &::placeholder {
+            color: $colortxtOne;
+        }
+    }
+}

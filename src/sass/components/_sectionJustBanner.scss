@@ -1,0 +1,16 @@
+.justbanner {
+    @extend %flex-centered;
+    height: 25vh;
+    position: relative;
+    .banner {
+        position: absolute;
+        margin-top: -50px;
+    }
+    @include bkp(md) {
+        height: fit-content;
+        & .banner {
+            position: inherit;
+            margin-top: 25px;
+        }
+    }
+}

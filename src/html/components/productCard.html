@@ -1,0 +1,23 @@
+<div class="productcard" data-aos="@@aosConfig">
+    <div class="productcard-categorytype">
+        <h5 class="productcard-categoryname">
+            @@categoryName
+        </h5>    
+    </div>
+    <div class="productcard-inner">        
+        <div class="productcard-containerimg">
+            <img class="productcard-img" src="@@img" alt="@@imgAlt">
+            @@if ( context.hasflag === true ) {
+                <span class="productcard-flag">
+                    @@flagName
+                </span>
+            }
+        </div>
+        <div class="productcard-footer">
+            <h6 class="productcard-name">@@name</h6>
+            <button class="productcard-btn">
+                @@textbtn
+            </button>
+        </div>
+    </div>
+</div>

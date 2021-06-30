@@ -1,0 +1,43 @@
+<div class="banner @@class" data-aos="@@aosConfig">
+    @@if ( context.hasheader === true) {
+        <div class="banner-header">
+            <ul class="banner-headerinfo">
+                <li class="banner-headerinfo-item">/ Lorem ipsum dolor sit amet, consectetur</li>
+                <li class="banner-headerinfo-item">/ Lorem ipsum dolor sit amet, consectetur</li>
+                <li class="banner-headerinfo-item">/ Lorem ipsum dolor sit amet, consectetur</li>
+            </ul>
+        </div>
+    }
+    <div class="banner-containerimg">
+        <img class="banner-img @@hideClass" src="@@img" alt="img">
+        @@if ( context.hasImgMobile === true) {
+            <img class="banner-img is-mobile" src="@@imgMobile" alt="img">
+        }
+    </div>
+    @@if ( context.hasfooter === true) {
+        <div class="banner-footer">
+            <small class="banner-smalltext">
+                @@textSmall
+                <p class="banner-smalltextnum">
+                    @@textSmallNum
+                </ṕ> 
+            </small>
+            <h4 class="banner-title">
+                @@title
+            </h4>
+            <p class="banner-text">
+                @@text
+            </p>
+        </div>
+    }
+</div>
+
+
+<!-- @@include('./banner.html', {
+    "class": "-insta",
+    "img": "./src/assets/animal1.jpeg",
+    "title": "Título do Banner1",
+    "text": "Lorem ipsum, dolor sit amet consectetur adipisicing elit.",
+    "hasfooter": false,
+    "aosConfig": "fade-right",
+}) -->

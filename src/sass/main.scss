@@ -1,0 +1,41 @@
+@import "./base/reset";
+@import "./base/media";
+@import "./base/font";
+@import "./base/z-index";
+@import "./base/helpers";
+@import "./base/colors";
+@import "./base/global";
+
+@import "./components/controls";
+
+@import "./components/header";
+@import "./components/menu-icon";
+@import "./components/searchbar";
+
+@import "./components/bag-icon";
+@import "./components/cart";
+@import "./components/cardCart";
+
+@import "./components/banners";
+@import "./components/blocktext";
+@import "./components/productCard";
+
+@import "./components/hero";
+
+@import "./components/sectionJustBanner";
+
+@import "./components/halfToHalf";
+
+@import "./components/sectionText";
+
+@import "./components/listProd";
+
+@import "./components/sectionThreeBanners";
+
+@import "./components/fullbanner";
+
+@import "./components/howToFind";
+
+@import "./components/newsletter";
+
+@import "./components/footer";

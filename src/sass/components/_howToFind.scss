@@ -1,0 +1,28 @@
+.howtofind {
+    padding-bottom: 50px;
+    &-title {
+        font-size: 16px;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: underline;
+        margin-bottom: 40px;
+    }
+    &-list {
+        margin: auto;
+        width: fit-content;
+        max-width: 650px;
+    }
+    &-city {
+        font-size: 28px;
+        color: $colorPrimary;
+        cursor: pointer;
+        &:hover {
+            color: $colorTertiary;
+        }
+    }
+    @include bkp(md) {
+        .howtofind-city {
+            font-size: 14px  
+        }
+    }
+}

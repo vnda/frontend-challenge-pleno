@@ -1,0 +1,69 @@
+.footer {
+    &-inner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    &-container {
+        width: 100%;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: $colorQuaternary;
+    }
+    &-logo {
+        height: 80px;
+        width: 80px;
+        margin: auto;
+        display: block;
+    }
+    &-listitem {
+        text-align: center;
+        margin: 10px 0;
+        a {
+            color: $colortxtOne;
+            &:hover {
+                color: $colorSecondary;
+            }
+        }
+    }
+    &-copy  {
+        background-color: $colorSecondary;
+        color: $colortxtOne;
+        font-weight: 700;
+        padding: 20px;
+        text-align: center;
+    }
+    .iconinsta {
+        margin-right: 5px;
+        color: #fff;
+        padding: 5px;
+        border-radius: 50%;
+        font-size: 18px;
+        background: #f09433; 
+        background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); 
+        background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); 
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    }
+    .iconfacebook {
+        margin-right: 5px;
+        color: #4267B2;
+        font-size: 26px;
+    }
+    @include bkp(md) {
+        &-logo {
+            height: 60px;
+            width: 60px;
+        }
+        &-inner {
+            display: flex;
+            flex-direction: column
+        }
+        &-listitem {
+            font-size: 12px
+        }
+        &-copy {
+            font-size: 12px;
+            padding: 10px
+        }
+    }
+}

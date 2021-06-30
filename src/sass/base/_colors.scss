@@ -1,0 +1,21 @@
+$colorTitles: hsl(238, 84%, 25%);
+
+$colortxtOne: hsl(0, 0%, 100%);
+$colortxtTwo: hsl(0, 0%, 0%);
+
+$colorPrimary: hsl(238, 84%, 25%);
+$colorSecondary: rgb(0, 162, 255);
+$colorTertiary: hsl(238, 91%, 50%);
+$colorQuaternary: hsl(240, 80%, 8%);
+$colorQuinary: rgba(0, 255, 34, 0.698);
+
+$colorExtra1: hsl(0, 0%, 100%);
+$colorExtra2: hsl(0, 0%, 0%);
+$colorExtra3: hsl(0, 45%, 19%);
+
+@mixin gradientBlue {
+    background: hsla(204, 95%, 53%, 1);
+    background: linear-gradient(300deg, hsla(204, 95%, 53%, 1) 32%, hsl(216, 93%, 48%) 90%);
+    background: -moz-linear-gradient(300deg, hsla(204, 95%, 53%, 1) 32%, hsl(216, 93%, 48%) 90%);
+    background: -webkit-linear-gradient(300deg, hsla(204, 95%, 53%, 1) 32%, hsl(216, 93%, 48%) 90%);
+}

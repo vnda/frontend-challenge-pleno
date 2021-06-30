@@ -1,0 +1,55 @@
+.blocktext {
+    width: 50%;
+    max-width: 50%;
+    padding-top: 70px;
+    &-inner {
+        padding: 90px;
+        padding-top: 50px;
+        height: 100%;
+        &.-withcolor {
+            @include gradientBlue;
+
+            .blocktext-text {
+                color: $colortxtOne;
+            }
+            .blocktext-btn {
+                background-color: transparent;
+                color: $colorQuaternary;
+                border: 1px solid $colorQuaternary;
+                &:hover {
+                    color: $colorExtra1;
+                    background-color: $colorQuaternary;
+                    border: 1px solid $colorQuaternary;                
+                }
+            }
+        }
+    }
+    &-title {
+        font-weight: 700;
+        letter-spacing: 0.8px;
+        font-size: 30px;
+    }
+    &-text {
+        margin: 35px 0;
+        letter-spacing: 0.8px;
+        padding-right: 145px;
+        color: $colorQuaternary;
+        font-family: $fontSecondary;
+        font-style: italic
+    }
+    &-btn {
+        @extend %flex-centered;       
+        background-color: $colorQuaternary;
+        color: $colortxtOne;
+        border: none;text-transform: uppercase;
+        font-weight: 700;
+        width: 100%;
+        max-width: 240px;
+        padding: 15px 20px;
+        &:hover {
+            background-color: $colorSecondary ;
+            color: $colorQuaternary;            
+            border: 1px solid $colorSecondary;           
+        }
+    }
+}
