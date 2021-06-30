@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire me</title>
+    <!-- Font Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <!-- Font PT Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    
+    <!-- AOS - Lib Scrolling -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- SWIPER -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- STYLE -->
+    <link rel="stylesheet" href="./src/min/style.min.css">
+</head>
+<body>
+    <!-- HEADER -->
+    @@include('../components/header.html')
+    <!-- CART -->	
+    @@include('../components/cart.html')	
+    <!-- HERO -->	
+    @@include('../components/hero.html')
+
+    <!-- Half-to-Half -->	
+    <section class="half-to-half">
+        <!-- Blocktext -->	
+        @@include('../components/blockText.html', {
+            "class": "",
+            "title": "Título da seção int occaecat cupidatat non proident, sunt in culpa qui officia deserunt",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "btntext": "Call to action"
+        })
+        <div class="half-to-half-banners">
+            <!-- Banner -->	
+            @@include('../components/banner.html', {
+                "class": "-big-medium",
+                "img": "./src/assets/bannerSale.jpeg",
+                "hasheader": false,
+                "hasImgMobile": false,
+                "hasfooter": false,
+                "aosConfig": "fade-right"      
+            })
+            <!-- Banner -->	
+            @@include('../components/banner.html', {
+                "class": "-big-slim",
+                "img": "./src/assets/bannerSale4.jpeg",
+                "hasheader": false,
+                "hasImgMobile": false,
+                "hasfooter": false,
+                "aosConfig": "fade-up"  
+            })
+        </div>
+    </section>
+
+    <section class="justbanner" data-aos="fade-up">
+        <!-- Banner -->	
+        @@include('../components/banner.html', {
+            "class": "-big",
+            "img": "./src/assets/bannerSale5.jpg",
+            "hasheader": false,
+            "hasImgMobile": false,
+            "hasfooter": false    
+        })	
+    </section>
+
+    <!-- Half-to-Half -->	
+    <section class="half-to-half">
+        <!-- Blocktext -->	
+        @@include('../components/blockText.html', {
+            "class": "-withcolor",
+            "title": "Título da seção int occaecat cupidatat non proident, sunt in culpa qui officia deserunt",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "btntext": "Call to action"
+        })
+        <!-- Banner -->	
+        @@include('../components/banner.html', {
+            "class": "-half",
+            "img": "./src/assets/bannerSale2.jpg",
+            "hasheader": false,
+            "hasImgMobile": false,
+            "hasfooter": false,
+            "aosConfig": "fade-right" 
+        })	
+    </section>
+
+    <!-- Lista de produtos -->
+    <section class="listProd">
+        <h2 class="listProd-title">Título da Seção</h2>
+        <div class="swiper-container listProd-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    @@include('../components/productCard.html',{
+                        "img": "./src/assets/prod1.jpg",
+                        "imgAlt": "Product",
+                        "categoryName": "Category",
+                        "hasflag": true,
+                        "flagName": "flag",
+                        "name": "Product name1",
+                        "textbtn": "buy1",
+                        "aosConfig": "fade-right" 
+                    })                    
+                </div>
+                <div class="swiper-slide">
+                    @@include('../components/productCard.html',{
+                        "img": "./src/assets/prod2.jpeg",
+                        "imgAlt": "Product",
+                        "categoryName": "Category",
+                        "hasflag": false,
+                        "flagName": "flag",
+                        "name": "Product name2",
+                        "textbtn": "buy1",
+                        "aosConfig": "fade-right"
+                    })                    
+                </div>
+                <div class="swiper-slide">
+                    @@include('../components/productCard.html',{
+                        "img": "./src/assets/prod3.jpeg",
+                        "imgAlt": "Product",
+                        "categoryName": "Category",
+                        "hasflag": false,
+                        "flagName": "flag",
+                        "name": "Product name3",
+                        "textbtn": "buy1",
+                        "aosConfig": "fade-right"
+                    })                    
+                </div>
+                <div class="swiper-slide">
+                    @@include('../components/productCard.html',{
+                        "img": "./src/assets/prod1.jpg",
+                        "imgAlt": "Product",
+                        "categoryName": "Category",
+                        "hasflag": false,
+                        "flagName": "flag",
+                        "name": "Product name4",
+                        "textbtn": "buy1",
+                        "aosConfig": "fade-right"
+                    })                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lista de produtos -->
+    <section class="listProd">
+        <h2 class="listProd-title">Título da Seção</h2>
+        <div class="swiper-container listProd-slider">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    @@include('../components/productCard.html',{
+                        "img": "./src/assets/prod2.jpeg",
+                        "imgAlt": "Product",
+                        "categoryName": "Category",
+                        "hasflag": true,
+                        "flagName": "flag",
+                        "name": "Product name5",
+                        "textbtn": "buy1",
+                        "aosConfig": "fade-left" 
+                    })                    
+                </div>
+                <div class="swiper-slide">
+                    @@include('../components/productCard.html',{
+                        "img": "./src/assets/prod3.jpeg",
+                        "imgAlt": "Product",
+                        "categoryName": "Category",
+                        "hasflag": false,
+                        "flagName": "flag",
+                        "name": "Product name6",
+                        "textbtn": "buy1",
+                        "aosConfig": "fade-left" 
+                    })                    
+                </div>
+                <div class="swiper-slide">
+                    @@include('../components/productCard.html',{
+                        "img": "./src/assets/prod1.jpg",
+                        "imgAlt": "Product",
+                        "categoryName": "Category",
+                        "hasflag": true,
+                        "flagName": "flag2",
+                        "name": "Product name7",
+                        "textbtn": "buy1",
+                        "aosConfig": "fade-left" 
+                    })                    
+                </div>
+                <div class="swiper-slide">
+                    @@include('../components/productCard.html',{
+                        "img": "./src/assets/prod2.jpeg",
+                        "imgAlt": "Product",
+                        "categoryName": "Category",
+                        "hasflag": false,
+                        "flagName": "flag",
+                        "name": "Product name8",
+                        "textbtn": "buy1",
+                        "aosConfig": "fade-left" 
+                    })                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Text -->	
+    @@include('../components/sectionText.html')
+    
+    <!-- Half-to-Half -->	
+    <section class="half-to-half">
+        <!-- Blocktext -->	
+        @@include('../components/blockText.html', {
+            "class": "-withcolor",
+            "title": "Título da seção int occaecat cupidatat non proident, sunt in culpa qui officia deserunt",
+            "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "btntext": "Call to action"
+        })
+        <!-- Banner -->	
+        @@include('../components/banner.html', {
+            "class": "-half",
+            "img": "./src/assets/bannerSale.jpg",
+            "hasheader": false,
+            "hasImgMobile": false,
+            "hasfooter": false,
+            "aosConfig": "fade-right" 
+        })
+    </section>
+
+    <!-- Full Banner -->	
+    @@include('../components/sectionThreeBanners.html')
+   
+    <!-- Full Banner -->	
+    @@include('../components/sectionFullBanner.html')
+
+    <!-- How to find -->	
+    @@include('../components/sectionHowToFInd.html')
+
+    <!-- Newsletter -->	
+    @@include('../components/newsletter.html')
+
+    <footer class="footer" data-aos="fade-up">
+        <!-- INSTAGRAM -->	
+        @@include('../components/footer.html')	
+        <div class="overlay"></div>
+        <script src="https://www.npmjs.com/package/vanilla-tilt"></script>
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="./src/min/index.min.js"></script>
+    </footer>
+</body>
+</html>

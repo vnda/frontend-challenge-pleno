@@ -1,0 +1,24 @@
+<section class="fullbanner" data-aos="fade-up">
+    <div class="fullbanner-containerimg">
+        <img class="fullbanner-img" src="./src/assets/bg-1.jpeg" alt="banner">
+        <div class="fullbanner-overlay">
+            <div class="fullbanner-half">
+                <!-- Banner -->	
+                @@include('../components/banner.html', {
+                    "class": "-withheader",
+                    "img": "./src/assets/bannerSale3.jpeg",
+                    "hasheader": true,
+                    "hasImgMobile": false,
+                    "hasfooter": false,
+                    "aosConfig": "fade-down" 
+                })
+            </div>
+            <div class="fullbanner-half">
+                <h3 class="fullbanner-title">
+                    Título do banner
+                    lorem ipsum
+                </h3>
+            </div>
+        </div>
+    </div>    
+</section>
