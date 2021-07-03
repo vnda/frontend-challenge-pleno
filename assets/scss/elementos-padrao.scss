@@ -1,0 +1,128 @@
+/* ELEMENTOS PADRÃO */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+//font-family: 'Playfair Display', serif;
+
+:root {
+    font-size: 16px;    
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video, input, textarea {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-family: 'PT Sans', sans-serif;
+	vertical-align: baseline;
+}
+
+body {
+	line-height: 1;
+    position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+
+.centra {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn {
+  padding: 8px 15px;
+  background-color: $green;
+  font-weight: bold;
+  color: $white;
+  border-radius: 10px;
+  transition: background-color 200ms ease;
+
+  &:hover {
+    background-color: $blue;
+  }
+
+  @include md {
+    font-size: 1.1rem;
+    padding: 10px 20px;
+  }
+
+  @include xl {
+    font-size: 1.3rem;
+    padding: 15px 30px;
+  }
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper-justgo {
+  overflow: hidden;
+}
+
+h2 {
+    color: $blue;
+    position: relative;
+    display: inline-block;
+    margin-bottom: 15px;
+
+    &:after {
+        content: '';
+        position: absolute;
+        width: 100px;
+        height: 4px;
+        background-color: $green;
+        bottom: -8px;
+        right: 0;
+    }
+
+    @include md {
+      font-size: 2.2rem;
+      margin-bottom: 50px;
+
+      &:after {
+        width: 130px;
+      }
+    }
+
+    @include xl {
+      font-size: 2.8rem;
+      
+
+      &:after {
+        width: 170px;
+      }
+    }
+}
+
+.swiper-button-next, .swiper-button-prev {
+  &:after {
+    color: $blue;
+  }
+}

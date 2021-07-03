@@ -1,0 +1,29 @@
+#sky-animation {
+    animation: scroll 100s linear infinite;
+    background: url(../../img/sky-pattern.jpg);
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    .airplane {
+      animation: voando 8s ease infinite;
+      transform: translateY(+35px);
+    }
+  
+    @keyframes voando {
+      50% {
+        transform: translateY(-35px);
+      }
+  
+      100% {
+        transform: translateY(+35px);
+      }
+    }
+  }
+  
+  @keyframes scroll {
+    100%{
+     background-position: -3000px 0px;
+   }
+  }

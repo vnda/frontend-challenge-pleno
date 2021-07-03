@@ -1,0 +1,42 @@
+/* VARIÁVEIS */ 
+$white: #FFF;
+$light: #F4EDED;
+$blue: #2D58A0;
+$darkblue: #0e2a58;
+$green: #5DAC53;
+$lightgreen: #8fad8b;
+$darkgreen: #243010;
+
+
+/* MIXINS */
+$screen-sm: 576px;
+$screen-md: 768px;
+$screen-lg: 992px;
+$screen-xl: 1200px;
+$screen-xxl: 1500px;
+
+@mixin sm {
+  @media (min-width: #{$screen-sm}) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: #{$screen-md}) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: #{$screen-lg}) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: #{$screen-xl}) {
+    @content;
+  }
+}
+@mixin xxl {
+  @media (min-width: #{$screen-xxl}) {
+    @content;
+  }
+}

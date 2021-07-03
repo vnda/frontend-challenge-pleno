@@ -1,0 +1,100 @@
+#lojas-e-newsletter {
+  background: url(../../img/bg-travel-light.jpg) center;
+  padding: 25px 0;
+
+  @include md {
+    padding: 50px 0;
+  }
+
+  .container {
+    h3 {
+      text-align: center;
+      color: $darkblue;
+      margin-bottom: 15px;
+
+      @include lg {
+        margin-bottom: 25px;
+      }
+    }
+
+    .nossas-lojas {
+      display: flex;
+      flex-direction: column;
+      max-width: 300px;
+      margin: 0 auto 15px;
+
+      @include lg {
+        flex-direction: row;
+        max-width: none;
+        justify-content: space-between;
+      }
+
+      .loja {
+        color: $darkblue;
+        margin-bottom: 10px;
+        line-height: 1.5rem;
+        max-width: 260px;
+
+        div {
+          display: flex;
+
+          img {
+            margin-right: 10px;
+          }
+        }
+
+        span {
+          display: block;
+        }
+      }
+    }
+
+    #form-newsletter {
+      width: 100%;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: white;
+      padding: 5px;
+      border-radius: 50px;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 21px;
+      -webkit-box-shadow: 0px 0px 14px 0px rgba(14, 42, 88, 0.5);
+      -moz-box-shadow: 0px 0px 14px 0px rgba(14, 42, 88, 0.5);
+      box-shadow: 0px 0px 14px 0px rgba(14, 42, 88, 0.5);
+
+      .e-mail-news {
+        width: 120px;
+        margin: 0px 15px;
+        border: none;
+        outline: none;
+
+        @include sm {
+          width: auto;
+          flex-grow: 1;
+        }
+      }
+
+      button {
+        padding: 7px 15px;
+        background-color: $darkblue;
+        color: white;
+        font-weight: bold;
+        font-size: 1.1rem;
+        border-radius: 50px;
+        border: none;
+        outline: none;
+        cursor: pointer;
+
+        @include sm {
+          font-size: 1.2rem;
+          padding: 7px 20px;
+        }
+
+        &:hover {
+          background-color: $green;
+        }
+      }
+    }
+  }
+}

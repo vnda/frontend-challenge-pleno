@@ -1,0 +1,16 @@
+{
+    "folder" : {
+      "default_name" : "main",
+      "images" : "assets/img",
+      "javascript" : "assets/js/dist",
+      "js" : "assets/js",
+      "srccss" : "assets/css/src",
+      "css" : "assets/css/dist",
+      "sass" : "assets/scss",
+      "exclude_files" : {
+        "javascript" : "!assets/js",
+        "css" : "!assets/css",
+        "sass" : "!assets/scss"
+      }
+    }
+  }

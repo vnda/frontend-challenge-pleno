@@ -1,0 +1,117 @@
+#vistos-e-seguros {
+    background: url(../../img/bg-travel-light.jpg) center;
+      background-size: contain;
+    padding: 25px 0;
+
+    .container {
+        .box-vistos {
+            display: flex;
+            flex-direction: column;
+      
+            @include md {
+              flex-direction: row;
+              justify-content: space-between;
+              margin-top: 50px;
+              padding-left: 50px;
+            }
+
+            @include lg {
+              padding-left: 100px ;
+            }
+      
+            .vistos-img {
+              background-image: url(../../img/vistos.jpg);
+              background-size: cover;
+              width: 300px;
+              height: 300px;
+              margin: 35px auto 0;
+              border-radius: 50%;
+      
+              @include md {
+                margin-top: 35px;
+              }
+      
+              @include lg {
+                width: 360px;
+                height: 360px;
+              }
+            }
+      
+            .vistos-infos {
+      
+              @include md {
+               width: 45%;
+               padding: 50px 0;
+              }
+      
+              p {
+                color: $darkblue;
+                margin-bottom: 15px;
+      
+                &:nth-of-type(2) {
+                  margin-bottom: 50px;
+                }
+      
+                @include md {
+                  max-width: 400px;
+                }
+              }
+            }
+          }
+
+          #seguro-viagem {
+            margin-top: 50px;
+          }
+
+        .slider-seguros {
+          max-width: 900px;
+          margin-top: 15px;
+
+          .card-seguro {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 25px 75px;
+            text-align: center;
+            transition: transform 300ms ease;
+            transition-delay: 250ms;
+
+            @include md {
+              padding: 25px 10px;
+            }
+
+            img {
+              width: 200px;
+
+              @include md {
+                width: 90%;
+              }
+            }
+
+            .seguro-tipo {
+              margin: 5px 0 10px;
+              color: #2D58A0;
+              font-weight: 700;
+              font-size: 1.5rem;
+            }
+
+            .seguro-descricao {
+              margin-bottom: 10px;
+              color: $darkblue;
+            }
+
+            .btn {
+                display: none;
+            }
+          }
+
+          .swiper-slide-active {
+            transform: scale(1.1);
+
+            .btn {
+                display: block;
+            }
+          }
+        }
+    }
+}
