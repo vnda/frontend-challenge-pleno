@@ -1,0 +1,132 @@
+#slider-topo {
+
+    .slider-topo {    
+      height: 400px;
+
+      @include md {
+        height: 600px;
+      }
+
+      @include xl {
+        height: 800px;
+      }
+  
+      .slide-1 {
+        background: url(../../img/slide-1.jpg) bottom;
+        background-size: cover;
+        padding: 0 20px;
+
+        h1 {
+            color: $white;
+            margin-top: 180px;
+            text-align: center;
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+
+            @include md {
+              margin-top: 260px;
+              font-size: 2.5rem;
+            }
+
+            @include xl {
+              margin-top: 350px;
+              font-size: 3.5rem;
+            }
+        }
+
+        p {
+            color: $white;
+            text-align: center;
+            margin-top: 25px;
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+            
+
+            span {
+                color: $green;
+                font-weight: bold;
+                text-shadow: 0px 0px 8px rgb(0, 0, 0);
+                font-size: 1.2rem;
+            }
+
+            @include md {
+              font-size: 1.2rem;              
+
+              span {
+                font-size: 1.5rem;
+              }
+            }
+        }
+
+        .centra {
+          margin-top: 25px;
+        }
+      }
+  
+      .slide-2 {
+        background: url(../../img/slide-2.jpg) bottom;
+        background-size: cover;
+        padding: 0 20px;
+
+        h1 {
+            color: $white;
+            margin-top: 180px;
+            text-align: center;
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+
+            @include md {
+              margin-top: 260px;
+              font-size: 2.5rem;
+            }
+
+            @include xl {
+              margin-top: 350px;
+              font-size: 3.5rem;
+            }
+        }
+
+        p {
+            color: $white;
+            text-align: center;
+            margin-top: 25px;
+            text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+            
+
+            span {
+                color: $green;
+                font-weight: bold;
+                text-shadow: 0px 0px 8px rgb(0, 0, 0);
+                font-size: 1.2rem;
+            }
+
+            @include md {
+              font-size: 1.2rem;              
+
+              span {
+                font-size: 1.5rem;
+              }
+            }
+        }
+
+        .centra {
+          margin-top: 25px;
+        }
+      }
+  
+      .slide-3 {
+        background-color: #ff97dc;
+      }
+    }
+
+    .swiper-pagination-bullet {
+      background-color: $white;
+      opacity: .3;
+      width: 10px;
+      height: 10px;
+      transition: transform 300ms ease;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      background-color: $green;
+      transform: scale(1.2);
+    }
+  }

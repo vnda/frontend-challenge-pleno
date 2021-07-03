@@ -1,0 +1,135 @@
+#destinos {
+    background: url(../../img/bg-travel-light.jpg) center;
+      background-size: contain;
+    padding: 25px 0;
+  
+    @include md {
+      padding: 50px 0;
+    }
+  
+    .container {
+  
+      .margem-topo {
+        @include sm {
+          margin-top: 25px;
+        }
+      }
+
+      .destinos-vazio {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: $blue;
+        font-size: 20px;
+        font-weight: bold;
+        height: 150px;
+        width: 100%;
+      }
+  
+      .slider-destinos {
+  
+        .card-destino {
+  
+          padding: 10px 20px 25px;
+  
+          span {
+            display: block;
+            text-align: center;
+          }
+  
+          .categoria {
+            color: $green;
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 10px;
+          }
+  
+          .pais-imagem {
+            width: 85%;
+            margin: 0 auto;
+            background-size: cover;
+            background-position: center;
+            max-width: 225px;
+            height: 300px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;          
+  
+            .pais-bandeira {
+              width: 50px;
+              height: 50px;
+              border-radius: 50%;
+              border: 4px solid $white;
+              position: absolute;
+              top: 10px;
+              left: 10px;
+              -webkit-box-shadow: 0px 0px 13px 1px rgba(45,88,160,1);
+              -moz-box-shadow: 0px 0px 13px 1px rgba(45,88,160,1);
+              box-shadow: 0px 0px 13px 1px rgba(45,88,160,1);
+            }
+  
+            .box-valor {
+              padding: 10px;
+              background-color: rgba($color: #000, $alpha: 0.4);
+            }
+  
+            .a-partir {
+              color: $white;
+            }
+  
+            .pais-valor {
+              color: $green;
+              margin-top: 5px;
+              font-weight: bold;
+              font-size: 1.3rem;
+            }
+          }
+  
+          .pais-produto {
+            margin: 5px 0 15px;
+            color: $blue;
+            font-weight: bold;
+            font-size: 1.5rem;
+          }
+  
+          .btn-produto {          
+            display: block;    
+            width: 180px;      
+            text-align: center;
+  
+            @include xl {
+              padding: 10px 20px;
+              font-size: 1.1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #citacao {
+    background-color: $darkblue;
+    .container {
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      color: $light;
+      
+      q {
+        font-family: 'Playfair Display', serif;
+        font-size: 1.3rem;
+        margin-bottom: 10px;
+
+        @include md {
+          font-size: 1.5rem;
+        }
+      }
+
+      span {
+        font-size: .8rem;
+      }
+    }
+  }

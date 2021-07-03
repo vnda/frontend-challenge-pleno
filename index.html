@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JUST GO | O mundo espera por você!</title>
+
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <!-- END FONTS -->
+
+    <!-- FAVICON -->
+    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/png">
+    <!-- END FAVICON -->
+
+    <!-- META NAME -->
+    <meta
+      name="description"
+      content="A Just Go traz para você os melhores destinos, viagens culturais e serviços para explorar o mundo!"
+    />
+    <meta
+      name="keywords"
+      content="justgo viagens visto seguro mundo turismo cultura"
+    />
+    <meta
+      name="author"
+      content="Caio Haag - caiohaag@gmail.com"
+    />
+    <meta name="language" content="Portuguese" />
+    <!-- END: META NAME -->
+
+    <!-- OG TAGS -->
+    <meta
+      property="og:image"
+      content="https://www.justgo.com/assets/img/justgo-facebook.jpg"
+    />
+    <meta property="og:site_name" content="Just Go" />
+    <meta property="og:title" content="O mundo espera por você!" />
+    <meta
+      property="og:description"
+      content="A Just Go traz para você os melhores destinos, viagens culturais e serviços para explorar o mundo!"
+    />
+    <meta property="og:locale" content="pt_BR" />
+    <meta property="og:image:type" content="image/jpg" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="600" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.justgo.com/" />
+    <!-- END: OG TAGS -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/lib/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/lib/aos.css" />
+    <link rel="stylesheet" href="assets/css/dist/main.min.css" />
+    <!-- END CSS -->
+  </head>
+  <body>
+    <div class="wrapper-justgo">
+      <header>
+        <div class="menu-overlay"></div>
+        <div class="container">
+          <a href="#" class="header-logo" title="JUST GO">
+            <img src="./assets/img/justgo-logo.png" alt="JUST GO" />
+          </a>
+          <nav class="menu-topo">
+            <ul>
+              <li class="logo-mobile">
+                <a href="#" title="JUST GO">
+                  <img
+                    src="./assets/img/justgo-logo-branco.png"
+                    alt="JUST GO"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#destinos" title="destinos">DESTINOS</a>
+              </li>
+              <li>
+                <a href="#vistos-e-seguros" title="vistos">VISTOS</a>
+              </li>
+              <li>
+                <a href="#seguro-viagem" title="seguro viagem">SEGURO VIAGEM</a>
+              </li>
+            </ul>
+          </nav>
+          <div class="flex">
+            <div class="header-botoes">
+              <div class="box-busca">
+                <div class="container">
+                  <input type="text" name="search" id="search" />
+                  <a href="javascript:void(0);" class="btn-buscar">BUSCAR</a>
+                </div>
+              </div>
+              <a href="javascript:void(0);" class="toggle-busca btn-icon"
+                ><img
+                  src="./assets/img/icons/search.svg"
+                  alt="buscar"
+                  class="busca-off" /><img
+                  src="./assets/img/icons/close.svg"
+                  alt="buscar"
+                  class="busca-on"
+              /></a>
+              <a
+                href="javascript:void(0);"
+                class="btn-usuario btn-icon"
+                title="painel do usuário"
+                ><img src="./assets/img/icons/user.svg" alt="painel do usuário"
+              /></a>
+              <a
+                href="javascript:void(0);"
+                class="btn-carrinho btn-icon"
+                title="carrinho de compras"
+                ><img
+                  src="./assets/img/icons/basket.svg"
+                  alt="carrinho de compras"
+              /></a>
+            </div>
+            <div class="mobile-button">
+              <div class="mobile-line"></div>
+              <div class="mobile-line"></div>
+              <div class="mobile-line"></div>
+              <div class="mobile-x-1"></div>
+              <div class="mobile-x-2"></div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section id="slider-topo">
+        <div class="swiper-container slider-topo">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-1">
+              <h1>O mundo espera por você!</h1>
+              <p>
+                Nós trazemos os destinos mais procurados do mundo.
+                <span>Just Go!</span>
+              </p>
+              <div class="centra">
+                <a href="#destinos" class="btn">CLIQUE E CONFIRA!</a>
+              </div>
+            </div>
+            <div class="swiper-slide slide-2">
+              <h1>Viagens culturais</h1>
+              <p>
+                Preparamos uma seleção de destinos cheios de arte e cultura.
+              </p>
+              <div class="centra">
+                <a href="#section-cultura" class="btn">CLIQUE E CONFIRA!</a>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section id="explore">
+        <div class="container">
+          <div class="box-explore">
+            <div class="explore-infos">
+              <h2>Explore o mundo</h2>
+              <p>
+                Desde o início dos tempos somos viajantes. Nossa natureza humana
+                nos faz querer desbravar e conhecer todas as maravilhas que o
+                mundo pode proporcionar. Aqui você encontra os melhores destinos
+                com os melhores roteiros.
+              </p>
+              <a href="#destinos" class="btn">JUST GO!</a>
+            </div>
+            <div class="explore-fotos">
+              <img
+                src="assets/img/torre-eifell.jpg"
+                alt="Torre Eifell"
+                class="img-eifell"
+                data-aos="fade-left"
+              />
+              <img
+                src="assets/img/piramide.jpg"
+                alt="Pirâmide de Gizé"
+                class="img-piramide"
+                data-aos="fade-left"
+                data-aos-delay="200"
+              />
+              <img
+                src="assets/img/machu-picchu.jpg"
+                alt="Machu Picchu"
+                class="img-machu-picchu"
+                data-aos="fade-left"
+                data-aos-delay="400"
+              />
+            </div>
+          </div>
+          <div class="box-seguro-viagem">
+            <div class="seguro-img" data-aos="zoom-in"></div>
+            <div class="seguro-infos">
+              <h2>Seguro-Viagem</h2>
+              <p>
+                Como item essencial da sua viagem, conte com o Seguro Viagem
+                JustGo e esteja protegido contra possíveis imprevistos.
+              </p>
+              <p>
+                Para que a sua viagem seja sem preocupações você possui
+                atendimento 24h em português e assistência completa para viagens
+                nacionais, internacionais, aéreas, marítimas e terrestres.
+              </p>
+              <a href="#seguro-viagem" class="btn">VIAGE PROTEGIDO!</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="sky-animation">
+        <img src="assets/img/airplane.png" alt="Airplane" class="airplane" />
+      </section>
+      <section id="destinos">
+        <div class="container">
+          <div class="centra">
+            <h2>MAIS PROCURADOS</h2>
+          </div>
+          <div
+            class="swiper-container slider-destinos mais-procurados"
+            data-aos="fade-up"
+          >
+            <div class="swiper-wrapper">
+              <!-- CONTEÚDO PREENCHIDO POR JAVASCRIPT -->
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+          <div class="centra margem-topo" id="section-cultura">
+            <h2>VIAGENS CULTURAIS</h2>
+          </div>
+          <div
+            class="swiper-container slider-destinos culturais"
+            data-aos="fade-up"
+          >
+            <div class="swiper-wrapper">
+              <!-- CONTEÚDO PREENCHIDO POR JAVASCRIPT -->
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <section id="citacao">
+        <div class="container">
+          <q>Para viajar basta existir.</q>
+          <span>FERNANDO PESSOA</span>
+        </div>
+      </section>
+      <section id="vistos-e-seguros">
+        <div class="container">
+          <div class="box-vistos">
+            <div class="vistos-infos">
+              <h2>Obtenha Vistos</h2>
+              <p>Conte conosco para auxiliá-lo a obter seu visto.</p>
+              <p>
+                Oferecemos consultoria, cartilha com recomendações,
+                centralizamos os pagamentos em uma unica fatura e marcamos as
+                entrevistas. Você só precisa comparecer!
+              </p>
+              <a
+                href="javascript:void(0);"
+                class="btn toggle-modal"
+                data-produto="Vistos"
+                >OBTENHA SEU VISTO!</a
+              >
+            </div>
+            <div class="vistos-img" data-aos="zoom-in"></div>
+          </div>
+
+          <div class="centra" id="seguro-viagem">
+            <h2>Planos Seguro-Viagem</h2>
+          </div>
+
+          <div class="swiper-container slider-seguros" data-aos="fade-up">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide card-seguro">
+                <img src="assets/img/seguro-1.jpg" alt="Individual" />
+                <span class="seguro-tipo">Seguro Individual</span>
+                <p class="seguro-descricao">
+                  Para você que viaja sozinho. Curta a viagem, o resto é
+                  conosco!
+                </p>
+                <a
+                  href="javascript:void(0);"
+                  class="btn toggle-modal"
+                  data-produto="Seguro Individual"
+                  >CONTRATE</a
+                >
+              </div>
+              <div class="swiper-slide card-seguro">
+                <img src="assets/img/seguro-2.jpg" alt="Família" />
+                <span class="seguro-tipo">Seguro Família</span>
+                <p class="seguro-descricao">
+                  Viagem em família nos proporciona momentos inesquecíveis. A
+                  gente cuida de vocês.
+                </p>
+                <a
+                  href="javascript:void(0);"
+                  class="btn toggle-modal"
+                  data-produto="Seguro Família"
+                  >CONTRATE</a
+                >
+              </div>
+              <div class="swiper-slide card-seguro">
+                <img src="assets/img/seguro-3.jpg" alt="Anual" />
+                <span class="seguro-tipo">Plano anual</span>
+                <p class="seguro-descricao">Para quem viaja o tempo todo!</p>
+                <a
+                  href="javascript:void(0);"
+                  class="btn toggle-modal"
+                  data-produto="Seguro Plano Anual"
+                  >CONTRATE</a
+                >
+              </div>
+            </div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+          </div>
+        </div>
+      </section>
+      <section id="depoimentos">
+        <div class="swiper-container slider-depoimentos">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide slide-depoimento-1">
+              <q
+                >Tive as melhores férias da minha vida, o hotel foi muito bem
+                selecionado e o atendimento foi muito prestativo.</q
+              >
+              <span>Maria Moraes - Bahamas 2019</span>
+            </div>
+            <div class="swiper-slide slide-depoimento-2">
+              <q
+                >Com a ajuda da Just Go, tirei meu visto e pude realizar o sonho
+                de conhecer Nova York!</q
+              >
+              <span>Cleiton Dias - Nova York 2021</span>
+            </div>
+            <div class="swiper-slide slide-depoimento-3">
+              <q
+                >O Seguro-Viagem da Just Go me deu segurança para viajar pela
+                Escócia e conhecer meus antepassados.</q
+              >
+              <span>Janete McMillan - Escócia 2018</span>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+      <section id="lojas-e-newsletter">
+        <div class="container">
+          <h3>Nossas Lojas</h3>
+          <div class="nossas-lojas">
+            <div class="loja">
+              <span><b>Porto Alegre - Barra Shopping</b></span>
+              <div>
+                <img src="assets/img/icons/phone.svg" alt="phone" />
+                <a href="tel:5555555555">51 5555.5555</a>
+              </div>
+              <div>
+                <img src="assets/img/icons/email.svg" alt="email" />
+                <a href="mailto:portoalegre@justgo.com"
+                  >portoalegre@justgo.com</a
+                >
+              </div>
+              <div>
+                <img src="assets/img/icons/endereco.svg" alt="endereço" />
+                <address>Av. Diário de Notícias, 300 - Cristal</address>
+              </div>
+            </div>
+            <div class="loja">
+              <span><b>São Paulo - Shopping Iguatemi</b></span>
+              <div>
+                <img src="assets/img/icons/phone.svg" alt="phone" />
+                <a href="tel:5555555555">11 5555.5555</a>
+              </div>
+              <div>
+                <img src="assets/img/icons/email.svg" alt="email" />
+                <a href="mailto:portoalegre@justgo.com"
+                  >saopaulo@justgo.com</a
+                >
+              </div>
+              <div>
+                <img src="assets/img/icons/endereco.svg" alt="endereço" />
+                <address>Av. Brg. Faria Lima, 2232 - Pinheiros</address>
+              </div>
+            </div>
+            <div class="loja">
+              <span><b>Rio de Janeiro - Leblon Shopping</b></span>
+              <div>
+                <img src="assets/img/icons/phone.svg" alt="phone" />
+                <a href="tel:5555555555">21 5555.5555</a>
+              </div>
+              <div>
+                <img src="assets/img/icons/email.svg" alt="email" />
+                <a href="mailto:portoalegre@justgo.com"
+                  >riodejaneiro@justgo.com</a
+                >
+              </div>
+              <div>
+                <img src="assets/img/icons/endereco.svg" alt="endereço" />
+                <address>Av. Afrânio de Melo, 290 - Leblon</address>
+              </div>
+            </div>
+            <div class="loja">
+              <span><b>Recife - Shopping Recife</b></span>
+              <div>
+                <img src="assets/img/icons/phone.svg" alt="phone" />
+                <a href="tel:5555555555">81 5555.5555</a>
+              </div>
+              <div>
+                <img src="assets/img/icons/email.svg" alt="email" />
+                <a href="mailto:portoalegre@justgo.com"
+                  >recife@justgo.com</a
+                >
+              </div>
+              <div>
+                <img src="assets/img/icons/endereco.svg" alt="endereço" />
+                <address>R. Padre Carapuceiro, 777 - Boa Viagem</address>
+              </div>
+            </div>
+          </div>
+          <div class="newsletter">
+            <h3>
+              Inscreva-se em nossa newsletter e acompanhe as notícias do nosso
+              blog.
+            </h3>
+            <form action="#" id="form-newsletter">
+              <img src="assets/img/icons/email.svg" alt="Newsletter" />
+              <input
+                type="email"
+                name="e-mail-news"
+                id="e-mail-news"
+                class="e-mail-news"
+              />
+              <button type="submit">ENVIAR</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <footer>
+        <div class="container">
+          <div class="flex-footer">
+            <a href="#" class="footer-logo" title="JUST GO">
+              <img src="./assets/img/justgo-logo-branco.png" alt="JUST GO" />
+            </a>
+            <nav class="menu-footer">
+              <ul>
+                <li>
+                  <a href="#destinos" title="destinos">DESTINOS</a>
+                </li>
+                <li>
+                  <a href="#vistos-e-seguros" title="vistos">VISTOS</a>
+                </li>
+                <li>
+                  <a href="#seguro-viagem" title="seguro viagem"
+                    >SEGURO VIAGEM</a
+                  >
+                </li>
+              </ul>
+            </nav>
+            <div class="redes-sociais">
+              <a href="http://instagram.com" target="_blank"
+                ><img src="assets/img/icons/insta.svg" alt="Instagram"
+              /></a>
+              <a href="http://twitter.com" target="_blank"
+                ><img src="assets/img/icons/twitter.svg" alt="Twitter"
+              /></a>
+              <a href="http://facebook.com" target="_blank"
+                ><img src="assets/img/icons/face.png" alt="Facebook"
+              /></a>
+              <a href="http://youtube.com" target="_blank"
+                ><img src="assets/img/icons/youtube.svg" alt="Youtube"
+              /></a>
+            </div>
+          </div>
+          <small class="copyright">
+            &copy; Vnda - Tecnologia para ecommerce / CNPJ: 00.000.000/0001-00
+          </small>
+        </div>
+      </footer>
+
+      <div class="overlay-form"></div>
+      <div class="modal-form">
+        <span class="fecha-modal">X</span>
+        <form action="#" id="form-infos">
+          <input
+            type="text"
+            name="nome"
+            id="nome"
+            placeholder="Seu nome"
+            required
+          />
+          <input
+            type="phone"
+            name="telefone"
+            id="telefone"
+            placeholder="Telefone"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="E-mail"
+            required
+          />
+          <input
+            type="text"
+            name="produto"
+            id="produto"
+            placeholder="Produto desejado"
+          />
+          <textarea
+            name="mensagem"
+            id="mensagem"
+            style="resize: none"
+            placeholder="Mensagem"
+          ></textarea>
+          <div class="div-check">
+            <input type="checkbox" name="aceito" id="aceito" required />
+            <label for="aceito" class="label-lgpd"
+              >Eu autorizo a Just Go a utilizar esses dados para,
+              exclusivamente, entrar em contato comigo para apresentar seus
+              serviços.</label
+            >
+          </div>
+          <button type="submit">ENVIAR</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="assets/js/lib/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/lib/swiper-bundle.min.js"></script>
+    <script src="assets/js/lib/aos.js"></script>
+    <script src="assets/js/dist/main.min.js"></script>
+  </body>
+</html>

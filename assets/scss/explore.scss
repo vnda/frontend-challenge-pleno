@@ -1,0 +1,181 @@
+#explore {
+    background: url(../../img/bg-travel.jpg) center;
+    background-size: contain;
+    padding: 25px 0;
+  
+    @include md {
+      padding: 50px 0;
+    }
+  
+    .container {
+  
+      .box-explore {      
+        
+        @include md {
+          display: flex;
+          justify-content: space-between;
+        }
+  
+        .explore-infos {
+  
+          @include md {
+           width: 55%;
+           padding: 50px 0;
+          }
+  
+          p {
+            color: $darkblue;
+            margin-bottom: 50px;
+  
+            @include md {
+              max-width: 400px;
+            }
+          }
+        }
+  
+  
+        .explore-fotos {
+          position: relative;
+          height: 270px;
+          max-width: 400px;
+          margin: 25px auto;
+  
+          @include sm {
+            height: 320px;
+          }
+  
+          @include md {
+            width: 40%;
+            margin: 0;
+            max-width: none;
+            height: 430px;
+          }
+  
+  
+          .img-eifell {
+            width: 157px;
+            top: 0;
+            left: 0;
+            position: absolute;
+  
+            @include sm {
+              width: 190px;
+            }
+  
+            @include md {
+              top: -21;
+              left: auto;
+              right: 90px;
+              width: 215px;
+            }
+  
+            @include xl {
+              right: 0;
+              width: 270px;
+            }
+          }
+    
+          .img-piramide {
+            width: 161px;
+            top: 0;
+            transform: rotate(357deg);
+            right: 15px;
+            position: absolute;
+  
+            @include sm {
+              width: 215px;
+            }
+  
+            @include md {
+              width: 215px;
+              bottom: 0px;
+              top: auto;
+              z-index: 1;
+            }
+  
+            @include xl {
+              bottom: auto;
+              top: 15px;
+              right: 255px;
+              width: 306px;
+            }
+          }
+    
+          .img-machu-picchu {
+            width: 209px;
+            bottom: 0;
+            transform: rotate(6deg);
+            right: 0;
+            position: absolute;
+  
+            @include sm {
+              width: 250px;
+            }
+  
+            @include md {
+              width: 297px;
+              right: 210px;
+            }
+  
+            @include xl {
+              right: 268px;
+              bottom: 18px;
+              width: 372px;
+            }
+          }
+        }
+  
+      }
+  
+      .box-seguro-viagem {
+        display: flex;
+        flex-direction: column-reverse;
+  
+        @include md {
+          flex-direction: row;
+          justify-content: space-between;
+          margin-top: 50px;
+        }
+  
+        .seguro-img {
+          background-image: url(../../img/seguro-viagem.jpg);
+          background-size: cover;
+          width: 300px;
+          height: 300px;
+          margin: 35px auto 0;
+          border-radius: 50%;
+  
+          @include md {
+            margin-top: 35px;
+          }
+  
+          @include lg {
+            width: 360px;
+            height: 360px;
+          }
+        }
+  
+        .seguro-infos {
+  
+          @include md {
+           width: 45%;
+           padding: 50px 0;
+          }
+  
+          p {
+            color: $darkblue;
+            margin-bottom: 15px;
+  
+            &:nth-of-type(2) {
+              margin-bottom: 50px;
+            }
+  
+            @include md {
+              max-width: 400px;
+            }
+          }
+        }
+      }
+    }
+    
+  }

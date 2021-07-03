@@ -1,0 +1,66 @@
+#depoimentos {
+
+    .slider-depoimentos {
+      height: 200px;
+
+      @include lg {
+        height: 300px;
+      }
+
+      .swiper-slide {
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 25px;
+
+        q {
+          font-family: 'Playfair Display', serif;
+          text-align: center;
+
+          @include lg {
+            font-size: 1.2rem;
+          }
+        }
+
+        span {
+          font-family: 'Playfair Display', serif;
+          display: block;
+          text-align: center;
+          margin-top: 10px;  
+          font-size: .8rem;     
+          
+          @include lg {
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .slide-depoimento-1 {
+        background: url(../../img/depo-1.jpg);                      
+        background-size: cover;
+      }
+      .slide-depoimento-2 {
+        background: url(../../img/depo-2.jpg);                      
+        background-size: cover;
+      }
+      .slide-depoimento-3 {
+        background: url(../../img/depo-3.jpg);                      
+        background-size: cover;
+      }
+    }
+
+    .swiper-pagination-bullet {
+      background-color: $white;
+      opacity: .5;
+      width: 10px;
+      height: 10px;
+      transition: transform 300ms ease;
+    }
+
+    .swiper-pagination-bullet-active {
+      opacity: 1;
+      background-color: $blue;
+      transform: scale(1.2);
+    }
+}

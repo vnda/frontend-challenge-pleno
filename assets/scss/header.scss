@@ -1,0 +1,236 @@
+header {
+    padding: 16px 0 20px;
+    background-color: rgba($color: #fff, $alpha: .5);
+    height: 80px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    width: 100%;
+
+    .menu-overlay {
+      position: fixed;
+      display: none;
+      cursor: pointer;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      z-index: 9;
+      background-color: rgba($color: #000000, $alpha: 0.2);
+    }
+
+    .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .header-logo {
+        img {
+          height: 37px;
+
+          @include sm {
+            height: 50px;
+          }
+        }
+      }
+
+      .menu-topo {
+        position: fixed;
+        width: 80%;
+        max-width: 320px;
+        background-color: $blue;
+        top: 0;
+        left: -330px;
+        bottom: 0;
+        padding: 2rem;
+        z-index: 10;
+        transition: left 300ms ease;
+
+        @include lg {
+          position: static;
+          width: auto;
+          max-width: none;
+          background: none;
+          padding: 0;
+        }
+
+        ul {
+          list-style: none;
+
+          @include lg {
+            display: flex;
+          }
+
+          .logo-mobile {
+            display: block;
+  
+              a {
+                img {
+                  width: 150px;
+                }
+
+                &:before {
+                  content: '';
+                }
+              }
+
+            @include lg {
+              display: none;
+            }
+              
+            }
+          
+
+          li {
+            color: $white;            
+
+            @include lg {
+              color: $blue;
+            }
+            
+            a {
+              padding: 10px 0;
+              display: block;
+              font-weight: bold;
+              transition: transform 300ms ease;
+
+              @include lg {
+                padding: 10px 15px;
+                transition: none;
+              }
+
+              &:before {
+                content: '> ';
+                opacity: 0;
+                transform: opacity 300ms ease;
+
+                @include lg {
+                  content: '';
+                }
+              }
+
+              &:hover {
+                transform: translateX(15px);
+
+                @include lg {
+                  transform: none;
+                  border-bottom: 2px solid;
+                }
+
+                &:before {
+                  opacity: 1;
+                }
+              }
+            }
+          }
+        }
+      }
+
+      .menu-aberto {
+        left: 0;       
+      }
+
+      .header-botoes {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+
+        .box-busca {
+          position: absolute;          
+          width: 100%;
+          top: 80px;
+          left: 0;          
+          height: 0px;
+          background-color: rgba($color: #fff, $alpha: .5);
+          display: flex;
+          align-items: center;
+          justify-content: flex-end;
+          overflow: hidden;
+          transition: height 200ms ease;
+
+          .container {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+          }
+
+          #search {
+            padding: 5px;
+            outline: none;
+            margin-right: 10px;
+            border-radius: 5px;
+            border: 1px solid $blue;
+          }
+
+          .btn-buscar {
+            background-color: $blue;
+            color: $white;
+            padding: 6px;
+            border-radius: 5px;
+          }
+        }
+
+        .busca-aberto {
+          height: 50px;
+        }
+
+        .btn-icon {
+          margin-left: 10px;
+
+          @include lg {
+            margin-left: 15px;
+          }
+          img {
+            width: 20px;            
+          }
+        }        
+
+        .busca-on {
+          display: none;
+        }
+      }
+
+
+      .mobile-button {
+        cursor: pointer;
+        z-index: 5;
+        position: relative;
+        width: 35px;
+        height: 35px;
+    
+        @include lg {
+          display: none;
+        }
+      }
+    
+      .mobile-line {
+        width: 35px;
+        height: 5px;
+        background-color: $blue;
+        margin: 6px 0;
+      }
+      .mobile-x-1 {
+        display: none;
+        position: absolute;
+        top: 3px;
+        left: 4px;
+        width: 43px;
+        height: 5px;
+        background-color: $blue;
+        transform-origin: top left;
+        transform: rotate(44deg);
+      }
+      .mobile-x-2 {
+        display: none;
+        position: absolute;
+        top: 3px;
+        right: 4px;
+        width: 43px;
+        height: 5px;
+        background-color: $blue;
+        transform-origin: top right;
+        transform: rotate(-45deg);
+      }
+    }
+  }
