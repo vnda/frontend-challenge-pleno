@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Jessica Biali Gelman" />
+    <meta
+      name="description"
+      content="Vestidos, sapatos e acessórios para noivas"
+    />
+    <meta name="keywords" content="Vestidos, noivas, sapatos, acessórios" />
+    <link rel="stylesheet" href="css/index.css" type="text/css" />
+    <title>MarryMe Store</title>
+
+    <!-- Swipper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header id="header">
+      <nav id="menu">
+        <ul id="menu-list">
+          <li id="menu-logo-area">
+            <img
+              src="images/icons/menu.svg"
+              alt="menu"
+              class="menu-icons"
+              id="hamburguer-menu"
+            />
+            <img
+              src="images/icons/wedding-ring.svg"
+              id="menu-logo-img"
+              alt="Logo"
+            />
+            <span id="menu-logo-title">MarryMe</span>
+          </li>
+          <li>
+            <a href="#vestidos" class="menu-links">Vestidos</a>
+          </li>
+          <li><a href="#sapatos" class="menu-links">Sapatos</a></li>
+          <li>
+            <a href="#acessorios" class="menu-links">Acessórios</a>
+          </li>
+          <li>
+            <img src="images/icons/search.svg" class="menu-icons" />
+            <img src="images/icons/heart.svg" class="menu-icons" />
+            <img src="images/icons/shopping-cart.svg" class="menu-icons" />
+            <img src="images/icons/user.svg" class="menu-icons" />
+          </li>
+        </ul>
+      </nav>
+      <div id="drawer">
+        <ul id="drawer-list">
+          <li id="drawer-logo">
+            <img
+              src="images/icons/wedding-ring.svg"
+              id="drawer-logo-img"
+              alt="Logo"
+            />
+            <span id="drawer-logo-title">MarryMe</span>
+          </li>
+          <li class="drawer-item">
+            <a href="#quem-somos" class="drawer-link">Quem somos</a>
+          </li>
+          <li class="drawer-item">
+            <a href="#customization" class="drawer-link">Customização</a>
+          </li>
+          <li class="drawer-item">
+            <a href="#vestidos" class="drawer-link">Vestidos</a>
+          </li>
+          <li class="drawer-item">
+            <a href="#sapatos" class="drawer-link">Sapatos</a>
+          </li>
+          <li class="drawer-item">
+            <a href="#acessorios" class="drawer-link">Acessórios</a>
+          </li>
+          <li class="drawer-item">
+            <a href="#catalogo" class="drawer-link">Catálogo</a>
+          </li>
+          <li class="drawer-item">
+            <a href="#find-us" class="drawer-link">Onde estamos</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+    <main>
+      <section id="main-banner">
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="images/banner1.jpg" class="swiper-img" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/banner2.jpg" class="swiper-img" />
+            </div>
+            <div class="swiper-slide">
+              <img src="images/banner3.png" class="swiper-img" />
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+        <div id="main-banner-content">
+          <h1 id="main-banner-title">
+            <span id="typed-text"></span
+            ><span class="cursor typing">&nbsp;</span> com MarryMe
+          </h1>
+          <a href="#" class="button"
+            ><span id="main-button-title">Conheça nossa loja</span>
+            <img
+              src="images/icons/short-arrow.svg"
+              alt="arrow"
+              class="button-arrow"
+          /></a>
+        </div>
+      </section>
+
+      <section class="sections">
+        <article id="quem-somos">
+          <h1 class="article-title">Quem somos</h1>
+          <img id="img-1" src="images/img-1.webp" alt="noiva" />
+          <p class="article-p">
+            Fundada em 2017, com sua primeira sede em Porto Alegre, a MarryMe
+            nasceu com a proposta de trazer produtos modernos, acessíveis e de
+            altíssima qualidade. Em 2020, inauguramos nossa loja online para
+            podermos atender mais clientes que desejam comprar conosco e por
+            algum motivo não possam ou não queiram vir até a nossa loja física.
+          </p>
+          <img id="img-2" src="images/img-2.webp" alt="noiva" />
+          <p class="article-p">
+            Na nossa loja online você encontrará vestidos com manequis até o
+            plus-size, acessórios e sapatos para que você possa ter o casamento
+            dos seus sonhos. Há uma seção exclusiva em que montamos kits
+            personalizados de acordo com seu orçamento e estilo.
+          </p>
+          <div id="quemSomos-link-wrapper">
+            <a class="button" href="#"
+              >Agende sua visita<img
+                class="button-arrow"
+                src="images/icons/short-arrow.svg"
+            /></a>
+          </div>
+        </article>
+
+        <img id="img-3" src="images/img-3.jpg" alt="noiva" />
+      </section>
+
+      <section class="sections">
+        <article id="customization">
+          <img src="images/img-4.webp" id="img-4" alt="noiva" />
+          <h1 class="article-title">Customize seu pedido</h1>
+          <p class="article-p">
+            Deseja ajustar ou modificar algum de nossos produtos? Não tem
+            problema! Nós temos um serviço especialmente voltado para lhe
+            auxiliar nesse processo. Caso deseja adquirir esse serviço, preencha
+            o formulário com seu nome, o que deseja alterar ou ajustar, suas
+            medidas, seu telefone e e-mail de contato, para que possamos
+            encaminhar sua solicitação o mais breve possível.
+          </p>
+          <a class="button" href="#"
+            >Preencha o formulário<img
+              class="button-arrow"
+              src="images/icons/short-arrow.svg"
+          /></a>
+        </article>
+      </section>
+
+      <section class="sections produtos" id="vestidos">
+        <h1 class="article-title">Vestidos</h1>
+
+        <div class="item-container">
+          <div class="item">
+            <div class="image-price">
+              <img
+                src="images/produto-1.png"
+                class="item-image"
+                alt="Vestido de noiva"
+              />
+              <span class="price">R$ 4990,00</span>
+            </div>
+            <span class="item-name">Lotus</span>
+            <a class="button">Adicionar ao carrinho</a>
+          </div>
+
+          <div class="item">
+            <div class="image-price">
+              <img
+                src="images/produto-2.jpg"
+                class="item-image"
+                alt="Vestido de noiva"
+              />
+              <span class="price">R$ 2490,00</span>
+            </div>
+            <span class="item-name">Azelea</span>
+            <a class="button">Adicionar ao carrinho</a>
+          </div>
+
+          <div class="item">
+            <div class="image-price">
+              <img
+                src="images/produto-3.webp"
+                class="item-image"
+                alt="Vestido de noiva"
+              />
+              <span class="price">R$ 990,00</span>
+            </div>
+            <span class="item-name">Rose</span>
+            <a class="button">Adicionar ao carrinho</a>
+          </div>
+
+          <div class="item">
+            <div class="image-price">
+              <img
+                src="images/produto-4.jpg"
+                class="item-image"
+                alt="Vestido de noiva"
+              />
+              <span class="price">R$ 5000,00</span>
+            </div>
+            <span class="item-name">Sunflower</span>
+            <a class="button">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sections produtos" id="sapatos">
+        <h1 class="article-title">Sapatos</h1>
+
+        <div class="item-container">
+          <div class="item">
+            <div class="image-price">
+              <img
+                src="images/produto-5.jpg"
+                class="item-image"
+                alt="Sapato de noiva"
+              />
+              <span class="price">R$ 490,00</span>
+            </div>
+            <span class="item-name">Amelia</span>
+            <a class="button">Adicionar ao carrinho</a>
+          </div>
+
+          <div class="item">
+            <div class="image-price">
+              <img
+                src="images/produto-6.jpg"
+                class="item-image"
+                alt="Sapato de noiva"
+              />
+              <span class="price">R$ 790,00</span>
+            </div>
+            <span class="item-name">Anne</span>
+            <a class="button">Adicionar ao carrinho</a>
+          </div>
+
+          <div class="item">
+            <div class="image-price">
+              <img
+                src="images/produto-7.webp"
+                class="item-image"
+                alt="Sapato de noiva"
+              />
+              <span class="price">R$ 390,00</span>
+            </div>
+            <span class="item-name">Eve</span>
+            <a class="button">Adicionar ao carrinho</a>
+          </div>
+
+          <div class="item">
+            <div class="image-price">
+              <img
+                src="images/produto-8.jpg"
+                class="item-image"
+                alt="Sapato de noiva"
+              />
+              <span class="price">R$ 490,00</span>
+            </div>
+            <span class="item-name">Lucy</span>
+            <a class="button">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </section>
+      <section class="sections produtos" id="acessorios">
+        <h1 class="article-title">Acessórios</h1>
+
+        <div class="item-container">
+          <div class="item">
+            <div class="image-price">
+              <img
+                src="images/coroa-1.jpg"
+                class="item-image"
+                alt="Coroa de noiva"
+              />
+              <span class="price">R$ 990,00</span>
+            </div>
+            <span class="item-name">Nightsky</span>
+            <a class="button">Adicionar ao carrinho</a>
+          </div>
+
+          <div class="item">
+            <div class="image-price">
+              <img
+                src="images/coroa-2.jpg"
+                class="item-image"
+                alt="Coroa de noiva"
+              />
+              <span class="price">R$ 890,00</span>
+            </div>
+            <span class="item-name">Twilight</span>
+            <a class="button">Adicionar ao carrinho</a>
+          </div>
+
+          <div class="item">
+            <div class="image-price">
+              <img
+                src="images/coroa-3.webp"
+                class="item-image"
+                alt="Coroa de noiva"
+              />
+              <span class="price">R$ 790,00</span>
+            </div>
+            <span class="item-name">Sundown</span>
+            <a class="button">Adicionar ao carrinho</a>
+          </div>
+
+          <div class="item">
+            <div class="image-price">
+              <img
+                src="images/coroa-4.jpg"
+                class="item-image"
+                alt="Coroa de noiva"
+              />
+              <span class="price">R$ 1290,00</span>
+            </div>
+            <span class="item-name">Dawn</span>
+            <a class="button">Adicionar ao carrinho</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="sections" id="quote">
+        <img
+          src="images/icons/beginning-quote.svg"
+          class="quote"
+          alt="quote mark"
+        />
+        <h1 class="article-title">
+          Nossa missão é tornar sua cerimônia um momento inesquecível, por isso
+          nossa loja dispõe de soluções e produtos para todos os gostos,
+          tamanhos e orçamentos.
+        </h1>
+        <img src="images/icons/end-quote.svg" class="quote" alt="quote mark" />
+      </section>
+      <section class="sections catalogo" id="catalogo">
+        <article id="article-catalog">
+          <h1 class="article-title">Catálogo</h1>
+          <img id="img-catalog" src="images/catalogo.jpg" alt="Noiva" />
+          <p class="article-p">
+            No nosso catalógo, voce encontrará uma sessão com lançamentos, a
+            sessão com kits personalizados planejados com base no orçamento e no
+            estilo da cliente, e também uma sessão com produtos em promoção.
+            Além disso, você pode filtrar os produtos por tamanho, estilo e
+            valor.
+          </p>
+
+          <a class="button" href="#"
+            >Confira nosso catálogo<img
+              class="button-arrow"
+              src="images/icons/short-arrow.svg"
+          /></a>
+        </article>
+
+        <div id="article-wrapper">
+          <article class="articles">
+            <img
+              id="vestido-simples"
+              src="images/vestido-simples.jpg"
+              alt="Noiva com vestido simples"
+            />
+            <div class="article">
+              <h1 class="article-title">Vestidos simplistas</h1>
+              <p class="article-p">
+                Possuímos uma grande variedade de modelos simplistas, curtos,
+                longos, rendados e lisos. Ideais para pequenas cerimônias e
+                casamentos civís.
+              </p>
+            </div>
+          </article>
+
+          <article class="articles">
+            <img
+              id="vestido-plus"
+              src="images/vestido-plus.jpg"
+              alt="Noiva plus-size"
+            />
+            <div class="article" id="middle-article">
+              <h1 class="article-title">Vestidos plus size</h1>
+              <p class="article-p">
+                Inclusão é um dos pilares base da MerryMe, acreditamos que todas
+                devem ter acesso ao vestido dos sonhos, independente de seu
+                manequim, por isso temos vestidos dos mais luxuosos aos mais
+                simplistas de acordo com o orçamento e desejo da cliente.
+              </p>
+            </div>
+          </article>
+
+          <article class="articles">
+            <img
+              id="vestido-luxuoso"
+              src="images/vestido-luxuoso.jpg"
+              alt="Noiva com vestido luxuoso"
+            />
+            <div class="article">
+              <h1 class="article-title">Vestidos luxuosos</h1>
+              <p class="article-p">
+                Contamos também com vestidos altamente luxuosos, bordados com
+                pedrarias ou perólas e/ou rendados. Para adquirir um de nossos
+                modelos dessa linha é necessário preencher o formulário de
+                customização, pois são modelos feitos sob medida. Caso deseje,
+                você também pode visitar nosso showroom.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+      <section class="sections">
+        <div id="banner-bottom">
+          <img
+            src="images/banner4.jpg"
+            id="banner-4"
+            alt="vestidos de casamento"
+          />
+          <img src="images/img-5.jpg" id="img-5" alt="noiva" />
+          <span id="banner-bottom-title">Visite nosso show rooom</span>
+        </div>
+
+        <div id="find-us">
+          <h1 class="article-title">Onde nos encontrar</h1>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6908.940925587388!2d-51.201158088379444!3d-30.02335798247705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x951979b7b873c379%3A0x708eb7be9cfdc088!2sMoinhos%20Shopping!5e0!3m2!1spt-BR!2sbr!4v1627590972022!5m2!1spt-BR!2sbr"
+            loading="lazy"
+            id="map"
+          ></iframe>
+        </div>
+
+        <div id="newsletter">
+          <span class="article-p">Receba novidades e promoções:</span>
+          <form id="form">
+            <input type="email" placeholder="Digite seu e-mail" id="email" />
+            <input type="submit" value="Cadastrar" class="button" />
+          </form>
+        </div>
+      </section>
+      <footer id="footer">
+        <div id="footer-wrapper">
+          <span id="logo-title">MarryMe</span>
+
+          <div id="footer-links">
+            <a href="#quem-somos" class="footer-link">Quem somos</a>
+            <a href="#customization" class="footer-link">Customização</a>
+            <a href="#" class="footer-link">Como comprar</a>
+            <a href="#" class="footer-link">Trocas e devoluções</a>
+            <a href="#" class="footer-link">Contato</a>
+          </div>
+
+          <div id="footer-redes">
+            <a href="#" class="footer-link">
+              <img
+                src="images/icons/instagram.png"
+                alt="logo instagram"
+                class="img-redes"
+              />
+              <span>Instagram</span>
+            </a>
+            <a href="#" class="footer-link">
+              <img
+                src="images/icons/facebook.png"
+                alt="logo facebook"
+                class="img-redes"
+              />
+              <span>Facebook</span>
+            </a>
+          </div>
+        </div>
+        <p id="footer-copy">MarryMe Store - Todos os direitos reservados.</p>
+      </footer>
+    </main>
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script type="text/javascript" src="js/index.js"></script>
+  </body>
+</html>

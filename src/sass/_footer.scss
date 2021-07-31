@@ -1,0 +1,102 @@
+#footer {
+  background-color: #492338;
+  box-shadow: -5px -5px 20px 10px #000;
+
+  > #footer-wrapper {
+    padding: 5%;
+    @media (max-width: 768px) {
+      @include flex(center, center, column);
+      padding: 5% 10%;
+    }
+    @media (max-width: 1200px) {
+      padding: 5% 10%;
+    }
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    @include flex(flex-start, space-between, row);
+    
+      > #logo-title {
+        @include fontPlayfair(2.5rem, 900, italic);
+        @include text-shadow(#000);
+        color: rgb(252, 221, 242);
+        letter-spacing: 3px;
+        @include for-size(phone-only) {
+          font-size: 1.75rem;
+        }
+        @include for-size(tablet-portrait-up) {
+          font-size: 2rem;
+        }
+        @include for-size(tablet-landscape-up) {
+          font-size: 2rem;
+        }
+      }
+    
+    > #footer-links {
+      @include flex(center, center, column);
+      @media (max-width: 768px) {
+        margin: 5% 0;
+      }
+      > .footer-link {
+        @include fontPlayfair(1.5rem, 700, normal);
+        @include text-shadow(#000);
+        color: rgb(252, 221, 242);
+        padding-bottom: 10px;
+        text-decoration: none;
+        cursor: pointer;
+        &:last-of-type {
+          padding-bottom: 0;
+        }
+        @include for-size(phone-only) {
+          font-size: 1rem;
+        }
+        @include for-size(tablet-portrait-up) {
+          font-size: 1.25rem;
+        }
+        @include for-size(tablet-landscape-up) {
+          font-size: 1.25rem;
+        }
+      }
+    }
+    > #footer-redes {
+      @include flex(flex-start, center, column);
+      @include for-size(phone-only) {
+        margin: 5% 0;
+      }
+      > .footer-link {
+        cursor: pointer;
+        @include fontPlayfair(1.5rem, 700, normal);
+        @include text-shadow(#000);
+        @include flex(flex-end, center, row);
+        color: rgb(252, 221, 242);
+        padding-bottom: 10px;
+        text-decoration: none;
+        @include flex(center, center, row);
+        > .img-redes {
+          width: 40px;
+          padding-right: 10px;
+          @media (max-width: 768px) {
+            width: 30px;
+          }
+        }
+        @include for-size(phone-only) {
+          font-size: 1.25rem;
+        }
+        @include for-size(tablet-portrait-up) {
+          font-size: 1.25rem;
+        }
+        @include for-size(tablet-landscape-up) {
+          font-size: 1.25rem;
+        }
+      }
+    }
+  }
+  > #footer-copy {
+    @include fontPlayfair(1rem, 700, normal);
+    text-align: center;
+    color: rgb(252, 221, 242);
+    padding: 0% 10% 5% 10%;
+    @media (min-width: 1024px){
+      font-size: 1.5rem;
+    }
+  }
+}

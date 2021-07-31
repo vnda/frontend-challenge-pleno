@@ -1,0 +1,253 @@
+.catalogo {
+  padding: 5%;
+  margin-top: 10%;
+  background-color: #492338;
+  box-shadow: 5px 5px 20px 5px #000, -5px -5px 20px 5px #000;
+  @media (max-width: 1023px) {
+    padding: 10%;
+  }
+
+  > #article-catalog {
+    margin-right: 60%;
+    @media (max-width: 1023px) {
+      margin-right: unset;
+    }
+    @include for-size(desktop-up) {
+      margin-right: 50%;
+    }
+    > #img-catalog {
+      position: absolute;
+      right: 0;
+      top: -5rem;
+      width: 50%;
+      box-shadow: 5px 5px 20px 5px #000, -5px -5px 20px 5px #000;
+      @media (max-width: 1023px) {
+        display: none;
+      }
+      @include for-size(desktop-up) {
+        width: 40%;
+      }
+    }
+    > .article-title {
+      @include article-title(#fff);
+      @include fontPlayfair(2rem, 900, normal);
+      @include for-size(phone-only) {
+        font-size: 1.5rem;
+      }
+      @include for-size(tablet-portrait-up) {
+        font-size: 1.75rem;
+      }
+    }
+    > .article-p {
+      @include article-p(#fff);
+      @include fontPlayfair(1.5rem, 700, normal);
+      margin-bottom: 10%;
+      @include for-size(phone-only) {
+        font-size: 1rem;
+        text-align: justify;
+      }
+      @include for-size(tablet-portrait-up) {
+        font-size: 1.25rem;
+      }
+      @include for-size(tablet-landscape-up) {
+        margin-bottom: 5%;
+      }
+    }
+    > .button {
+      @include button(rgba(252, 221, 242, 0.8), #000, 80%, 1.5rem);
+      @include fontPTSans(1.5rem, 700, normal);
+      @include flex(center, space-between, row);
+      @include box-shadow(#000);
+      @include for-size(phone-only) {
+        width: 100%;
+        font-size: 1rem;
+        padding: 10px;
+      }
+      @include for-size(tablet-portrait-up) {
+        padding: 10px;
+        font-size: 1.25rem;
+        width: 70%;
+      }
+      @include for-size(tablet-landscape-up) {
+        padding: 10px;
+        font-size: 1.25rem;
+        width: 50%;
+      }
+    }
+  }
+  > #article-wrapper {
+    margin-top: 92.5%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 15%;
+    margin-bottom: 5%;
+    padding: 0 2.5%;
+    @include for-size(phone-only) {
+      @include flex(center, center, column);
+      margin-top: 10%;
+    }
+    @include for-size(tablet-portrait-up) {
+      @include flex(center, center, column);
+      margin-top: 10%;
+    }
+    @include for-size(tablet-landscape-up) {
+      @include flex(center, center, column);
+      margin-top: 10%;
+    }
+    @include for-size(desktop-up) {
+      @include flex(center, center, column);
+      margin-top: 10%;
+    }
+    > .articles {
+      padding: 5% 0;
+      @include for-size(desktop-up) {
+        @include flex(center, center, column);
+      }
+      > #vestido-simples {
+        position: absolute;
+        z-index: 4;
+        top: 45%;
+        left: 5%;
+        width: 35%;
+        height: auto;
+        box-shadow: 5px 5px 20px 5px rgb(0, 0, 0), -5px -5px 20px 5px #000;
+        @include for-size(phone-only) {
+          position: unset;
+          width: 100%;
+          height: unset;
+          margin-bottom: 10%;
+          padding: 0;
+        }
+        @include for-size(tablet-portrait-up) {
+          position: unset;
+          width: 100%;
+          margin-bottom: 10%;
+          height: unset;
+          padding: 0;
+        }
+        @include for-size(tablet-landscape-up) {
+          position: unset;
+          width: 100%;
+          margin-bottom: 10%;
+          height: unset;
+          padding: 0;
+        }
+        @include for-size(desktop-up) {
+          position: unset;
+          width: 70%;
+          margin-bottom: 10%;
+          height: unset;
+          padding: 0;
+        }
+      }
+      > #vestido-plus {
+        position: absolute;
+        z-index: 3;
+        box-shadow: 5px 5px 20px 10px rgb(0, 0, 0);
+        top: 40%;
+        left: 30%;
+        width: 40%;
+        @include for-size(phone-only) {
+          position: unset;
+          width: 100%;
+          margin-bottom: 10%;
+          padding: 0;
+        }
+        @include for-size(tablet-portrait-up) {
+          position: unset;
+          width: 100%;
+          margin-bottom: 10%;
+          height: unset;
+          padding: 0;
+        }
+        @include for-size(tablet-landscape-up) {
+          position: unset;
+          width: 100%;
+          margin-bottom: 10%;
+          height: unset;
+          padding: 0;
+        }
+        @include for-size(desktop-up) {
+          position: unset;
+          width: 70%;
+          margin-bottom: 10%;
+          height: unset;
+          padding: 0;
+        }
+      }
+      > #vestido-luxuoso {
+        position: absolute;
+        z-index: 2;
+        top: 45%;
+        right: 5%;
+        width: 37.5%;
+        box-shadow: 5px 5px 20px 10px rgb(0, 0, 0);
+        @include for-size(phone-only) {
+          position: unset;
+          width: 100%;
+          margin-bottom: 10%;
+          height: unset;
+          padding: 0;
+        }
+        @include for-size(tablet-portrait-up) {
+          position: unset;
+          width: 100%;
+          margin-bottom: 10%;
+          height: unset;
+          padding: 0;
+        }
+        @include for-size(tablet-landscape-up) {
+          position: unset;
+          width: 100%;
+          margin-bottom: 10%;
+          height: unset;
+          padding: 0;
+        }
+        @include for-size(desktop-up) {
+          position: unset;
+          width: 70%;
+          margin-bottom: 10%;
+          height: unset;
+          padding: 0;
+        }
+      }
+      > #middle-article{
+        top: 15%;
+        @media (max-width: 1200px){
+          position: unset;
+        }
+      }
+      > .article {
+        position: relative;
+        top: 5%;
+        > .article-title {
+          @include fontPlayfair(3rem, 700, normal);
+          @include article-title(#fff);
+          @include for-size(phone-only) {
+            font-size: 1.5rem;
+          }
+          @include for-size(tablet-portrait-up) {
+            font-size: 1.75rem;
+          }
+          @include for-size (desktop-up){
+            text-align: center;
+          }
+        }
+        > .article-p {
+          @include fontPlayfair(1.5rem, 700, normal);
+          @include article-p(#fff);
+          @include for-size(phone-only) {
+            font-size: 1rem;
+            text-align: justify;
+          }
+          @include for-size(tablet-portrait-up) {
+            font-size: 1.25rem;
+          }
+          @include for-size(desktop-up) {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}

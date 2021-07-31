@@ -1,0 +1,172 @@
+#header {
+  position: fixed;
+  width: 100%;
+  background-color: #FFF;
+  z-index: 10;
+  #menu {
+    padding: 10px 20px;
+    box-shadow: 0 5px 20px 5px #000;
+    padding: 10px;
+    > #menu-list {
+      @include flex(flex-start, space-between, row);
+      list-style-type: none;
+      > #menu-logo-area {
+        @include flex(center, center, row);
+        > #hamburguer-menu {
+          display: none;
+          @include for-size(phone-only) {
+            display: block;
+            width: 20px;
+            height: 20px;
+          }
+          @include for-size(tablet-portrait-up) {
+            display: block;
+            width: 20px;
+            height: 20px;
+          }
+          @include for-size(tablet-landscape-up) {
+            display: block;
+            width: 20px;
+            height: 20px;
+          }
+        }
+        > #menu-logo-img {
+          height: 30px;
+          padding-right: 10px;
+          @include for-size(phone-only) {
+            display: none;
+          }
+          @include for-size(tablet-portrait-up) {
+            display: none;
+          }
+          @include for-size(tablet-landscape-up) {
+            display: none;
+          }
+        }
+        > #menu-logo-title {
+          @include fontPlayfair(1.5rem, 900, italic);
+          @include for-size(phone-only) {
+            font-size: 1rem;
+          }
+          @include for-size(tablet-portrait-up) {
+            font-size: 1.25rem;
+          }
+          @include for-size(tablet-landscape-up) {
+            font-size: 1.25rem;
+          }
+          color: #452135;
+          letter-spacing: 3px;
+        }
+      }
+      .menu-links {
+        text-decoration: none;
+        color: #000;
+        @include fontPlayfair(1.5rem, 500, normal);
+        &:hover {
+          font-size: 1.6rem;
+          font-weight: 700;
+          color: rgb(224, 169, 207);
+        }
+        @include for-size(phone-only) {
+          display: none;
+        }
+        @include for-size(tablet-portrait-up) {
+          display: none;
+        }
+        @include for-size(tablet-landscape-up) {
+          display: none;
+        }
+      }
+      .menu-icons {
+        height: 30px;
+        width: 40px;
+        margin-right: 5px;
+        &:last-of-type {
+          margin-right: 0;
+        }
+        &:hover {
+          cursor: pointer;
+        }
+        @include for-size(phone-only) {
+          height: 20px;
+          width: 20px;
+          &:first-of-type {
+            margin-right: 10px;
+          }
+        }
+        @include for-size(tablet-portrait-up) {
+          height: 25px;
+          width: 25px;
+          &:first-of-type {
+            margin-right: 10px;
+          }
+        }
+        @include for-size(tablet-landscape-up) {
+          height: 25px;
+          width: 25px;
+          &:first-of-type {
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+  > #drawer {
+    width: 100%;
+    position: fixed;
+    height: 100vh;
+    z-index: 11;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    > #drawer-list {
+      width: 60%;
+      height: 100vh;
+      padding: 10px 20px;
+      background-color: #FFF;
+      list-style-type: none;
+      max-width: 200px;
+      @include for-size(tablet-portrait-up) {
+        width: 40%;
+      }
+      @include for-size(tablet-landscape-up) {
+        width: 30%;
+      }
+      > #drawer-logo {
+        @include flex(center, flex-start, row);
+        margin-bottom: 10px;
+        > #drawer-logo-img {
+          height: 25px;
+          padding-right: 10px;
+          @include for-size(tablet-landscape-up){
+            height: 30px;
+          }
+        }
+        > #drawer-logo-title {
+          @include fontPlayfair(1.25rem, 900, italic);
+          @include text-shadow(#000);
+          color: rgb(252, 221, 242);
+          @include for-size(tablet-landscape-up){
+            font-size: 1.5rem;
+          }
+        }
+      }
+      > .drawer-item {
+        padding: 10px 0;
+
+        > .drawer-link {
+          padding: 20px 0;
+          text-decoration: none;
+          @include fontPlayfair(1rem, 900, normal);
+          color: #492338;
+          &:first-of-type{
+            padding-top: 0;
+          }
+          @include for-size(tablet-landscape-up){
+            font-size: 1.25rem;
+          }
+        }
+      }
+    }
+  }
+}

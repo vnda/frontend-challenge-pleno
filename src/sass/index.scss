@@ -1,0 +1,94 @@
+// Import fonts
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@mixin fontPlayfair($size, $weight, $style) {
+  font-family: "Playfair Display", serif;
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+}
+@mixin fontPTSans($size, $weight, $style) {
+  font-family: "PT Sans", sans-serif;
+  font-size: $size;
+  font-weight: $weight;
+  font-style: $style;
+}
+@mixin flex($flex-align, $flex-justify, $flex-direction) {
+  display: flex;
+  align-items: $flex-align;
+  justify-content: $flex-justify;
+  flex-direction: $flex-direction;
+}
+@mixin text-shadow($color) {
+  text-shadow: 1px 0 0 $color, -1px 0 0 $color, 0 1px 0 $color, 0 -1px 0 $color,
+    1px 1px $color, -1px -1px 0 $color, 1px -1px 0 $color, -1px 1px 0 $color,
+    5px 5px 4px $color;
+}
+@mixin box-shadow($color) {
+  box-shadow: 1px 0 0 $color, -1px 0 0 $color, 0 1px 0 $color, 0 -1px 0 $color,
+    1px 1px $color, -1px -1px 0 $color, 1px -1px 0 $color, -1px 1px 0 $color,
+    0px 5px 6px 0px $color;
+}
+@mixin button($background-color, $color, $size, $arrow) {
+  background-color: $background-color;
+  color: $color;
+  padding: 15px;
+  text-decoration: none;
+  user-select: none;
+  width: $size;
+  &:hover {
+    cursor: pointer;
+  }
+  > .button-arrow {
+    width: $arrow;
+  }
+}
+@mixin article-title($color) {
+  color: $color;
+  margin-bottom: 5%;
+}
+@mixin article-p($color) {
+  line-height: 2.5rem;
+  color: $color;
+  margin-bottom: 5%;
+}
+@mixin for-size($size) {
+  @if $size == phone-only {
+    @media (max-width: 480px) { @content; }
+  } @else if $size == tablet-portrait-up {
+    @media (min-width: 481px) and (max-width: 768px) { @content; }
+  } @else if $size == tablet-landscape-up {
+    @media (min-width: 769px) and (max-width: 1023px){ @content; }
+  } @else if $size == desktop-up {
+    @media (min-width: 1024px) and (max-width: 1200px) { @content; }
+  } @else if $size == big-desktop-up {
+    @media (min-width: 1201px) { @content; }
+  } 
+}
+
+@import "./header";
+@import "./mainBanner";
+@import "./quemSomos";
+@import "./customization";
+@import "./produtos";
+@import "./quote";
+@import "./catalogo";
+@import "./loja";
+@import "./footer";
+
+body {
+  background-color: #dbb3ca;
+}
+.sections {
+  position: relative;
+  z-index: 0;
+}
+
+
