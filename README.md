@@ -19,3 +19,6 @@
 
 ## Observações:
 - Os preços do produtos em telas maiores que 1200px são exibidos com o passar do mouse sobre as fotos dos produtos
+
+## Site em deploy:
+- https://challenge-pleno-front-end.vercel.app/
