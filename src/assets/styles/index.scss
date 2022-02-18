@@ -1,0 +1,792 @@
+// -------------- CABEÇALHO (Header)
+
+.header {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  height: 90px;
+  width: 100%;
+  top: 0;
+  z-index: 3;
+
+  .container {
+    .header__logo {
+      display: flex;
+      align-items: center;
+      width: 25%;
+  
+      a {
+        display: flex;
+        align-items: center;
+        color: white;
+  
+        h1 {
+          letter-spacing: 2px;
+          font-weight: 400;
+        }
+  
+        h1:nth-of-type(1) {
+          font-size: 36px;
+        }
+        h1:nth-of-type(2) {
+          font-size: 24px;
+        }
+    
+        .logo__divisor {
+          background-color: white;
+          height: 30px;
+          width: 2px;
+          margin: 0 12px;
+        }
+      }
+    }
+  
+    .header__menu {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 65%;
+  
+      ul {
+        margin-top: 5px;
+  
+        li {
+          margin: 0 3px;
+          
+    
+          a {
+            padding: 5px 6px;
+            color: white;
+            font-size: 16px;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            border-bottom: 1px solid transparent;
+          }
+
+          a:hover {
+            border-bottom: 1px solid white;
+            cursor: pointer;
+          }
+  
+          a.header__menu--selected {
+            border-bottom: 1px solid white;
+          }
+        }
+  
+        
+      }
+    }
+  
+    .header__icons {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      width: 10%;
+  
+      .header__icon {
+        width: fit-content;
+        padding: 0 8px;
+  
+        .icon {
+          font-size: 20px;
+        }
+  
+        .icon:hover {
+          cursor: pointer;
+        }
+      }
+    }
+  
+    .header__menu_responsive {
+      display: none;
+      align-items: center;
+      justify-content: flex-end;
+      width: 8%;
+  
+      .icon {
+        font-size: 20px;
+      }
+  
+      .icon:hover {
+        cursor: pointer;
+      }
+  
+      .header__menu_responsive__container {
+        position: absolute;
+        background-color: white;
+        border: 2px solid rgb(233, 233, 233);
+        box-shadow: 0 0 10px rgba(77, 77, 77, 0.4);
+        top: 0;
+        margin-top: 70px;
+        border-radius: 5px;
+        
+        ul {
+          flex-direction: column;
+          align-items: center;
+          padding: 5px 0;
+  
+          li {
+            border-radius: 5px;
+            width: 100%;
+            padding: 6px 50px;
+            text-align: center;
+
+            a {
+              color: black;
+              font-size: 18px;
+              letter-spacing: 1px;
+            }
+          }
+  
+          li:hover {
+            background-color: rgba(228, 228, 228, 0.5);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}
+
+// -------------- BANNER PRINCPIAL (Main Banner)
+
+.main-banner {
+  background-image: url('/assets/images/main_banner.jpg');
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  a {
+    .main-banner__gradient {
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.6), transparent);
+      position: absolute;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+// -------------- SOBRE NÓS (About Us)
+
+.about-us {
+  padding-top: 42px;
+
+  .about-us__left {
+    position: relative;
+
+    .about-us__left__background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      z-index: -1;
+      background-image: url('/assets/images/vult_banner_04.jpg');
+      background-position: center;
+      background-size: cover;
+      filter: blur(2px);
+      opacity: 0.1;
+    }
+  }
+
+  .about-us__right {
+    position: relative;
+
+    .about-us__images {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    
+    .about-us__images.first {
+      position: absolute;
+      width: 50%;
+      height: 440px;
+      right: 0;
+      top: 35%;
+      z-index: 100;
+    }
+
+    .about-us__images.second {
+      position: absolute;
+      width: 60%;
+      height: 440px;
+      right: 40px;
+    }
+
+    .about-us__images.third {
+      position: absolute;
+      width: 440px;
+      height: 440px;
+      right: 100%;
+      top: 100%;
+      transform: translate(50%, -50%);
+      z-index: 99;
+    }
+  }
+}
+
+// -------------- SOBRE A LOJA BANNER (Store)
+
+.store {
+  .store__right {
+    position: relative;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
+
+// -------------- BANNER DE TEXTO (Text Banner)
+
+.text-banner {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 64px;
+
+  .text-banner__text {
+    font-size: 34px;
+    width: calc(100% - 400px);
+    margin: 150px 200px 16px 200px;
+    text-align: center;
+    line-height: 1.5;
+  }
+}
+
+// -------------- BANNER DE DESTAQUE (Feature)
+
+.feature {
+  margin-bottom: 0;
+
+  .feature__container {
+    align-items: flex-end;
+  }
+
+  .feature__left {
+    background-image: linear-gradient(180deg, transparent, rgba(153, 153, 153, 0.1));
+    height: 800px;
+  }
+
+  .feature__right {
+    position: relative;
+    height: inherit;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      transition: opacity 0.8s ease-in;
+      
+      &.model_1 {
+        opacity: 1;
+      }
+
+      &.model_2 {
+        opacity: 0;
+      }
+
+      &.model_3 {
+        opacity: 0;
+        
+      }
+      &.model_4 {
+        opacity: 0;
+        
+      }
+      &.model_5 {
+        opacity: 0;
+        
+      }
+      &.model_6 {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+// -------------- BANNER DE NOVIDADES (News)
+
+.news {
+  display: flex;
+  justify-content: center;
+  height: 1400px;
+  margin-bottom: 80px;
+
+  .container {
+    background-image: linear-gradient(180deg, rgba(153, 153, 153, 0.1), transparent);
+    padding: 80px;
+    padding-top: 180px;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+    .news__container {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      width: 440px;
+      height: fit-content;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.5;
+        transition: .2s;
+      }
+
+      img:hover {
+        opacity: 1;
+      }
+
+      .news__container__small__image {
+        background-color: cornsilk;
+        width: 440px;
+        height: 440px;
+      }
+
+      .news__container__large__image {
+        background-color: darkgray;
+        width: 440px;
+        height: 560px;
+      }
+
+      .news__container__content {
+        padding: 20px 60px;
+        margin-top: 15px;
+        font-size: 18px;
+
+        .news__container__links {
+          display: flex;
+          flex-direction: column;
+          text-transform: uppercase;
+          
+          a {
+            color: var(--dark-grey);
+            text-decoration: underline;
+          }
+        }
+  
+        .news__container__title {
+          font-size: 26px;
+          margin: 14px 0;
+        }
+      }
+    }
+
+    .news__container:nth-of-type(1) {
+      left: 5%;
+      z-index: 2;
+      margin-bottom: 90px;
+    }
+
+    .news__container:nth-of-type(2) {
+      z-index: 1;
+    }
+
+    .news__container:nth-of-type(3) {
+      right: 5%;
+      z-index: 0;
+      margin-bottom: 90px;
+    }
+  }
+}
+
+// -------------- BANNER DE ORÇAMENTO (Budget)
+
+.budget {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 140px;
+
+  .budget__gradient {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    z-index: -1;
+    background-image: url('/assets/images/budget_images/budget_background.jpg');
+    background-position: center;
+    background-size: cover;
+    filter: blur(5px);
+    opacity: 0.2;
+  }
+
+  .container {
+    z-index: 1;
+
+    .budget__container__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 45%;
+      font-size: 22px;
+      padding: 80px;
+      color: black;
+
+      .budget__image {
+        margin-top: 20px;
+        img {
+          width: 460px;
+          transition: .3s;
+        }
+
+        img:hover {
+          transform: scale(1.2);
+        }
+      }
+    }
+
+    .budget__container__right {
+      width: 55%;
+      padding: 80px;
+
+      .budget__form {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        background-color: #00000091;
+        color: white;
+        padding: 30px;
+
+        p:nth-of-type(1) {
+          font-size: 34px;
+        }
+        p:nth-of-type(2) {
+          font-size: 26px;
+          margin-bottom: 30px;
+          text-align: right;
+        }
+        p:nth-of-type(3) {
+          font-size: 26px;
+          margin-bottom: 20px;
+          text-align: right;
+        }
+
+        #select_plan {
+          padding: 10px 12px;
+          font-size: 15px;
+          background-color: var(--light-grey);
+          outline: 3px solid var(--light-grey);
+        }
+        #select_plan:hover {
+          cursor: pointer;
+        }
+
+        .budget__form__variations {
+          display: flex;
+          margin: 15px 0 30px 0;
+
+          .budget__form__variation {
+            background-color: transparent;
+            padding: 10px 12px;
+            margin-left: 10px;
+            outline: 3px solid var(--light-grey);
+            transition: .2s;
+          }
+          .budget__form__variation:hover {
+            cursor: pointer;
+            background-color: var(--light-grey);
+            color: black;
+          }
+          .budget__form__variation--selected {
+            background-color: var(--light-grey);
+            color: black;
+          }
+        }
+
+        .budget__form__infos {
+          display: flex;
+          flex-wrap: wrap;
+
+          input {
+            padding: 10px 12px;
+            font-size: 15px;
+            margin-bottom: 10px;
+          }
+          input[type="text"] {
+            width: 60%;
+          }
+          input[type="number"] {
+            width: calc(40% - 10px);
+            margin-left: 10px;
+          }
+          input[type="email"] {
+            width: calc(80% - 10px);
+            margin-right: 10px;
+          }
+          input[type="submit"] {
+            width: 20%;
+            text-transform: uppercase;
+            background-color: var(--grey-blue);
+            color: white;
+            letter-spacing: 1px;
+            transition: .2s;
+          }
+          input[type="submit"]:hover {
+            background-color: var(--light-grey);
+            color: black;
+          }
+        }
+      }
+    }
+  }
+}
+
+// -------------- BANNER DE CIDADES (Find-us)
+
+.find-us {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 140px;
+
+  .container {
+    height: 400px;
+
+    .find-us__container__left {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      width: 50%;
+      padding: 80px;
+
+      p {
+       font-size: 20px;
+       margin-bottom: 5px;
+      }
+
+      p:nth-of-type(1) {
+        font-size: 34px;
+        margin-bottom: 15px;
+      }
+    }
+
+    .find-us__container__right {
+      width: 50%;
+      padding: 60px 80px 60px 0;
+
+      .find-us__map {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}
+
+// -------------- NEWSLETTER
+
+.newsletter {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 160px;
+
+  .container {
+    padding: 0 80px;
+    justify-content: space-between;
+    align-items: center;
+
+    .newsletter__text {
+      display: flex;
+      width: 30%;
+      font-size: 20px;
+    }
+
+    .newsletter__form {
+      display: flex;
+      align-items: center;
+      width: calc(70% - 20px);
+      margin-left: 20px;
+      height: 40px;
+
+      input {
+        padding: 10px 12px;
+        font-size: 16px;
+      }
+      input[type="email"] {
+        width: calc(80% - 10px);
+        margin-right: 10px;
+        background-color: var(--light-grey);
+      }
+      input[type="submit"] {
+        width: 20%;
+        background-color: var(--grey-blue);
+        color: white;
+        letter-spacing: 1px;
+        transition: .2s;
+      }
+      input[type="submit"]:hover {
+        background-color: var(--light-grey);
+        color: black;
+      }
+    }
+  }
+}
+
+// -------------- RODAPÉ (Footer)
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  background-color: var(--grey-blue);
+
+  .footer__background {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0.1;
+
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .container {
+    flex-direction: column;
+    z-index: 1;
+
+    .footer__top {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      
+      .footer__infos, .footer__menus, .footer__social-medias {
+        width: calc(100% / 3);
+        padding: 50px 30px;
+      }
+
+      .footer__infos {
+        display: flex;
+        align-items: center;
+
+        a {
+          display: flex;
+          align-items: center;
+          color: white;
+    
+          h1 {
+            letter-spacing: 2px;
+            font-weight: 400;
+          }
+    
+          h1:nth-of-type(1) {
+            font-size: 36px;
+          }
+          h1:nth-of-type(2) {
+            font-size: 24px;
+          }
+      
+          .logo__divisor {
+            background-color: white;
+            height: 30px;
+            width: 2px;
+            margin: 0 12px;
+          }
+        }
+      }
+
+      .footer__menus, .footer__social-medias {
+        ul {
+          height: 100%;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+
+          li {
+            margin-bottom: 4px;
+
+            a {
+              color: white;
+              font-size: 18px;
+              text-transform: uppercase;
+            }
+          }
+        }
+      }
+
+      .footer__menus {
+        margin-right: 14%;
+
+        ul {
+          li {
+            a {
+              transition: .2s;
+            }
+            a:hover {
+              letter-spacing: 2px;
+            }
+          }
+        }
+      }
+
+      .footer__social-medias {
+        width: fit-content;
+
+        ul {
+          align-items: flex-start;
+          li {
+            margin-bottom: 6px;
+          }
+        }
+      }
+    }
+
+    .footer__resposive {
+      display: none;
+      width: 100%;
+      background-color: #3d495398;
+      flex-direction: column;
+
+      a {
+        color: white;
+        width: 100%;
+        text-align: center;
+        font-size: 20px;
+        padding: 10px 0;
+
+        .icon {
+          margin: 3px 5px 0 5px;
+          padding-top: 3px;
+          font-size: 20px;
+        }
+      }
+
+      .footer__resposive__menu {
+        background-color: #3d495371;
+        padding: 20px 0;
+        transition: .2s;
+
+        ul {
+          flex-direction: column;
+          align-items: center;
+
+          li {
+            margin: 2px 0;
+          }
+        }
+      }
+    }
+  }
+
+  .footer__bottom {
+    background-color: #3d495398;
+    color: white;
+    width: 100%;
+    padding: 20px 0;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    z-index: 1;
+  }
+}

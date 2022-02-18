@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Vnda Frontend Challenge</title>
+
+  <!-- Google Fonts Ref. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&family=Playfair+Display:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+
+  <!-- Font Awesome Ref. -->
+  <script src="https://kit.fontawesome.com/2f4889854d.js" crossorigin="anonymous"></script>
+
+  <!-- Estilos Ref. -->
+  <link rel="stylesheet" href="/assets/css/index.css">
+  <link rel="stylesheet" href="/assets/css/components.css">
+  <link rel="stylesheet" href="/assets/css/media_query.css">
+
+  <!-- Animate Ref. -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+
+  <div class="screen hidden"></div>
+
+  <div class="pop-up hidden">
+    <div class="pop-up__container animate__animated animate__bounceIn">
+      <div class="pop-up__icon"><i class="icon far"></i></div>
+      <div class="pop-up__message"></div>
+    </div>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container">
+      <div class="header__logo">
+        <a href="#header">
+          <h1>Vult </h1>
+          <div class="logo__divisor"></div>
+          <h1>Cosméticos</h1>
+        </a>
+      </div>
+      <div class="header__menu">
+        <ul class="flex">
+          <li><a href="#header" class="header__menu--selected">Home</a></li>
+          <li><a href="#about_us">Sobre nós</a></li>
+          <li><a href="#store">A loja</a></li>
+          <li><a href="#showcase_1">Make up</a></li>
+          <li><a href="#showcase_2">Cremes</a></li>
+          <li><a href="#feature">Destaque</a></li>
+          <li><a href="#news">Novidades</a></li>
+          <li><a href="#budget">Orçamento</a></li>
+          <li><a href="#find_us">Localização</a></li>
+        </ul>
+      </div>
+      <div class="header__icons">
+        <div class="header__icon"><i class="icon fas fa-search"></i></div>
+        <div class="header__icon"><i class="icon fas fa-user"></i></div>
+        <div class="header__icon"><i class="icon fas fa-shopping-basket"></i></div>
+      </div>
+      <div class="header__menu_responsive">
+        <i class="icon fas fa-bars"></i>
+        <div class="header__menu_responsive__container hidden">
+          <ul class="flex">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about_us">Sobre nós</a></li>
+            <li><a href="#store">A loja</a></li>
+            <li><a href="#showcase_1">Make up</a></li>
+            <li><a href="#showcase_2">Cremes</a></li>
+            <li><a href="#feature">Destaque</a></li>
+            <li><a href="#news">Novidades</a></li>
+            <li><a href="#budget">Orçamento</a></li>
+            <li><a href="#find_us">Localização</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <section class="main-banner">
+    <a href="">
+      <div class="main-banner__gradient"></div>
+    </a>
+  </section>
+
+  <section class="section about-us" id="about_us">
+    <div class="container">
+      <div class="section__left_container about-us__left">
+        <div class="about-us__left__background"></div>
+        <p>A Vult foi fundada em 2004 pelos empresários Daniela Cruz e Murilo Reggian. Conta atualmente com mais de 35 mil pontos de venda no país e destaca-se pela sólida presença no varejo farmacêutico, canal onde é líder em maquiagem, de acordo com a Nielsen.</p>
+        <button><a href="#store">Mais sobre a loja</a></button>
+      </div>
+
+      <div class="section__right_container about-us__right">
+        <div class="about-us__images first"><img src="/assets/images/vult_banner_01.jpg" alt=""></div>
+        <div class="about-us__images second"><img src="/assets/images/vult_banner_02.jpg" alt=""></div>
+        <div class="about-us__images third"><img src="/assets/images/vult_banner_03.jpg" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section store" id="store">
+    <div class="container">
+      <div class="section__left_container">
+        <p> A Vult começou com um restrito portfólio de sete itens - que somavam 506 em meados de 2017</p>
+        <p>Depois de se estabelecerem no setor de farmácias, responsável por 70% de seu faturamento, resolveram expandir os horizontes em 2015 ao abrir os próprios quiosques em endereços variados da cidade, entre eles estações de metrô, shoppings e aeroportos. Em maio de 2017 havia 23 pontos próprios espalhados pela Grande São Paulo.</p>
+        <button><a href="#find_us">Lojas pelo brasil</a></button>
+      </div>
+      <div class="section__right_container store__right">
+        <img src="/assets/images/store_banner.jpg" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="showcase" id="showcase_1">
+    <div class="container showcase__container swiper">
+      <div class="showcase__title">Vitrine de Maquiagens</div>
+      <div class="showcase__items swiper-wrapper">
+        <div class="showcase__item swiper-slide">
+          <div class="showcase__item__category">Máscara para cílios</div>
+          <div class="showcase__item__container">
+            <div class="showcase__item__image">
+              <img src="/assets/images/showcase_images/vult_item_04.png" alt="">
+              <div class="showcase__item__image__flag">30% OFF</div>
+              <div class="showcase__item__image__price">
+                <div class="showcase__item__image__discount">R$ 32,90</div>
+                R$ 23,00
+              </div>
+            </div>
+            <div class="showcase__item__title">5UP</div>
+            <div class="showcase__item__buy_button"><button>Compre Agora</button></div>
+          </div>
+        </div>
+
+        <div class="showcase__item swiper-slide">
+          <div class="showcase__item__category">batom Lip tint</div>
+          <div class="showcase__item__container">
+            <div class="showcase__item__image">
+              <img src="/assets/images/showcase_images/vult_item_02.png" alt="">
+              <div class="showcase__item__image__flag hidden">34% OFF</div>
+              <div class="showcase__item__image__price">R$ 15,90</div>
+            </div>
+            <div class="showcase__item__title">Aquatint Violet</div>
+            <div class="showcase__item__buy_button"><button>Compre Agora</button></div>
+          </div>
+        </div>
+
+        <div class="showcase__item swiper-slide">
+          <div class="showcase__item__category">Pó compacto</div>
+          <div class="showcase__item__container">
+            <div class="showcase__item__image">
+              <img src="/assets/images/showcase_images/vult_item_01.png" alt="">
+              <div class="showcase__item__image__flag">35% OFF</div>
+              <div class="showcase__item__image__price">
+                <div class="showcase__item__image__discount">R$ 31,90</div>
+                R$ 20,70</div>
+            </div>
+
+            <div class="showcase__item__title">Matte 04 Bege</div>
+            <div class="showcase__item__buy_button"><button>Compre Agora</button></div>
+          </div>
+        </div>
+        <div class="showcase__item swiper-slide">
+          <div class="showcase__item__category">Base líquida</div>
+          <div class="showcase__item__container">
+            <div class="showcase__item__image">
+              <img src="/assets/images/showcase_images/vult_item_03.png" alt="">
+              <div class="showcase__item__image__flag  hidden">100% OFF</div>
+              <div class="showcase__item__image__price">R$ 19,90</div>
+            </div>
+            <div class="showcase__item__title">Basic 2 em 1</div>
+            <div class="showcase__item__buy_button"><button>Compre Agora</button></div>
+          </div>
+        </div>
+        <div class="showcase__item swiper-slide">
+          <div class="showcase__item__category">Lápis de olho</div>
+          <div class="showcase__item__container">
+            <div class="showcase__item__image">
+              <img src="/assets/images/showcase_images/vult_item_09.png" alt="">
+              <div class="showcase__item__image__flag  hidden">100% OFF</div>
+              <div class="showcase__item__image__price">R$ 18,00</div>
+            </div>
+            <div class="showcase__item__title">Lápis para olho 2 em 1</div>
+            <div class="showcase__item__buy_button"><button>Compre Agora</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <section class="showcase" id="showcase_2">
+    <div class="container showcase__container swiper flex">
+      <div class="showcase__title">Vitrine de Cremes</div>
+      <div class="showcase__items swiper-wrapper">
+        <div class="showcase__item swiper-slide">
+          <div class="showcase__item__category">Hidratantes</div>
+          <div class="showcase__item__container">
+            <div class="showcase__item__image">
+              <img src="/assets/images/showcase_images/vult_item_06.png" alt="">
+              <div class="showcase__item__image__flag hidden">100% OFF</div>
+              <div class="showcase__item__image__price">R$ 122,70</div>
+            </div>
+            <div class="showcase__item__title">Kit Hidranutre Revigorante Super</div>
+            <div class="showcase__item__buy_button"><button>Compre Agora</button></div>
+          </div>
+        </div>
+        <div class="showcase__item swiper-slide">
+          <div class="showcase__item__category">Demaquilantes</div>
+          <div class="showcase__item__container">
+            <div class="showcase__item__image">
+              <img src="/assets/images/showcase_images/vult_item_05.png" alt="">
+              <div class="showcase__item__image__flag">10% OFF</div>
+              <div class="showcase__item__image__price">
+                <div class="showcase__item__image__discount">R$ 21,90</div>
+                R$ 19,71
+              </div>
+            </div>
+            <div class="showcase__item__title">Creme Demaquilante Para Olhos</div>
+            <div class="showcase__item__buy_button"><button>Compre Agora</button></div>
+          </div>
+        </div>
+        <div class="showcase__item swiper-slide">
+          <div class="showcase__item__category">Hidratantes Faciais</div>
+          <div class="showcase__item__container">
+            <div class="showcase__item__image">
+              <img src="/assets/images/showcase_images/vult_item_08.png" alt="">
+              <div class="showcase__item__image__flag hidden">100% OFF</div>
+              <div class="showcase__item__image__price">R$ 55,90</div>
+            </div>
+            <div class="showcase__item__title">Hidranutre - Creme Anti-idade</div>
+            <div class="showcase__item__buy_button"><button>Compre Agora</button></div>
+          </div>
+        </div>
+        <div class="showcase__item swiper-slide">
+          <div class="showcase__item__category">Corretivos cremosos</div>
+          <div class="showcase__item__container">
+            <div class="showcase__item__image">
+              <img src="/assets/images/showcase_images/vult_item_07.png" alt="">
+              <div class="showcase__item__image__flag hidden">100% OFF</div>
+              <div class="showcase__item__image__price">R$ 19,90</div>
+            </div>
+            <div class="showcase__item__title">Corretivo Cremoso Macadâmia</div>
+            <div class="showcase__item__buy_button"><button>Compre Agora</button></div>
+          </div>
+        </div>
+        <div class="showcase__item swiper-slide">
+          <div class="showcase__item__category">Iluminador</div>
+          <div class="showcase__item__container">
+            <div class="showcase__item__image">
+              <img src="/assets/images/showcase_images/vult_item_10.jpg" alt="">
+              <div class="showcase__item__image__flag  hidden">100% OFF</div>
+              <div class="showcase__item__image__price">R$ 15,90</div>
+            </div>
+            <div class="showcase__item__title">Iluminador cremoso</div>
+            <div class="showcase__item__buy_button"><button>Compre Agora</button></div>
+          </div>
+        </div>
+      </div>
+
+      <!-- navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </section>
+
+  <section class="text-banner">
+    <div class="container">
+      <div class="text-banner__text">
+         Como ele enfrentou gigantes da beleza nas farmácias
+      </div>
+    </div>
+  </section>
+
+  <section class="section feature" id="feature">
+    <div class="container feature__container">
+      <div class="section__left_container feature__left">
+        <p>Era hora de se aproximar das quatro grandes redes farmacêuticas</p>
+        <p>Com um volume de produção mais representativo, Reggiani mapeou um roteiro com as pequenas farmácias que existiam na distância entre Mogi das Cruzes e a cidade de São Paulo. Em menos de um ano, a Vult entrou em todas elas, e chegou também a outros estados. Para o empresário, era hora de se aproximar das quatro grandes redes farmacêuticas, que hoje controlam 25% do mercado nacional - Raia Drogasil, Pague Menos, Pacheco e Drogaria São Paulo.</p>
+        <button class="desactive" id="onClickToRoll">Mudar modelo</button>
+      </div>
+      <div class="section__right_container feature__right">
+        <img src="/assets/images/vult_model_01.jpg" class="model_1" alt="">
+        <img src="/assets/images/vult_model_02.jpg" class="model_2" alt="">
+        <img src="/assets/images/vult_model_03.jpg" class="model_3" alt="">
+        <img src="/assets/images/vult_model_04.jpg" class="model_4" alt="">
+        <img src="/assets/images/vult_model_05.jpg" class="model_5" alt="">
+        <img src="/assets/images/vult_model_06.jpg" class="model_6" alt="">
+      </div>
+    </div>
+  </section>
+
+  <section class="news" id="news">
+    <div class="container">
+      <div class="news__container">
+        <div class="news__container__small__image"><img src="/assets/images/vult_news_01.png" alt=""></div>
+        <div class="news__container__content">
+          <div class="news__container__links">
+            <a href="">Verão</a>
+          </div>
+          <div class="news__container__title">
+            Vult Balm Melancia
+          </div>
+          <div class="news__container__text">
+            O Protetor Labial Vult Balm é formulado com Óleo de Rícino e um Complexo de Vitaminas Hidratantes que garantem lábios extremamente macios, protegidos e rejuvenescidos, além de realçar a beleza natural da boca. Disponível em diferentes aromas.
+          </div>
+        </div>
+      </div>
+
+      <div class="news__container news__container--responsive">
+        <div class="news__container__large__image"><img src="/assets/images/vult_news_03.png" alt=""></div>
+        <div class="news__container__content">
+          <div class="news__container__links">
+            <a href="#">Maquiagens para os olhos com até 40% OFF</a>
+          </div>
+          <div class="news__container__title">
+            Glitter Vult Cor 02
+          </div>
+          <div class="news__container__text">
+            O Glitter Vult vem com dosador que facilita a aplicação e evita o desperdício de maquiagem. Sâo vários tons para destacar o olhar com um toque moderno e cheio de personalidade, deixando sua make descontraída e cheia de brilho.
+          </div>
+        </div>
+      </div>
+
+      <div class="news__container">
+        <div class="news__container__small__image"><img src="/assets/images/vult_news_02.png" alt=""></div>
+        <div class="news__container__content">
+          <div class="news__container__links">
+            <a href="">Ganhe 1 esmalte + FRETE GRÁTIS!</a>
+          </div>
+          <div class="news__container__title">
+            Glow in Paris Rica de Marré Vult - Desodorante Colônia Feminino
+          </div>
+          <div class="news__container__text">
+            O perfume Glow in Paris, de Rica de Marré Vult, destaca o equilíbrio perfeito de notas cítricas com a personalidade delicada das flores brancas, revelando uma combinação inspirada nos cenários franceses. Um perfume feito para mulheres divertidas que aproveitam todos os momentos com espontaneidade e leveza.
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="budget" id="budget">
+    <div class="budget__gradient"></div>
+    <div class="container">
+      <div class="budget__container__left">
+       Faça já o seu pedido dos melhores produtos cosméticos produzidos no Brasil. Afilie-se a nós e faça dinheiro vendendo nossos produtos.
+      </div>
+
+      <div class="budget__container__right">
+        <div class="budget__form">
+          <p>Afilie-se</p>
+          <p>Entre em contato com um dos nossos atendentes e torne-se um afiliado!</p>
+          <p>Informe seus dados e solicite uma afiliação imediata</p>
+          <div class="budget__form__infos">
+            <input type="text" placeholder="Nome completo">
+            <input type="number" placeholder="Número de telefone">
+            <input type="email" placeholder="E-mail">
+            <input type="submit" value="Enviar">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="find-us" id="find_us">
+    <div class="container">
+      <div class="find-us__container__left">
+        <p>Onde nos encontrar</p>
+        <p>Av. Ricieri José Marcatto, 826 - Vila Suissa, Mogi das Cruzes - SP, 08810-020, Brasil</p>
+        <p>(21) 2197-7777</p>
+      </div>
+      <div class="find-us__container__right">
+        <div class="find-us__map" id="find_us__map">
+          <iframe width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJazU9ytzZzZQRfwESFMAWF1g&key=AIzaSyA_FoHEvTlWFaP0AML9Q10y9W_HHQAFzeM"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="newsletter">
+    <div class="container">
+      <div class="newsletter__text">Receba informações em primeira mão. Saiba primeiro de promoções e eventos.</div>
+      <div class="newsletter__form">
+        <input type="email" id="" placeholder="Digite seu email aqui">
+        <input type="submit" value="Me inscrever">
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__background"><img src="/assets/images/store_banner.jpg" alt=""></div>
+    <div class="container">
+      <div class="footer__resposive">
+        <a href="#footer"><i class="icon fas fa-chevron-down"></i> Menu</a>
+        <div class="footer__resposive__menu hidden">
+          <ul class="flex">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about_us">Sobre nós</a></li>
+            <li><a href="#store">A loja</a></li>
+            <li><a href="#showcase_1">Maquiagens</a></li>
+            <li><a href="#showcase_2">Cremes</a></li>
+            <li><a href="#feature">Destaque</a></li>
+            <li><a href="#news">Novidades</a></li>
+            <li><a href="#budget">Orçamento</a></li>
+            <li><a href="#find_us">Localização</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__top">
+        <div class="footer__infos">
+          <a href="">
+            <h1>Vult</h1>
+            <div class="logo__divisor"></div>
+            <h1>Cosméticos</h1>
+          </a>
+        </div>
+        <div class="footer__menus">
+          <ul class="flex">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about_us">Sobre nós</a></li>
+            <li><a href="#store">A loja</a></li>
+            <li><a href="#showcase_1">Maquiagens</a></li>
+            <li><a href="#showcase_2">Cremes</a></li>
+            <li><a href="#feature">Destaque</a></li>
+            <li><a href="#news">Novidades</a></li>
+            <li><a href="#budget">Orçamento</a></li>
+            <li><a href="#find_us">Localização</a></li>
+          </ul>
+        </div>
+        <div class="footer__social-medias">
+          <ul class="flex">
+            <li><a href="https://instagram.com/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://facebook.com/" target="_blank"><i class="fab fa-facebook"></i> Facebook</a></li>
+            <li><a href="https://linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i> Linkedin</a></li>
+            <li><a href="https://discord.com/" target="_blank"><i class="fab fa-discord"></i> DISCORD</a></li>
+            <li><a href="https://youtube.com/" target="_blank"><i class="fab fa-youtube"></i> YOUTUBE</a></li>
+            <li><a href="https://web.whatsapp.com/" target="_blank"><i class="fab fa-whatsapp"></i> WHATSAPP</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      @Vnda - Tecnologia para e-commerce | CNPJ: 00.000.000/0001-00
+    </div>
+  </footer>
+
+  </div>
+
+  <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+  <script src="/js/bundle.js"></script>
+
+</body>
+</html>
