@@ -33,5 +33,6 @@
 #### Notas:
 > PARA RODAR O PROJETO:
 1 - Clonar e entrar na pasta do repositório;
-2 - Entrar na pasta *src* e no console do vsCode ou no cmd iniciar o projeto com o comando 'gulp'
+2 - Rodar 'npm i' dentro da pasta do projeto para baixar os pacotes necessários; 
+3 - Por fim, no console do vsCode ou no cmd iniciar o projeto com o comando 'gulp'
 > Na pasta *dist* ficam os arquivos compactos, css e js minificados.
