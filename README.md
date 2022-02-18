@@ -31,7 +31,7 @@
 - Revisão e entrega
 
 #### Notas:
-> PARA RODAR O PROJETO:
-1 - Clonar e entrar na pasta do repositório;
-2 - Entrar na pasta *src* e no console do vsCode ou no cmd iniciar o projeto com o comando 'gulp'
+> PARA RODAR O PROJETO:<br/>
+1 - Clonar e entrar na pasta do repositório;<br/>
+2 - Entrar na pasta *src* e no console do vsCode ou no cmd iniciar o projeto com o comando 'gulp'<br/>
 > Na pasta *dist* ficam os arquivos compactos, css e js minificados.
