@@ -21,10 +21,11 @@
         max-height: 400px; 
     }
     &-img {
-        padding: 30px;
+        // padding: 30px;
         width: 100%;
         max-width: 250px;
         height: 400px;
+        object-fit: contain;
     }
     &-flag {
         border-radius: 10px;

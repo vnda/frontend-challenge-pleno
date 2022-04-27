@@ -3,7 +3,7 @@
     height: 85vh;
     margin-top: 2%;
     &-containerimg {
-        height: 65vh;
+        height: 70vh;
         position: relative;
     }
     &-img {
@@ -43,9 +43,20 @@
     }
 
     @include bkp(md) {
+        height: 58vh !important;
+        &-containerimg {
+            height: 46vh !important;
+        }
+        &-title {
+            margin-left: 10px;
+        }
         & .-withheader {
             margin-bottom: -30%;
             margin-left: 7%;
+            img {
+                object-fit: cover;
+                height: 200px !important;
+            }
         }
         & .banner-headerinfo-item {
             font-size: 10px;

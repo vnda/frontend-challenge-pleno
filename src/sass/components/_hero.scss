@@ -6,6 +6,9 @@
     }
     &-item {
         height: 100%;
+        img {
+            object-fit: cover;
+        }
     }
     &-overlay {
         display: flex;
