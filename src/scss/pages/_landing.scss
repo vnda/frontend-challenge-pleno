@@ -1,0 +1,483 @@
+.landing {
+    .block {
+        .heading {
+            font-size: 1.4rem;
+            margin-bottom: 30px;
+        }
+        .text{
+            font-size: 1.1rem;
+        }
+    }
+    .block-1,.block-2 {
+        .floating-image {
+            overflow: hidden;
+            @include radius;
+            &:hover {
+                .image {
+                    transform: scale(1.1);;
+                }
+            }
+        }
+        .image {
+            transition: all .5s ease;
+        }
+    }
+    .block-1 {
+        background-color: var(--base-color-1);
+        @media(min-width: $medium) and (max-width: calc($extraLarge - 1px)) {position: relative;}
+        .container {
+            padding: 5rem 0 8rem;
+            display: flex;
+            gap: 2rem;
+            @media(min-width: $extraLarge) {position: relative; padding: 5rem 0 12rem;}
+        }
+        .col-1 {
+            width: 60%;
+            .heading {
+                max-width: 75%;
+                font-size: 1.4rem;
+            }
+            .text {
+                max-width: 55%;
+                margin-bottom: 15px;
+            }
+            .btn {
+                display: block;
+                max-width: 150px;
+                font-size: 1rem;
+            }
+        }
+        .col-2 {
+            .floating-image {
+                position: absolute;
+                .image {
+                    border-radius: 5px;
+                }
+                &:hover {
+                    z-index: 5;
+                }
+            }
+            .floating-image-1 {
+                right: 10%;
+                top: 0;
+                z-index: 2;
+                @include desktop {
+                    .image {max-height: 340px;}
+                }
+            }
+            .floating-image-2 {
+                right: 0;
+                top: 100px;
+                z-index: 1;
+                @include desktop {
+                    .image {max-height: 360px;}
+                }
+            }
+        }
+
+        @include medium {
+            .container {
+                flex-direction: column;
+                padding: 3rem 0;
+            }
+            .col {
+                width: 100%;
+                .heading,.text {
+                    max-width: 100%;
+                    width: 100%;
+                }
+                .floating-image {
+                    position: relative;
+                    left: 0;
+                    top: 0;
+                    margin-bottom: 20px;
+                    .image {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    .block-2 {
+        @media(min-width: $medium) and (max-width: calc($extraLarge - 1px)) {position: relative;}
+        .container {
+            padding: 12rem 0 5rem;
+            display: flex;
+            gap: 2rem;
+            @media(min-width: $extraLarge) {position: relative;}
+        }
+        .col-1 {
+            width: 60%;
+            .heading {
+                max-width: 75%;
+                font-size: 1.4em;
+            }
+            .text {
+                max-width: 55%;
+                margin-bottom: 15px;
+            }
+            .btn {
+                display: block;
+                max-width: 150px;
+                font-size: 1rem;
+            }
+        }
+        .col-2 {
+            width: 40%;
+            .floating-image {
+                position: absolute;
+                .image {
+                    border-radius: 5px;
+                }
+            }
+            .floating-image-1 {
+                left: 35%;
+                top: -180px;
+                z-index: 2;
+                @media (min-width: $extraLarge) {
+                    left: 35%;
+                }
+                @include desktop {
+                    .image {max-height: 350px;}
+                }
+            }
+            .floating-image-2 {
+                right: 0;
+                z-index: 1;
+                @include centerVertical;
+                @include desktop {
+                    .image {max-height: 525px;}
+                }
+            }
+        }
+
+        @include medium {
+            .container {
+                flex-direction: column;
+                padding: 3rem 0;
+            }
+            .col {
+                width: 100%;
+                .heading,.text {
+                    max-width: 100%;
+                    width: 100%;
+                }
+                .floating-image {
+                    position: relative;
+                    left: 0;
+                    top: 0;
+                    margin-bottom: 20px;
+                    transform: none;
+                    .image {
+                        width: 100%;
+                        height: auto;
+                    }
+                }
+            }
+        }
+    }
+    .block-3,
+    .block-4 {
+        .container {
+            padding: 4rem 0;
+            position: relative;
+        }
+        .title {
+            @include flexCenter;
+        }
+        .heading {
+            @include sectionTitle;
+        }
+        .anchor {
+            width: 100%;
+            height: 40px;
+            position: absolute;
+            top: -230px;
+            background-color: red;
+            z-index: 5;
+        }
+        .swiper-button-prev{left: -40px;}
+        .swiper-button-next{right: -40px;}
+        @include medium{
+            .container {
+                padding: 0;
+            }
+            .swiper-button-prev{left: -10px;}
+            .swiper-button-next{right: -10px;}
+        }
+    }
+    .block-4 {
+        @include medium {
+            .container {
+                padding-top: 2rem;
+            }
+        }
+    }
+    .block-5 {
+        .row-1 {
+            margin: 5rem 0;
+            .heading {
+                font-size: 2rem;
+                max-width: 600px;
+                margin: 0 auto;
+                @include regular;
+            }
+        }
+        .row-2 {
+            padding: 4rem 0;
+            margin-top: 10rem;
+            background-color: var(--base-color-1);
+            .container {
+                @include flexCenter;
+            }
+            .heading {
+                max-width: 75%;
+            }
+        }
+        .col-1 {
+            width: 60%;
+        }
+        .col-2 {
+            width: 40%;
+            height: 400px;
+            .image-wrapper {
+                position: absolute;
+                right: 0;
+                top: -80px;
+                overflow: hidden;
+                @include boxShadow;
+                @include radius;
+                @include flexCenter;
+                &:hover {
+                    .image {
+                        transform: scale(1.1);
+                    }
+                }
+            }
+            .image {
+                transition: all .5s ease;
+                max-height: 550px;
+                height: auto;
+            }
+        }
+        .btn {
+            display: block;
+            max-width: 150px;
+            font-size: 1rem;
+        }
+        .text {
+            max-width: 55%;
+            margin-bottom: 15px;
+        }
+
+        @include medium {
+            .row-1 {
+                margin: 5rem 0 0;
+            }
+            .row-2 {
+                margin-top: 4rem;
+            }
+            .container {
+                flex-direction: column-reverse;
+                gap: 30px;
+            }
+            .col {
+                width: 100%;
+                height: auto;
+            }
+            .col-2 {
+                .image-wrapper {
+                    position: relative;
+                    top: 0;
+                    max-height: 480px;
+                    align-items: flex-end;
+                }
+                .image {
+                    width: 100%;
+                    max-height: none;
+                    object-fit: cover;
+                }
+            }
+            .text {
+                max-width: 100%;
+            }
+        }
+        @media (min-width: $extraLarge) {
+            .container {
+                position: relative;
+            }
+            .col-2 .image-wrapper {
+                top: -140px;
+            }
+        }
+        @media(min-width: $medium) and (max-width: calc($extraLarge - 1px)) {
+            .row-2 {
+                position: relative;
+            }
+        }
+    }
+    .block-6 {
+        background-color: var(--base-color-1);
+        padding-bottom: 4rem;
+        @include medium {
+            padding-bottom: 0;
+        }
+    }
+    .block-7 {
+        .fullbanner {
+            position: relative;
+            margin-bottom: calc(3rem + 80px);
+        }
+        .fullbanner-wrapper {
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+            @include flexCenter;
+            .image {
+                width: 100%;
+                height: 100%;
+                background: url('#{$imageUrl}/landing-images/floating.png');
+                background-attachment: fixed;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+        .container {
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-end;
+            @include centerAll;
+        }
+        .swiper{
+            max-width: 350px;
+            @include boxShadow;
+        }
+        .swiper,
+        .swiper-slide ,
+        .swiper-wrapper {
+            @include radius;
+        }
+        .floating-image {
+            position: relative;
+            bottom: -80px;
+            .title-image {
+                margin-bottom: 15px;
+            }
+        }
+        .floating-title {
+            text-align: center;
+            max-width: 400px;
+            position: absolute;
+            right: 15%;
+            bottom: 20%;
+            padding: 15px;
+            background-color: var(--base-color-2-transparent);
+            color: var(--font-light);
+            @include radius;
+            @include boxShadow;
+        }
+        .title-image {
+            text-align: center;
+            font-size: 1.1rem;
+            color: var(--font-light);
+            @include semiBold;
+            .title {
+                display: inline-block;
+                padding-bottom: 5px;
+                border-bottom: 2px solid var(--base-color-1);
+            }
+        }
+        .link {
+            color: var(--font-light);
+        }
+
+        @media (min-width: 320px) and (max-width: 719px) {
+            .fullbanner {
+                margin-bottom: 3rem;
+            }
+            .fullbanner-wrapper {
+                height: 800px;
+            }
+            .container {
+                flex-direction: column-reverse;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .floating-image {
+                width: 100%;
+                bottom: 0;
+            }
+            .floating-title {
+                position: relative;
+                right: 0;
+                bottom: 0;
+            }
+        }
+
+        @media (min-width: 720px) and (max-width: 992px) {
+            .fullbanner {
+                margin-bottom: 3rem;
+            }
+            .container {
+                gap: 30px;
+                align-items: center;
+                justify-content: center;
+            }
+            .floating-image {
+                bottom: 0;
+            }
+            .floating-title {
+                position: relative;
+                right: 0;
+                bottom: 0;
+            }
+        }
+    }
+    .block-8 {
+        padding-bottom: 4rem;
+        position: relative;
+        .heading {@include sectionTitle;}
+        .where-to-find {
+            position: relative;
+        }
+        .swiper:not(.swiper-initialized) .swiper-wrapper {
+            justify-content: center;
+        }
+        .swiper-wrapper {
+            padding-bottom: 35px;
+        }
+        .swiper-pagination {
+            bottom: 0;
+        }
+        @include medium {
+            .swiper-button-prev,
+            .swiper-button-next {
+                top: -55px;
+            }
+        }
+        @include desktop {
+            .swiper-button-next {
+                right: -40px;
+                padding-bottom: 35px;
+            }
+            .swiper-button-prev {
+                left: -40px;
+                padding-bottom: 35px;
+            }
+        }
+    }
+    .block-9 {
+        margin-top: 1rem;
+        padding: 2.5rem 0;
+        background-color: var(--base-color-2);
+        color: var(--font-light);
+        @include medium {
+            padding: 1.5rem 0;
+        }
+    }
+}

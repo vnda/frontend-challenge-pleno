@@ -1,0 +1,64 @@
+.hero {
+    .image {
+        max-width: 1920px;
+        max-height: 600px;
+        width: 1920px;
+        object-fit: cover;
+        height: auto;
+    }
+    .floating-info {
+        width: 55%;
+        min-height: 50%;
+        position: absolute;
+        background-color: var(--base-color-1-transparent);
+        padding: 20px 40px;
+        font-size: 2rem;
+        z-index: 2;
+        flex-direction: column;
+        @include flexCenter;
+        @include radius;
+        @include centerAll;
+        @include boxShadow;
+    }
+    .swiper-slide {
+        @include flexCenter;
+        overflow: hidden;
+    }
+    .heading {
+        font-size: 2.5rem;
+        margin: 0 0 30px;
+    }
+    .text {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    @include medium {
+        .floating-info {
+            min-height: 40%;
+        }
+        .heading {
+            font-size: 1.8rem;
+            margin: 0 0 15px;
+        }
+        .text {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+        .floating-info {
+            padding: 15px;
+        }
+    }
+
+    @include mobile {
+        .floating-info {
+            width: 75%;
+        }
+    }
+
+    @media (min-width: $extraLarge) {
+        .floating-info {
+            width: 35%;
+        }
+    }
+}
