@@ -1,0 +1,753 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shutter</title>
+    <!-- CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.css" integrity="sha512-EDXaYrpumQKF+Ic8nuEsgJWBwMOhgwWvNINclFu91nx5VR4MeZ5xlUvyRaYQJTMImwbXSeDjtZMtTs8EB65Z0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/10.2.0/swiper-bundle.min.js" integrity="sha512-QwpsxtdZRih55GaU/Ce2Baqoy2tEv9GltjAG8yuTy2k9lHqK7VHHp3wWWe+yITYKZlsT3AaCj49ZxMYPp46iJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- Project -->
+    <script src="dist/js/scripts.min.js"></script>
+    <link rel="stylesheet" href="dist/css/main.min.css">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="dist/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="dist/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="dist/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="dist/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="dist/images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+
+<body>
+    <main id="main">
+        <!-- Header -->
+        <header class="header">
+            <div class="floating-header container">
+                <div class="isle wrapper">
+                    <div class="logo-menu">
+                        <div class="hamburguer-icon no-desktop no-large"></div>
+                        <a href="/" title="Shutter" class="link">
+                            <img src="dist/images/shutter.svg" alt="Shutter" title="Shutter" class="image">
+                            <span class="brand">Shutter</span>
+                        </a>
+                    </div>
+                    <nav class="header-menu-desktop no-medium no-tablet">
+                        <ul class="items">
+                            <li class="item">
+                                <a href="javascript:void(0);" title="Foto e Vídeo" class="link">Foto e Vídeo</a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown">
+                                        <nav class="sub-menu">
+                                            <ul class="items">
+                                                <li class="item">
+                                                    <a href="javascript:void(0);" class="link">Item 1</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="javascript:void(0);" class="link">Item 1</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="javascript:void(0);" class="link">Item 1</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <div class="banner">
+                                            <img src="dist/images/submenu/foto-e-video.png" alt="dropdown image" class="image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <a href="javascript:void(0);" title="Lentes" class="link">Lentes</a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown">
+                                        <nav class="sub-menu">
+                                            <ul class="items">
+                                                <li class="item">
+                                                    <a href="javascript:void(0);" class="link">Item 1</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="javascript:void(0);" class="link">Item 1</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="javascript:void(0);" class="link">Item 1</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <div class="banner">
+                                            <img src="dist/images/submenu/lentes.png" alt="dropdown image" class="image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <a href="javascript:void(0);" title="Drones" class="link">Drones</a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown">
+                                        <nav class="sub-menu">
+                                            <ul class="items">
+                                                <li class="item">
+                                                    <a href="javascript:void(0);" class="link">Item 1</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="javascript:void(0);" class="link">Item 1</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="javascript:void(0);" class="link">Item 1</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <div class="banner">
+                                            <img src="dist/images/submenu/drones.png" alt="dropdown image" class="image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="item">
+                                <a href="javascript:void(0);" title="Áudio" class="link">Áudio</a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown">
+                                        <nav class="sub-menu">
+                                            <ul class="items">
+                                                <li class="item">
+                                                    <a href="javascript:void(0);" class="link">Item 1</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="javascript:void(0);" class="link">Item 1</a>
+                                                </li>
+                                                <li class="item">
+                                                    <a href="javascript:void(0);" class="link">Item 1</a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                        <div class="banner">
+                                            <img src="dist/images/submenu/audio.png" alt="dropdown image" class="image">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="header-action">
+                        <div class="icon search"></div>
+                        <div class="icon account"></div>
+                        <div class="icon bag"></div>
+                    </div>
+                    <form class="search-bar">
+                        <input type="text" placeholder="Digite a sua busca">
+                        <button class="send-search">
+                            <img src="dist/images/action-icons/send.svg" alt="Buscar">
+                        </button>
+                    </form>
+                    <div class="hamburguer-menu">
+                        <div class="menu">
+                            <nav class="header-menu">
+                                <ul class="items">
+                                    <li class="item">
+                                        <div class="title">
+                                            <a href="javascript:void(0);" title="Foto e vídeo" class="link">Foto e vídeo</a>
+                                        </div>
+                                        <div class="dropdown-menu">
+                                            <div class="dropdown">
+                                                <nav class="sub-menu">
+                                                    <ul class="items">
+                                                        <li class="item">
+                                                            <a href="javascript:void(0);" class="link">Item 1</a>
+                                                        </li>
+                                                        <li class="item">
+                                                            <a href="javascript:void(0);" class="link">Item 1</a>
+                                                        </li>
+                                                        <li class="item">
+                                                            <a href="javascript:void(0);" class="link">Item 1</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                                <div class="banner">
+                                                    <img src="dist/images/submenu/foto-e-video.png" alt="dropdown image" class="image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="title">
+                                            <a href="javascript:void(0);" title="Lentes" class="link">Lentes</a>
+                                        </div>
+                                        <div class="dropdown-menu">
+                                            <div class="dropdown">
+                                                <nav class="sub-menu">
+                                                    <ul class="items">
+                                                        <li class="item">
+                                                            <a href="javascript:void(0);" class="link">Item 1</a>
+                                                        </li>
+                                                        <li class="item">
+                                                            <a href="javascript:void(0);" class="link">Item 1</a>
+                                                        </li>
+                                                        <li class="item">
+                                                            <a href="javascript:void(0);" class="link">Item 1</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                                <div class="banner">
+                                                    <img src="dist/images/submenu/lentes.png" alt="dropdown image" class="image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="title">
+                                            <a href="javascript:void(0);" title="Drones" class="link">Drones</a>
+                                        </div>
+                                        <div class="dropdown-menu">
+                                            <div class="dropdown">
+                                                <nav class="sub-menu">
+                                                    <ul class="items">
+                                                        <li class="item">
+                                                            <a href="javascript:void(0);" class="link">Item 1</a>
+                                                        </li>
+                                                        <li class="item">
+                                                            <a href="javascript:void(0);" class="link">Item 1</a>
+                                                        </li>
+                                                        <li class="item">
+                                                            <a href="javascript:void(0);" class="link">Item 1</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                                <div class="banner">
+                                                    <img src="dist/images/submenu/drones.png" alt="dropdown image" class="image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="title">
+                                            <a href="javascript:void(0);" title="Áudio" class="link">Áudio</a>
+                                        </div>
+                                        <div class="dropdown-menu">
+                                            <div class="dropdown">
+                                                <nav class="sub-menu">
+                                                    <ul class="items">
+                                                        <li class="item">
+                                                            <a href="javascript:void(0);" class="link">Item 1</a>
+                                                        </li>
+                                                        <li class="item">
+                                                            <a href="javascript:void(0);" class="link">Item 1</a>
+                                                        </li>
+                                                        <li class="item">
+                                                            <a href="javascript:void(0);" class="link">Item 1</a>
+                                                        </li>
+                                                    </ul>
+                                                </nav>
+                                                <div class="banner">
+                                                    <img src="dist/images/submenu/audio.png" alt="dropdown image" class="image">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Section -->
+        <section class="section landing">
+            <div class="swiper hero">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="banner">
+                            <img src="dist/images/landing-images/cameras-e-acessorios.png" alt="Câmeras e acessórios" title="Câmeras e acessórios" class="image">
+                            <div class="floating-info container text-center">
+                                <h2 class="heading">Câmeras e acessórios</h2>
+                                <p class="text">Eleve sua produção audiovisual com nossa seleção de câmeras DSLR e acessórios de alta qualidade!</p>
+                                <a href="#cameras-e-acessorios" title="Conferir seleção" class="btn cta">Conferir seleção</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="banner">
+                            <img src="dist/images/landing-images/filmmakers.png" alt="Equipamentos para filmmakers" title="Equipamentos para filmmakers" class="image">
+                            <div class="floating-info container text-center">
+                                <h2 class="heading">Equipamentos para filmmakers</h2>
+                                <p class="text">Aprimore sua arte cinematográfica com nossa seleção de câmeras de alta performance e taxas de FPS impressionantes!</p>
+                                <a href="#filmmakers" title="Conferir seleção" class="btn cta">Conferir seleção</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination"></div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+            </div>
+
+            <div class="block block-1">
+                <div class="container">
+                    <div class="col col-1">
+                        <div class="content">
+                            <h3 class="heading">
+                                Sua Janela para o Mundo da Fotografia de Alta Qualidade e Acessórios Premium.
+                            </h3>
+                            <p class="text">
+                                Explore o universo da fotografia com a Shutter. Descubra câmeras de última geração 
+                                e acessórios essenciais para capturar momentos inesquecíveis. Nossa seleção premium 
+                                oferece qualidade excepcional. Desde câmeras DSLR até lentes e tripés, temos tudo o 
+                                que você precisa para elevar suas habilidades fotográficas. Conte com a Shutter para 
+                                equipamentos confiáveis que ajudarão você a transformar cada imagem em uma obra-prima.
+                            </p>
+                            <a href="javascript:void(0);" class="cta btn">Call to action</a>
+                        </div>
+                    </div>
+                    <div class="col col-2">
+                        <div class="content">
+                            <div class="floating-image floating-image-1">
+                                <img src="dist/images/landing-images/mockup-1.png" alt="" title="" class="image">
+                            </div>
+                            <div class="floating-image floating-image-2">
+                                <img src="dist/images/landing-images/mockup-2.png" alt="" title="" class="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block block-2">
+                <div class="container">
+                    <div class="col col-1">
+                        <div class="content">
+                            <h3 class="heading">
+                                Sua Fonte de Equipamentos Profissionais para Fotografia e Vídeo Criativo.
+                            </h3>
+                            <p class="text">
+                                Na Shutter, você encontrará o que precisa para dar vida à sua visão criativa. 
+                                Oferecemos uma ampla gama de câmeras profissionais, lentes versáteis, iluminação 
+                                de estúdio e muito mais. Seja um fotógrafo experiente ou iniciante, a Shutter é o 
+                                seu destino para equipamentos de alta qualidade e inspiração ilimitada.
+                            </p>
+                            <a href="javascript:void(0);" class="cta btn">Call to action</a>
+                        </div>
+                    </div>
+                    <div class="col col-2">
+                        <div class="content">
+                            <div class="floating-image floating-image-1">
+                                <img src="dist/images/landing-images/mockup-3.png" alt="" title="" class="image">
+                            </div>
+                            <div class="floating-image floating-image-2">
+                                <img src="dist/images/landing-images/mockup-4.png" alt="" title="" class="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block block-3">
+                <div class="container">
+                    <div class="title">
+                        <h3 class="heading text-center">Câmeras e acessórios</h3>
+                    </div>
+                    <div class="product-list product-list-swiper-1 swiper" data-id="1">
+                        <div id="cameras-e-acessorios" class="anchor"></div>
+                        <div class="product-list-wrapper swiper-wrapper"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-button-next swiper-button-next-1"></div>
+                    <div class="swiper-button-prev swiper-button-prev-1"></div>
+                </div>
+            </div>
+
+            <div class="block block-4">
+                <div class="container">
+                    <div class="title">
+                        <h3 class="heading text-center">Filmmakers</h3>
+                    </div>
+                    <div class="product-list product-list-swiper-2 swiper" data-id="2">
+                        <div id="filmmakers" class="anchor"></div>
+                        <div class="product-list-wrapper swiper-wrapper"> </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-button-next swiper-button-next-2"></div>
+                    <div class="swiper-button-prev swiper-button-prev-2"></div>
+                </div>
+            </div>
+
+            <div class="block block-5">
+                <div class="row row-1">
+                    <div class="container">
+                        <h3 class="heading text-center">Confira abaixo uma seleção imperdível de posts exclusivos do nosso blog!</h3>
+                    </div>
+                </div>
+
+                <div class="row row-2">
+                    <div class="container">
+                        <div class="col col-1">
+                            <h3 class="heading">Explore o Universo Audiovisual: Dicas, Reviews e Mais no Nosso Blog Especializado em Produtos Audiovisuais.</h3>
+                            <p class="text">
+                                Conheça o nosso blog dedicado ao mundo audiovisual. Aqui, você encontrará avaliações detalhadas de câmeras, comparativos para escolher o equipamento certo, dicas de compra e técnicas de fotografia e filmagem. Além disso, mergulharemos na arte da edição de vídeo e foto para elevar suas habilidades. Descubra o melhor em produção audiovisual conosco.
+                            </p>
+                            <a href="javascript:void(0);" class="cta btn">Posts</a>
+                        </div>
+                        <div class="col col-2">
+                            <div class="image-wrapper">
+                                <img src="dist/images/blog/blog-hero.png" alt="Explore o Universo Audiovisual" title="Explore o Universo Audiovisual" class="image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block block-6">
+                <div class="container blog-posts">
+                    <div class="col col-1 post">
+                        <div class="image-wrapper">
+                            <a href="javascript:void(0);" class="link">
+                                <img src="dist/images/blog/blog-post-1.png" alt="" class="image">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <span class="theme">Dicas de edição</span>
+                            <h3 class="title">Por que editar é importante?</h3>
+                            <p class="text">
+                                A edição é a chave para dar vida às suas imagens. Ela molda a narrativa, aprimora
+                                a qualidade e cativa o público. Neste post, exploramos a importância da edição, 
+                                oferecendo dicas valiosas para aprimorar suas habilidades de pós-produção. Transforme
+                                suas capturas em obras-primas com a edição certa.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col col-2 post">
+                        <div class="image-wrapper">
+                            <a href="javascript:void(0);" class="link">
+                                <img src="dist/images/blog/blog-post-2.png" alt="" class="image">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <span class="theme">Videomaker</span>
+                            <h3 class="title">Sony: A queridinha dos videomakers</h3>
+                            <p class="text">
+                                No mundo da produção de vídeo, a Sony conquistou seu lugar especial. Neste post, 
+                                mergulhamos no porquê. Explore a renomada linha de câmeras Sony, conhecida por sua 
+                                qualidade de imagem e recursos avançados. Descubra por que videomakers de todo o mundo 
+                                confiam na Sony para capturar momentos inesquecíveis.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col col-3 post">
+                        <div class="image-wrapper">
+                            <a href="javascript:void(0);" class="link">
+                                <img src="dist/images/blog/blog-post-3.png" alt="" class="image">
+                            </a>
+                        </div>
+                        <div class="content">
+                            <span class="theme">Viagens</span>
+                            <h3 class="title">Organizando seu kit para viagem</h3>
+                            <p class="text">
+                                Viajar e fotografar são uma combinação incrível, mas um kit desorganizado pode ser um 
+                                pesadelo. Neste post, compartilhamos dicas práticas para organizar seu equipamento 
+                                fotográfico e de vídeo durante suas viagens. Desde bolsas inteligentes até acessórios 
+                                essenciais, saiba como simplificar sua experiência e capturar memórias perfeitas.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block block-7">
+                <div class="fullbanner">
+                    <div class="fullbanner-wrapper">
+                        <div class="image"></div>
+                    </div>
+                    <div class="container">
+                        <div class="floating-image">
+                            <div class="title-image text-center">
+                                <span class="title">Galeria dos seguidores</span>
+                            </div>
+                            <div class="swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide image-wrapper">
+                                        <img src="dist/images/landing-images/gallery-1.png" alt="" class="image">
+                                    </div>
+                                    <div class="swiper-slide image-wrapper">
+                                        <img src="dist/images/landing-images/gallery-2.png" alt="" class="image">
+                                    </div>
+                                    <div class="swiper-slide image-wrapper">
+                                        <img src="dist/images/landing-images/gallery-3.png" alt="" class="image">
+                                    </div>
+                                </div>
+                                <div class="swiper-button-next"></div>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-pagination"></div>
+                            </div>
+                        </div>
+                        <div class="floating-title">
+                            <h3 class="title">
+                                Confira a galeria dos nossos fiéis seguidores, utilizando equipamentos Shutter.<br><br>
+                                Mande a sua foto também! Basta mandar um direct em nosso Instagram: 
+                                <a href="javascript:void(0);" class="link" title="@shutter.dslr">@shutter.dslr</a>
+                            </h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block block-8">
+                <div class="container">
+                    <div class="title">
+                        <h3 class="heading text-center">Onde encontrar</h3>
+                    </div>
+
+                    <div class="where-to-find">
+                        <div class="store-locator swiper">
+                            <div class="swiper-wrapper">
+                                <div class="store swiper-slide">
+                                    <div class="content">
+                                        <div class="store-name"><b>Shutter Floripa Shopping</b></div>
+                                        <div class="store-info address">
+                                            <p class="text">SC-401, 3116 - Saco Grande, Florianópolis - SC</p>
+                                        </div>
+                                        <div class="store-info opening-hours">
+                                            <p class="text">Seg a Sáb - 10h às 22h</p>
+                                        </div>
+                                        <div class="store-info phone">
+                                            <p class="text">
+                                                <a href="javascript:void(0);" class="link">(51) 99999-9999</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="btn" data-map="Floripa%20Shopping">Ver no mapa</div>
+                                </div>
+                                <div class="store swiper-slide">
+                                    <div class="content">
+                                        <div class="store-name"><b>Shutter Beiramar Shopping</b></div>
+                                        <div class="store-info address">
+                                            <p class="text">R. Bocaiúva, 2468 - Centro, Florianópolis - SC</p>
+                                        </div>
+                                        <div class="store-info opening-hours">
+                                            <p class="text">Seg a Sáb - 10h às 22h</p>
+                                        </div>
+                                        <div class="store-info phone">
+                                            <p class="text">
+                                                <a href="javascript:void(0);" class="link">(51) 99999-9999</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="btn" data-map="Beiramar%20Shopping">Ver no mapa</div>
+                                </div>
+                                <div class="store swiper-slide">
+                                    <div class="content">
+                                        <div class="store-name"><b>Shutter Floripa Shopping</b></div>
+                                        <div class="store-info address">
+                                            <p class="text">SC-401, 3116 - Saco Grande, Florianópolis - SC</p>
+                                        </div>
+                                        <div class="store-info opening-hours">
+                                            <p class="text">Seg a Sáb - 10h às 22h</p>
+                                        </div>
+                                        <div class="store-info phone">
+                                            <p class="text">
+                                                <a href="javascript:void(0);" class="link">(51) 99999-9999</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="btn" data-map="Floripa%20Shopping">Ver no mapa</div>
+                                </div>
+                                <div class="store swiper-slide">
+                                    <div class="content">
+                                        <div class="store-name"><b>Shutter Beiramar Shopping</b></div>
+                                        <div class="store-info address">
+                                            <p class="text">R. Bocaiúva, 2468 - Centro, Florianópolis - SC</p>
+                                        </div>
+                                        <div class="store-info opening-hours">
+                                            <p class="text">Seg a Sáb - 10h às 22h</p>
+                                        </div>
+                                        <div class="store-info phone">
+                                            <p class="text">
+                                                <a href="javascript:void(0);" class="link">(51) 99999-9999</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="btn" data-map="Beiramar%20Shopping">Ver no mapa</div>
+                                </div>
+                                <div class="store swiper-slide">
+                                    <div class="content">
+                                        <div class="store-name"><b>Shutter Floripa Shopping</b></div>
+                                        <div class="store-info address">
+                                            <p class="text">SC-401, 3116 - Saco Grande, Florianópolis - SC</p>
+                                        </div>
+                                        <div class="store-info opening-hours">
+                                            <p class="text">Seg a Sáb - 10h às 22h</p>
+                                        </div>
+                                        <div class="store-info phone">
+                                            <p class="text">
+                                                <a href="javascript:void(0);" class="link">(51) 99999-9999</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="btn" data-map="Floripa%20Shopping">Ver no mapa</div>
+                                </div>
+                                <div class="store swiper-slide">
+                                    <div class="content">
+                                        <div class="store-name"><b>Shutter Beiramar Shopping</b></div>
+                                        <div class="store-info address">
+                                            <p class="text">R. Bocaiúva, 2468 - Centro, Florianópolis - SC</p>
+                                        </div>
+                                        <div class="store-info opening-hours">
+                                            <p class="text">Seg a Sáb - 10h às 22h</p>
+                                        </div>
+                                        <div class="store-info phone">
+                                            <p class="text">
+                                                <a href="javascript:void(0);" class="link">(51) 99999-9999</a>
+                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="btn" data-map="Beiramar%20Shopping">Ver no mapa</div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="swiper-button-next swiper-button-next-store"></div>
+                        <div class="swiper-button-prev swiper-button-prev-store"></div>
+                    </div>
+
+                    <div class="modal modal-maps">
+                        <div class="close"></div>
+                        <iframe
+                        width="100%"
+                        height="100%"
+                        frameborder="0" style="border:0"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyCn2KhXq4lRp3pRy4YKCAHPHtOr8Xho57o"
+                        allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+            <div class="block block-9">
+                <div class="container">
+                    <div class="newsletter">
+                        <p class="newsletter-text">Fique por dentro das últimas novidades da Shutter! Inscreva-se na nossa newsletter.</p>
+                        <form class="newsletter-form">
+                            <input type="email" placeholder="Digite seu e-mail aqui!" class="input-wrapper" required>
+                            <button class="send-newsletter">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-items">
+                    <div class="logo-menu">
+                        <a href="/" title="Shutter" class="link">
+                            <img src="dist/images/shutter.svg" alt="Shutter" title="Shutter" class="logo">
+                            <span class="brand">Shutter</span>
+                        </a>
+                        <div class="social-links no-desktop">
+                            <h3 class="heading">Redes Sociais</h3>
+                            <div class="items">
+                                <a href="https://www.instagram.com" target="_blank" class="social instagram">
+                                    <div class="image"></div>
+                                </a>
+                                <a href="https://www.facebook.com" target="_blank" class="social facebook">
+                                    <div class="image"></div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="institutional-menu">
+                        <div class="institutional">
+                            <h3 class="heading">Ajuda</h3>
+                            <nav class="institutional-items">
+                                <ul class="menu-footer">
+                                    <li class="item">
+                                        <a href="javasript:void(0);" title="Trocas e devoluções" class="link">Trocas e devoluções</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="javasript:void(0);" title="Dúvidas frequentes" class="link">Dúvidas frequentes</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="javasript:void(0);" title="Como comprar" class="link">Como comprar</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="javasript:void(0);" title="Frete" class="link">Frete</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="javasript:void(0);" title="Política de Privacidade" class="link">Política de Privacidade</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="javasript:void(0);" title="Termos de uso" class="link">Termos de uso</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="institutional sac">
+                            <h3 class="heading">Atendimento</h3>
+                            <nav class="institutional-items">
+                                <ul class="menu-footer">
+                                    <li class="item">
+                                        <span class="text">Compre por telefone</span>
+                                        <div class="contact">
+                                            <div class="icon phone"></div>
+                                            <a href="javascript:void(0);" class="link">(51) 3333-3333</a>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <span class="text">Chame no WhatsApp</span>
+                                        <div class="contact">
+                                            <div class="icon whatsapp"></div>
+                                            <a href="javascript:void(0);" class="link">(51) 99999-9999</a>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <span class="text">Envie um e-mail</span>
+                                        <div class="contact">
+                                            <div class="icon mail"></div>
+                                            <a href="javascript:void(0);" class="link">sac@shutter.com.br</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        <div class="institutional">
+                            <h3 class="heading">Sobre nós</h3>
+                            <nav class="institutional-items">
+                                <ul class="menu-footer">
+                                    <li class="item">
+                                        <a href="javasript:void(0);" title="Quem somos" class="link">Quem somos</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="javasript:void(0);" title="Trabalhe conosco" class="link">Trabalhe conosco</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="javasript:void(0);" title="Nossas lojas" class="link">Nossas lojas</a>
+                                    </li>
+                                    <li class="item">
+                                        <a href="javasript:void(0);" title="Avaliações" class="link">Avaliações</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                    <div class="social-links no-medium no-tablet">
+                        <h3 class="heading">Redes Sociais</h3>
+                        <div class="items">
+                            <a href="https://www.instagram.com" target="_blank" class="social instagram">
+                                <div class="image"></div>
+                            </a>
+                            <a href="https://www.facebook.com" target="_blank" class="social facebook">
+                                <div class="image"></div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
+</body>
+</html>

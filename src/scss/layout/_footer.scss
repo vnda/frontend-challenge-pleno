@@ -1,0 +1,175 @@
+.footer {
+    background-color: var(--base-color-1);
+    .footer-items {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 2rem 0;
+        flex-direction: column;
+        > .logo {
+            width: 80px;
+        }
+        @include desktop {flex-direction: row;}
+    }
+    .heading {
+        color: var(--base-color-2);
+        margin-top: 0;
+    }
+    .logo-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 10px;
+        > .link {
+            @include flexCenter;
+            .logo {
+                width: 90px;
+            }
+            .brand {
+                font-size: 1rem;
+                text-transform: uppercase;
+                color: var(--font-dark);
+                margin-left: 8px;
+                position: relative;
+                @include bold;
+                @include desktop {
+                    font-size: 1.2rem;
+                }
+            }
+            &:hover{
+                .brand {
+                    color: var(--base-color-3);
+                }
+            }
+        }
+        .social-links {
+            margin-left: 30px;
+        }
+        @include medium {
+            width: 100%;
+        }
+    }
+    .social-links {
+        .heading {
+            margin-bottom: 10px;
+        }
+        > .items {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .image {
+            width: 32px;
+            height: 32px;
+        }
+        .instagram .image {
+            background: url('#{$imageUrl}/social/instagram.png');
+        }
+        .facebook .image {
+            background: url('#{$imageUrl}/social/facebook.png');
+        }
+        @include medium{
+            > .items {
+                justify-content: center;
+            }
+        }
+    }
+    .institutional-menu {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        > .institutional:not(.sac) {
+            .item {
+                margin: 10px 0;
+            }
+            .link{
+                font-size: 1.1rem;
+                text-align: left;
+                &:hover {
+                    color: var(--base-color-3);
+                }
+            }
+        }
+        > .sac {
+            .item {
+                display: flex;
+                flex-direction: column;
+                margin: 10px 0;
+                font-size: 1.1rem;
+                gap: 5px;
+            }
+            .link {
+                @include semiBold;
+            }
+            .contact {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                .link {
+                    &:hover {
+                        color: var(--base-color-3);
+                    }
+                }
+                .icon{
+                    width: 24px;
+                    height: 24px;
+                }
+                .phone {
+                    background: url("#{$imageUrl}/contact/phone.png");
+                }
+                .whatsapp {
+                    background: url("#{$imageUrl}/contact/whatsapp.png");
+                }
+                .mail {
+                    background: url("#{$imageUrl}/contact/mail.png");
+                }
+            }
+        }
+        @include desktop {
+            max-width: 600px;
+            flex-direction: row;
+        }
+        @media (min-width: $large) {
+            max-width: 600px;
+        }
+        @media (min-width: $extraLarge) {
+            max-width: 800px;
+        }
+        @include medium {
+            > .institutional {
+                display: flex;
+                padding: 15px;
+                margin: 10px 0;
+                background-color: var(--base-color-4);
+                position: relative;
+                flex-direction: column;
+                @include radius;
+                &.open {
+                    .institutional-items {
+                        display: block;
+                    }
+                }
+                .heading {
+                    margin-bottom: 0;
+                }
+                .institutional-items {
+                    display: none;
+                }
+                &:after {
+                    content: '';
+                    display: inline-block;
+                    width: 24px;
+                    height: 24px;
+                    background-image: url('#{$imageUrl}/action-icons/arrow.svg');
+                    position: absolute;
+                    right: 15px;
+                    transition: transform .5s;
+                }
+                &.open::after {
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.hamburguer-icon {
+    width: 32px;
+    height: 32px;
+    background-image: url('#{$imageUrl}/action-icons/menu.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+    margin-right: 10px;
+    &.close {
+        background-image: url('#{$imageUrl}/action-icons/close.svg');
+    }
+}
+
+.hamburguer-menu {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 54px;
+    background-color: var(--base-color-1-transparent);
+    transform: translateX(-50%) scaleY(0);
+    transition: transform .2s;
+    transform-origin: top left;
+    @include radius;
+    &.active {
+        transform: translateX(-50%) scaleY(1);
+    }
+    .menu {
+        padding: 10px;
+    }
+}

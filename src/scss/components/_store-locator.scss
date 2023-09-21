@@ -1,0 +1,91 @@
+.store-locator {
+    .store {
+        width: 315px;
+        height: 280px;
+        background-color: var(--base-color-1-transparent);
+        padding: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        @include radius;
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            gap: 15px;
+            padding: 0 15px;
+        }
+        .text {
+            font-size: 1rem;
+        }
+        .link {
+            &:hover {
+                color: var(--base-color-2);
+            }
+        }
+        .btn {
+            width: 100%;
+            display: block;
+            font-size: 1.1rem;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            &:after {
+                content: '';
+                display: block;
+                width: 24px;
+                height: 24px;
+                position: relative;
+                left: 5px;
+                transition: all .5s ease;
+                background-image: url('#{$imageUrl}/action-icons/maps.svg');
+            }
+            &:hover {
+                &:after {
+                    left: 20px;
+                }
+            }
+        }
+    }
+    .store-name {
+        text-align: center;
+        margin-bottom: 8px;
+        position: relative;
+        align-self: center;
+        font-size: 1.2rem;
+        &:after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 2px;
+            background-color: var(--base-color-2);
+            position: absolute;
+            bottom: -5px;
+            @include centerHorizontal;
+        }
+    }
+    .store-info {
+        display: flex;
+        padding-left: 29px;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            left: 0;
+            @include centerVertical
+        }
+        &.address::before {
+            background-image: url('#{$imageUrl}/action-icons/location.svg');
+        }
+        &.opening-hours::before {
+            background-image: url('#{$imageUrl}/action-icons/calendar.svg');
+        }
+        &.phone::before {
+            background-image: url('#{$imageUrl}/action-icons/phone.svg');
+        }
+    }
+}

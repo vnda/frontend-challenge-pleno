@@ -1,0 +1,26 @@
+//Colors
+:root {
+    --base-color-1: #f3ba0c;
+    --base-color-1-transparent: #f3ba0cc9;
+    --base-color-2: #f86e51;
+    --base-color-2-transparent: #f86d51c9;
+    --base-color-3: #d14d37;
+    --base-color-3-transparent: #d14d37c9;
+    --base-color-4: #ffe926;
+    --base-color-4-transparent: #ffe926c9;
+    --font-dark: #272932;
+    --font-light: #eaeaea;
+    --black: #000;
+    --white: #fff;
+}
+
+//URL
+$imageUrl: '../images';
+
+//Breakpoints
+$extraSmall: 320px;
+$mediumSmall: 360px;
+$small: 640px;
+$medium: 768px;
+$large: 1024px;
+$extraLarge: 1536px;

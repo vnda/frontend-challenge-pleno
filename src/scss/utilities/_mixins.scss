@@ -1,0 +1,101 @@
+//Font
+@mixin Playfair {
+    font-family: 'Playfair Display', serif;
+}
+@mixin PTSans {
+    font-family: 'PT Sans', sans-serif;
+}
+//Text
+@mixin regular {
+    font-weight: 400;
+}
+@mixin medium {
+    font-weight: 500;
+}
+@mixin semiBold {
+    font-weight: 600;
+}
+@mixin bold {
+    font-weight: 700;
+}
+@mixin extraBold {
+    font-weight: 800;
+}
+@mixin boldBlack {
+    font-weight: 900;
+}
+@mixin italic {
+    font-style: italic;
+}
+@mixin uppercase {
+    text-transform: uppercase;
+}
+@mixin lowercase {
+    text-transform: lowercase;
+}
+//Style
+@mixin boxShadow {
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+@mixin radius {
+    border-radius: 10px;
+}
+@mixin flexCenter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@mixin sectionTitle {
+    max-width: 350px;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--base-color-2);
+    margin: 0 auto 30px;
+    padding: 10px 20px;
+    position: relative;
+    &:after {
+        content: '';
+        display: block;
+        width: 40%;
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        background-color: var(--base-color-1);
+        @include centerHorizontal;
+    }
+}
+//Breakpoints
+@mixin mobile {
+    @media (min-width: 320px) and (max-width: 480px) {
+        @content;
+    }
+}
+@mixin medium {
+    @media (min-width: 320px) and (max-width: 1023px) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (min-width: 481px) and (max-width: 991px) {
+        @content;
+    }
+}
+@mixin desktop {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+//Centralize
+@mixin centerHorizontal {
+    left: 50%;
+    transform: translateX(-50%);
+}
+@mixin centerVertical {
+    top: 50%;
+    transform: translateY(-50%);
+}
+@mixin centerAll {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
